@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
-    <modules />
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/age-solvers.iml" filepath="$PROJECT_DIR$/age-solvers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jssp-jp/jssp-jp.iml" filepath="$PROJECT_DIR$/jssp-jp/jssp-jp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jssp-jp-emas/jssp-jp-emas.iml" filepath="$PROJECT_DIR$/jssp-jp-emas/jssp-jp-emas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jssp-sp/jssp-sp.iml" filepath="$PROJECT_DIR$/jssp-sp/jssp-sp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jssp-sp-emas/jssp-sp-emas.iml" filepath="$PROJECT_DIR$/jssp-sp-emas/jssp-sp-emas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p-median/p-median.iml" filepath="$PROJECT_DIR$/p-median/p-median.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p-median-emas/p-median-emas.iml" filepath="$PROJECT_DIR$/p-median-emas/p-median-emas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qap-comma-op/qap-comma-op.iml" filepath="$PROJECT_DIR$/qap-comma-op/qap-comma-op.iml" />
+    </modules>
   </component>
 </project>
 
