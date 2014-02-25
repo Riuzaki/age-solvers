@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3cced6f-c41f-4ed0-89d9-fff8b0a4d0c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/age-solvers.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssp-jp-emas/jssp-jp-emas.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssp-jp/jssp-jp.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssp-sp-emas/jssp-sp-emas.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssp-sp/jssp-sp.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/p-median-emas/p-median-emas.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/p-median/p-median.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op/qap-comma-op.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/age-solvers.iws" afterPath="$PROJECT_DIR$/age-solvers.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="age-solvers.iws" />
@@ -83,7 +70,7 @@
       <file leaf-file-name="Evaluator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/p-median/src/main/java/org/jage/algorithms/p/median/evaluate/Evaluator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="13" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.28333333" vertical-offset="34" max-vertical-offset="1207">
+            <state line="49" column="13" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.2843866" vertical-offset="34" max-vertical-offset="1207">
               <folding />
             </state>
           </provider>
@@ -456,6 +443,11 @@
       <created>1393345872890</created>
       <updated>1393345872890</updated>
     </task>
+    <task id="LOCAL-00001" summary="IntelliJ files.">
+      <created>1393346859109</created>
+      <updated>1393346859109</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -463,7 +455,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32908458" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329849" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -472,6 +464,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -498,6 +491,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="IntelliJ files." />
+    <option name="LAST_COMMIT_MESSAGE" value="IntelliJ files." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -505,7 +500,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/p-median/src/main/java/org/jage/algorithms/p/median/evaluate/Evaluator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="13" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.28333333" vertical-offset="34" max-vertical-offset="1207">
+        <state line="49" column="13" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.2843866" vertical-offset="34" max-vertical-offset="1207">
           <folding />
         </state>
       </provider>
