@@ -17,7 +17,30 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="jssp-jp" />
+        <module name="jssp-jp-emas" />
+        <module name="jssp-sp" />
+        <module name="jssp-sp-emas" />
+        <module name="p-median" />
+        <module name="p-median-emas" />
+        <module name="qap-comma-op" />
+      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="age-solvers" target="1.6" />
+      <module name="jssp-jp" target="1.6" />
+      <module name="jssp-jp-emas" target="1.6" />
+      <module name="jssp-sp" target="1.6" />
+      <module name="jssp-sp-emas" target="1.6" />
+      <module name="p-median" target="1.6" />
+      <module name="p-median-emas" target="1.6" />
+      <module name="qap-comma-op" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 
