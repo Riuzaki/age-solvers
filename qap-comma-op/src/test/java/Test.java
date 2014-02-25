@@ -30,9 +30,11 @@
  */
 
 import org.jage.algorithms.comma.op.evaluate.Evaluator;
+import org.jage.algorithms.comma.op.input.InputDataHolder;
 import org.jage.solution.IVectorSolution;
 import org.jage.solution.VectorSolution;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -53,6 +55,8 @@ public class Test {
         for (int i = 0; i < tab.length; i++) {
             list.add(tab[i]);
         }
+        System.out.println(new File(".").getCanonicalPath());
+        InputDataHolder.getInstance("qap-comma-op/input/example");
         IVectorSolution<Integer> sol = new VectorSolution<Integer>(list);
         LOGGER.info("Result is: " + new Evaluator().evaluate(sol));
     }
