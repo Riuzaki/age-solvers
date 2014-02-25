@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>age-solvers</artifactId>
+    <name>Age Solvers</name>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.jage.algorithms</groupId>
+        <artifactId>applications</artifactId>
+        <version>2.6.2-SNAPSHOT</version>
+    </parent>
+
+    <modules>
+        <module>jssp-sp</module>
+        <module>jssp-jp</module>
+        <module>p-median</module>
+        <module>qap-comma-op</module>
+
+        <module>jssp-sp-emas</module>
+        <module>jssp-jp-emas</module>
+        <module>p-median-emas</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>age</id>
+            <url>http://age.iisg.agh.edu.pl/maven2</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+</project>
