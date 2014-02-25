@@ -48,9 +48,20 @@ public class InputDataHolder {
         inputData = new InputData(FILE_PATH);
     }
 
+    private InputDataHolder(String src) throws IOException {
+        inputData = new InputData(src);
+    }
+
     public static InputDataHolder getInstance() throws IOException {
         if (instance == null) {
             instance = new InputDataHolder();
+        }
+        return instance;
+    }
+
+    public static InputDataHolder getInstance(String src) throws IOException {
+        if (instance == null) {
+            instance = new InputDataHolder(src);
         }
         return instance;
     }

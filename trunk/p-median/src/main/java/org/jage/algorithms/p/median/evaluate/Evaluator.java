@@ -95,7 +95,7 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
             total += min;
         }
 
-        LOG.debug("Evaluator returns: " + (-total));
+        LOG.info("Evaluator returns: " + (-total));
 
         if (total < best.get()) {
             best.set(total);

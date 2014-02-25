@@ -31,6 +31,7 @@
 
 package org.jage.algorithms.comma.op.evaluate;
 
+import com.google.common.util.concurrent.AtomicDouble;
 import org.jage.algorithms.comma.op.input.InputData;
 import org.jage.algorithms.comma.op.input.InputDataHolder;
 import org.jage.solution.IVectorSolution;
@@ -38,6 +39,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * User: Norbert Tusiński
@@ -48,15 +51,30 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
     private static final Logger LOG = LoggerFactory.getLogger(Evaluator.class);
     private InputData inputData;
 
+    private static final AtomicDouble best = new AtomicDouble(Double.MAX_VALUE);
+    private static Timer timer;
+    private static long startTime;
+
     public Evaluator() throws IOException {
         inputData = InputDataHolder.getInstance().getInputData();
     }
 
     @Override
     public Double evaluate(IVectorSolution<Integer> solution) {
-        if (LOG.isInfoEnabled()) {
-            LOG.info("Solution vector: " + solution.getRepresentation());
+        if (timer == null) {
+            startTime = System.currentTimeMillis();
+
+            timer = new Timer();
+
+            timer.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    LOG.warn("{}    {}", (System.currentTimeMillis() - startTime) / 1000., best.get());
+                }
+            }, 0, 500);
         }
+
+        LOG.info("Solution vector: " + solution.getRepresentation());
 
         int n = inputData.getN();
 
@@ -69,7 +87,11 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
             }
         }
 
-        LOG.debug("Evaluator returns: " + (-total));
+        LOG.info("Evaluator returns: " + (-total));
+
+        if (total < best.get()) {
+            best.set(total);
+        }
 
         return (double) -total;
     }
