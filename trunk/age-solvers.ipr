@@ -592,6 +592,7 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/cli-bootstrapper/2.6.2-SNAPSHOT/cli-bootstrapper-2.6.2-20121201.161818-1-sources.jar!/" />
+        <root url="file://$PROJECT_DIR$/../jad" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.platform:component-pico:2.6.2-SNAPSHOT">
@@ -691,6 +692,7 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-sources.jar!/" />
+        <root url="file://$PROJECT_DIR$/../jad" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.services:lifecycle:2.6.2-SNAPSHOT">
@@ -814,22 +816,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/xom/xom/1.0/xom-1.0-sources.jar!/" />
       </SOURCES>
     </library>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="annotationTypeSettings">

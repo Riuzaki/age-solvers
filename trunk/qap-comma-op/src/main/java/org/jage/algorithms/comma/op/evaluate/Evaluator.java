@@ -39,7 +39,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.Timer;
+import java.util.*;
 
 /**
  * User: Norbert Tusiński
@@ -51,6 +51,7 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
    private static final Logger LOG = LoggerFactory.getLogger(Evaluator.class);
 
    private static final AtomicDouble best = new AtomicDouble(Double.MAX_VALUE);
+   private static List<Integer> bestList;
 
    private static Timer timer;
 
@@ -72,17 +73,18 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
 
          timer = new Timer();
 
-//         timer.schedule(new TimerTask()
-//         {
-//            @Override
-//            public void run ()
-//            {
-//               LOG.warn("{}    {}", (System.currentTimeMillis() - startTime) / 1000., best.get());
-//            }
-//         }, 0, 500);
+         timer.schedule(new TimerTask()
+         {
+            @Override
+            public void run ()
+            {
+               if (bestList != null)
+                  LOG.warn("{} {} {}", (System.currentTimeMillis() - startTime) / 1000., best.get(), bestList);
+            }
+         }, 0, 500);
       }
 
-      LOG.info("Solution vector: " + solution.getRepresentation());
+      LOG.debug("Solution vector: " + solution.getRepresentation());
 
       int n = inputData.getN();
 
@@ -91,29 +93,27 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
       {
          for (int j = i + 1; j < n; j++)
          {
-            total += inputData.getDistance(i, j)
-              * inputData.getFlow(solution.getRepresentation().get(i),
-              solution.getRepresentation().get(j));
+            int flow = inputData.getFlow(solution.getRepresentation().get(i),
+              solution.getRepresentation().get(j)) + inputData.getFlow(solution.getRepresentation().get(j),
+              solution.getRepresentation().get(i));
+
+            total += inputData.getDistance(i, j) * flow;
          }
       }
 
-      //LOG.info("Evaluator returns: " + (-total));
+      LOG.debug("Evaluator returns: {}", -total);
 
       if (total < best.get())
       {
          best.set(total);
+         synchronized (best)
+         {
+            bestList = new ArrayList<Integer>(Collections.nCopies(solution.getRepresentation().size(), 0));
+            Collections.copy(bestList, solution.getRepresentation());
+         }
       }
 
-      LOG.info("Current: " + total + ", best: " + best.get());
-
-      try
-      {
-         Thread.sleep(1500);
-      }
-      catch (InterruptedException e)
-      {
-         e.printStackTrace();
-      }
+      LOG.debug("Current: " + total + ", best: " + best.get());
 
       return (double) -total;
    }
