@@ -40,59 +40,81 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.Timer;
-import java.util.TimerTask;
 
 /**
  * User: Norbert Tusiński
  * Date: 11/27/13
  * Time: 3:44 PM
  */
-public class Evaluator extends org.jage.property.ClassPropertyContainer implements org.jage.evaluation.ISolutionEvaluator<org.jage.solution.IVectorSolution<Integer>, Double> {
-    private static final Logger LOG = LoggerFactory.getLogger(Evaluator.class);
-    private InputData inputData;
+public class Evaluator extends org.jage.property.ClassPropertyContainer implements org.jage.evaluation.ISolutionEvaluator<org.jage.solution.IVectorSolution<Integer>, Double>
+{
+   private static final Logger LOG = LoggerFactory.getLogger(Evaluator.class);
 
-    private static final AtomicDouble best = new AtomicDouble(Double.MAX_VALUE);
-    private static Timer timer;
-    private static long startTime;
+   private static final AtomicDouble best = new AtomicDouble(Double.MAX_VALUE);
 
-    public Evaluator() throws IOException {
-        inputData = InputDataHolder.getInstance().getInputData();
-    }
+   private static Timer timer;
 
-    @Override
-    public Double evaluate(IVectorSolution<Integer> solution) {
-        if (timer == null) {
-            startTime = System.currentTimeMillis();
+   private static long startTime;
 
-            timer = new Timer();
+   private InputData inputData;
 
-            timer.schedule(new TimerTask() {
-                @Override
-                public void run() {
-                    LOG.warn("{}    {}", (System.currentTimeMillis() - startTime) / 1000., best.get());
-                }
-            }, 0, 500);
-        }
+   public Evaluator () throws IOException
+   {
+      inputData = InputDataHolder.getInstance().getInputData();
+   }
 
-        LOG.info("Solution vector: " + solution.getRepresentation());
+   @Override
+   public Double evaluate (IVectorSolution<Integer> solution)
+   {
+      if (timer == null)
+      {
+         startTime = System.currentTimeMillis();
 
-        int n = inputData.getN();
+         timer = new Timer();
 
-        int total = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                total += inputData.getDistance(i, j)
-                        * inputData.getFlow(solution.getRepresentation().get(i),
-                        solution.getRepresentation().get(j));
-            }
-        }
+//         timer.schedule(new TimerTask()
+//         {
+//            @Override
+//            public void run ()
+//            {
+//               LOG.warn("{}    {}", (System.currentTimeMillis() - startTime) / 1000., best.get());
+//            }
+//         }, 0, 500);
+      }
 
-        LOG.info("Evaluator returns: " + (-total));
+      LOG.info("Solution vector: " + solution.getRepresentation());
 
-        if (total < best.get()) {
-            best.set(total);
-        }
+      int n = inputData.getN();
 
-        return (double) -total;
-    }
+      int total = 0;
+      for (int i = 0; i < n; i++)
+      {
+         for (int j = i + 1; j < n; j++)
+         {
+            total += inputData.getDistance(i, j)
+              * inputData.getFlow(solution.getRepresentation().get(i),
+              solution.getRepresentation().get(j));
+         }
+      }
+
+      //LOG.info("Evaluator returns: " + (-total));
+
+      if (total < best.get())
+      {
+         best.set(total);
+      }
+
+      LOG.info("Current: " + total + ", best: " + best.get());
+
+      try
+      {
+         Thread.sleep(1500);
+      }
+      catch (InterruptedException e)
+      {
+         e.printStackTrace();
+      }
+
+      return (double) -total;
+   }
 }
