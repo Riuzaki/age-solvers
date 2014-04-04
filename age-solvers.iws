@@ -26,18 +26,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="68499ffd-c6c9-426d-b6c7-fe5f6b2eeb5d" name="Default" comment="SolutionFactory fix.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op/input/jensen-example" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/input/InputDataHolder.java" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/input/InputDataHolder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/solution/SolutionFactory.java" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/solution/SolutionFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/age-solvers.iml" afterPath="$PROJECT_DIR$/age-solvers.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/age-solvers.ipr" afterPath="$PROJECT_DIR$/age-solvers.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/age-solvers.iws" afterPath="$PROJECT_DIR$/age-solvers.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssp-jp-emas/jssp-jp-emas.iml" afterPath="$PROJECT_DIR$/jssp-jp-emas/jssp-jp-emas.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssp-jp/jssp-jp.iml" afterPath="$PROJECT_DIR$/jssp-jp/jssp-jp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssp-sp-emas/jssp-sp-emas.iml" afterPath="$PROJECT_DIR$/jssp-sp-emas/jssp-sp-emas.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssp-sp/jssp-sp.iml" afterPath="$PROJECT_DIR$/jssp-sp/jssp-sp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/p-median-emas/p-median-emas.iml" afterPath="$PROJECT_DIR$/p-median-emas/p-median-emas.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/p-median/p-median.iml" afterPath="$PROJECT_DIR$/p-median/p-median.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/qap-comma-op.iml" afterPath="$PROJECT_DIR$/qap-comma-op/qap-comma-op.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/src/main/resources/age.properties" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/resources/age.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/pom.xml" afterPath="$PROJECT_DIR$/qap-comma-op/pom.xml" />
     </list>
     <ignored path="age-solvers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -165,6 +161,38 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java" line="112" class="org.jage.algorithms.comma.op.evaluate.Evaluator" package="org.jage.algorithms.comma.op.evaluate">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="jar://C:/Java/jdk1.7.0_51/src.zip!/java/util/Collections.java" line="586" class="java.util.Collections" package="java.util">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -232,26 +260,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Evaluator.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Evaluator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="3" selection-start="1609" selection-end="1684" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state line="109" column="28" selection-start="3247" selection-end="3247" vertical-scroll-proportion="0.39873418" vertical-offset="996" max-vertical-offset="1428">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SolutionFactory.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/solution/SolutionFactory.java">
+      <file leaf-file-name="VariationOperatorMutationOnly.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/VariationOperatorMutationOnly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="7" selection-start="2392" selection-end="2392" vertical-scroll-proportion="1.1113446" vertical-offset="814" max-vertical-offset="2584">
-              <folding>
-                <element signature="e#0#4011#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#2287#2296#0" expanded="true" />
-              </folding>
+            <state line="59" column="35" selection-start="1936" selection-end="1936" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Collections.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Java/jdk1.7.0_51/src.zip!/java/util/Collections.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3461" column="30" selection-start="135075" selection-end="135075" vertical-scroll-proportion="0.0" vertical-offset="58162" max-vertical-offset="67218">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SequentialPopulationEvaluator.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1.jar!/org/jage/evaluation/SequentialPopulationEvaluator.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="1" selection-start="610" selection-end="610" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="306">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntArrayList.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/it/unimi/dsi/fastutil/6.4.1/fastutil-6.4.1.jar!/it/unimi/dsi/fastutil/ints/IntArrayList.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="14" selection-start="2298" selection-end="2298" vertical-scroll-proportion="-5.12" vertical-offset="909" max-vertical-offset="1700">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VectorSolution.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1.jar!/org/jage/solution/VectorSolution.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="34" selection-start="400" selection-end="400" vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="323">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Java/jdk1.7.0_51/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="189" column="16" selection-start="7106" selection-end="7106" vertical-scroll-proportion="0.0" vertical-offset="2681" max-vertical-offset="19635">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -271,11 +338,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/jssp-sp-emas/src/main/resources/base.xml" />
-        <option value="$PROJECT_DIR$/jssp-sp/src/main/java/org/jage/algorithms/jssp/sp/JobShopEvaluator.java" />
-        <option value="$PROJECT_DIR$/jssp-sp/src/main/java/org/jage/algorithms/jssp/sp/JobShopProblem.java" />
-        <option value="$PROJECT_DIR$/jssp-jp/input/mt10.in" />
-        <option value="$PROJECT_DIR$/jssp-jp/src/main/java/org/jage/algorithms/jssp/jp/InputDataHolder.java" />
         <option value="$PROJECT_DIR$/jssp-jp-emas/src/main/java/org/jage/algorithms/jssp/jp/emas/JobShopProblem.java" />
         <option value="$PROJECT_DIR$/jssp-jp/src/main/resources/log4j.xml" />
         <option value="$PROJECT_DIR$/jssp-jp-emas/src/main/resources/log4j.xml" />
@@ -320,8 +382,13 @@
         <option value="$PROJECT_DIR$/p-median-emas/src/main/java/org/jage/algorithms/p/median/emas/rechenberg/RechenbergDefaultIslandAgent.java" />
         <option value="$PROJECT_DIR$/p-median-emas/src/main/java/org/jage/algorithms/p/median/emas/rechenberg/Settings.java" />
         <option value="$PROJECT_DIR$/p-median/src/main/java/org/jage/algorithms/p/median/rechenberg/Settings.java" />
-        <option value="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java" />
         <option value="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/solution/SolutionFactory.java" />
+        <option value="$PROJECT_DIR$/qap-comma-op/input/jensen-example" />
+        <option value="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/input/InputDataHolder.java" />
+        <option value="$PROJECT_DIR$/qap-comma-op/src/main/resources/age.properties" />
+        <option value="$MAVEN_REPOSITORY$/org/jage/algorithms/applications/2.6.2-SNAPSHOT/applications-2.6.2-SNAPSHOT.pom" />
+        <option value="$PROJECT_DIR$/qap-comma-op/pom.xml" />
+        <option value="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java" />
       </list>
     </option>
   </component>
@@ -329,6 +396,66 @@
     <option name="AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="SPLITTER_PROPORTION" value="0.5" />
     <profile name="Default" />
+  </component>
+  <component name="IntelliJadProjectConfigComponent">
+    <config>
+      <a type="boolean">false</a>
+      <af type="boolean">false</af>
+      <always-exclude-recursively type="boolean">false</always-exclude-recursively>
+      <b type="boolean">false</b>
+      <cleanup-source-roots type="boolean">true</cleanup-source-roots>
+      <clear type="boolean">false</clear>
+      <clear-and-close-console-on-success type="boolean">false</clear-and-close-console-on-success>
+      <create-output-directory type="boolean">true</create-output-directory>
+      <d type="string">C:\Users\SG0217~1\AppData\Local\Temp\intellijad\age-solvers</d>
+      <dead type="boolean">false</dead>
+      <decompile-on-navigation type="string">On demand</decompile-on-navigation>
+      <decompile-to-memory type="boolean">false</decompile-to-memory>
+      <dis type="boolean">false</dis>
+      <exclusion-table-model type="table-model" model-class="net.stevechaloner.intellijad.config.ExclusionTableModel" content-types="string,boolean,boolean" />
+      <f type="boolean">false</f>
+      <ff type="boolean">false</ff>
+      <forced-decompile-to-memory type="boolean">false</forced-decompile-to-memory>
+      <i type="boolean">false</i>
+      <indentation type="integer">4</indentation>
+      <jad-path type="string">C:/Windows/jad.exe</jad-path>
+      <keep-decompiled-to-memory type="boolean">false</keep-decompiled-to-memory>
+      <l type="integer">64</l>
+      <lnc type="boolean">false</lnc>
+      <lradix type="integer">10</lradix>
+      <nl type="boolean">false</nl>
+      <nocast type="boolean">false</nocast>
+      <noclass type="boolean">false</noclass>
+      <nocode type="boolean">false</nocode>
+      <noconv type="boolean">false</noconv>
+      <noctor type="boolean">false</noctor>
+      <nodos type="boolean">false</nodos>
+      <nofd type="boolean">false</nofd>
+      <noinner type="boolean">false</noinner>
+      <nolvt type="boolean">false</nolvt>
+      <nonlb type="boolean">false</nonlb>
+      <o type="boolean">false</o>
+      <pa type="string" />
+      <pc type="string">_cls</pc>
+      <pe type="string">_ex</pe>
+      <pf type="string">_fld</pf>
+      <pl type="string">_lcl</pl>
+      <pm type="string">_mth</pm>
+      <pp type="string">_prm</pp>
+      <pv type="integer">3</pv>
+      <r type="boolean">false</r>
+      <radix type="integer">10</radix>
+      <read-only type="boolean">false</read-only>
+      <reformat-style type="string">Preferred-Style</reformat-style>
+      <s type="string">java</s>
+      <safe type="boolean">false</safe>
+      <sort type="boolean" />
+      <space type="boolean">false</space>
+      <stat type="boolean">false</stat>
+      <t type="boolean">false</t>
+      <use-project-specific-settings type="boolean">true</use-project-specific-settings>
+      <v type="boolean">false</v>
+    </config>
   </component>
   <component name="LvcsProjectConfiguration">
     <option name="ADD_LABEL_ON_PROJECT_OPEN" value="true" />
@@ -353,6 +480,40 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Quadratic Assignment Problem with COMMAop algorithm" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Age Solvers" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Age Solvers" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -426,6 +587,68 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="age-solvers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="age-solvers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.jage.services:core:2.6.2-SNAPSHOT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core-2.6.2-20121201.161755-1.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="age-solvers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.jage.platform:cli-bootstrapper:2.6.2-SNAPSHOT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cli-bootstrapper-2.6.2-20121201.161818-1.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cli" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="age-solvers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.jage.platform:cli-bootstrapper:2.6.2-SNAPSHOT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cli-bootstrapper-2.6.2-20121201.161818-1.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -525,40 +748,6 @@
               <option name="myItemId" value="op" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="solution" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="age-solvers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="age" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qap-comma-op" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="op" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -594,6 +783,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="age-solvers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="age" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qap-comma-op" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="etc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="age-solvers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="age" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qap-comma-op" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="input" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -614,9 +843,9 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="LayoutCode.rearrangeEntriesJava" value="true" />
-    <property name="options.lastSelected" value="MavenSettings" />
+    <property name="options.lastSelected" value="net.stevechaloner.intellijad.config.ProjectConfigComponent" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -648,6 +877,16 @@
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5" value="764" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings />
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -659,7 +898,37 @@
       <recent name="D:\IntelliJ_Projects\age-solvers\p-median\src\main\java\org\jage\algorithms\p\radian\rechenberg" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.clean install">
+  <component name="RunManager" selected="Application.CliNodeBootstrapper">
+    <configuration default="false" name="CliNodeBootstrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.jage.platform.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.jage.platform.cli.CliNodeBootstrapper" />
+      <option name="VM_PARAMETERS" value="-Dage.config.properties=classpath:age.properties" />
+      <option name="PROGRAM_PARAMETERS" value="-Dage.node.conf=classpath:age.xml" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/qap-comma-op" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="qap-comma-op" />
+      <envs>
+        <env name="age.config.properties" value="classpath:age.properties" />
+      </envs>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1070,11 +1339,32 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Maven.clean install" />
-      <item index="1" class="java.lang.String" itemvalue="Maven.jssp-sp" />
-      <item index="2" class="java.lang.String" itemvalue="Maven.jssp-sp-emas" />
+    <configuration default="false" name="Remote Debug" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.CliNodeBootstrapper" />
+      <item index="1" class="java.lang.String" itemvalue="Maven.clean install" />
+      <item index="2" class="java.lang.String" itemvalue="Maven.jssp-sp" />
+      <item index="3" class="java.lang.String" itemvalue="Maven.jssp-sp-emas" />
+      <item index="4" class="java.lang.String" itemvalue="Remote.Remote Debug" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.CliNodeBootstrapper" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="StarteamConfiguration">
@@ -1142,7 +1432,7 @@
       <changelist id="68499ffd-c6c9-426d-b6c7-fe5f6b2eeb5d" name="Default" comment="" />
       <created>1386461481055</created>
       <updated>1386461481055</updated>
-      <workItem from="1396597207122" duration="3335000" />
+      <workItem from="1396597207122" duration="11739000" />
     </task>
     <task id="LOCAL-00001" summary="Time based results.">
       <created>1393086115093</created>
@@ -1200,11 +1490,15 @@
       <created>1393147835109</created>
       <updated>1393147835109</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="SolutionFactory fix.">
+      <created>1396600617103</created>
+      <updated>1396600617103</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3335000" />
+    <option name="totallyTimeSpent" value="11739000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1228,27 +1522,28 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34002677" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39976135" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39892906" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868758" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32797858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32797858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26444158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18292683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29396662" sideWeight="0.6706444" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32338902" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4966533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Aspects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34030196" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1340,315 +1635,440 @@
     <webview flattenPackages="false" showMembers="false" autoscrollToSource="false" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/p-median-emas/src/main/java/org/jage/algorithms/p/median/emas/rechenberg/Settings.java">
+    <entry file="file://$PROJECT_DIR$/jssp-sp/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="10" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1156">
+        <state line="6" column="16" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0" vertical-offset="366" max-vertical-offset="799">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp-emas/src/main/java/org/jage/algorithms/jssp/jp/emas/rechenberg/RechenbergSwapMutation.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/platform/cli-bootstrapper/2.6.2-SNAPSHOT/cli-bootstrapper-2.6.2-20121201.161818-1.jar!/org/jage/platform/cli/CliNodeBootstrapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="13" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1462">
+        <state line="6" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p-median/src/main/resources/age.properties">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1.jar!/org/jage/agent/AggregateActionService.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="289">
+        <state line="6" column="13" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p-median/src/main/java/org/jage/algorithms/p/median/evaluate/Evaluator.java">
+    <entry file="file://$PROJECT_DIR$/../jad/org/jage/agent/AggregateActionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="22" selection-start="2382" selection-end="2382" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="1904">
+        <state line="103" column="14" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0" vertical-offset="1295" max-vertical-offset="13600">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p-median/src/main/java/org/jage/algorithms/p/median/rechenberg/RechenbergSequentialPopulationEvaluator.java">
+    <entry file="file://$PROJECT_DIR$/jssp-sp-emas/src/main/resources/base.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="81" selection-start="4049" selection-end="4049" vertical-scroll-proportion="0.0" vertical-offset="1819" max-vertical-offset="2516">
+        <state line="16" column="40" selection-start="972" selection-end="991" vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="697">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p-median/src/main/java/org/jage/algorithms/p/median/rechenberg/Settings.java">
+    <entry file="file://$PROJECT_DIR$/p-median/src/main/resources/base.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="13" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="629">
+        <state line="16" column="21" selection-start="901" selection-end="901" vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="697">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median-emas/src/main/java/org/jage/algorithms/p/median/emas/evaluate/Evaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="22" selection-start="2395" selection-end="2395" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="1904">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median/src/main/java/org/jage/algorithms/p/median/rechenberg/RechenbergSwapMutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="13" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median/src/main/java/org/jage/algorithms/p/median/rechenberg/RechenbergSwapMutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="13" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-sp-emas/src/main/resources/age.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="64" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="1481" max-vertical-offset="1989" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp-emas/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp-emas/src/main/java/org/jage/algorithms/jssp/jp/emas/rechenberg/RechenbergAbstractStochasticMutate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="32" selection-start="2349" selection-end="2349" vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1292" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/test/java/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="71" selection-start="1810" selection-end="1814" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp/src/main/resources/age.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="100" selection-start="3004" selection-end="3004" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1054" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp/src/main/java/org/jage/algorithms/jssp/jp/rechenberg/RechenbergAbstractStochasticMutate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="3169" selection-end="3169" vertical-scroll-proportion="0.0" vertical-offset="749" max-vertical-offset="1445" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp/input/mt10.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="0" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp/src/main/java/org/jage/algorithms/jssp/jp/rechenberg/RechenbergSwapMutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="1277" selection-end="2590" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="850" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median-emas/src/main/java/org/jage/algorithms/p/median/emas/input/InputData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="24" selection-start="1734" selection-end="1750" vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="1122" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median-emas/input/334Pm_Pc.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="17527" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median-emas/src/main/java/org/jage/algorithms/p/median/emas/rechenberg/RechenbergSwapMutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="24" selection-start="1948" selection-end="1948" vertical-scroll-proportion="0.0" vertical-offset="298" max-vertical-offset="850" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp/src/main/java/org/jage/algorithms/jssp/jp/rechenberg/RechenbergIndividuallyMutatePopulation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="2193" selection-end="2193" vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="1071" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median-emas/src/main/java/org/jage/algorithms/p/median/emas/solution/SolutionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="13" selection-start="2600" selection-end="2600" vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="1615" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median/src/main/resources/age.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="23" selection-start="3266" selection-end="3266" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1071" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median-emas/src/main/resources/age.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="35" selection-start="1955" selection-end="1955" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1972" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median-emas/src/main/resources/age.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp/src/main/java/org/jage/algorithms/jssp/jp/rechenberg/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="10" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="629" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp-emas/src/main/java/org/jage/algorithms/jssp/jp/emas/JobShopEvaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="1785" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp-emas/input/mt10.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="27" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median/input/334Pm_Pc.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="17527" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp/src/main/resources/age.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp-emas/src/main/resources/age.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="15" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp/src/main/java/org/jage/algorithms/jssp/jp/JobShopEvaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="22" selection-start="2366" selection-end="2366" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1785" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp/src/main/java/org/jage/algorithms/jssp/jp/rechenberg/RechenbergSequentialPopulationEvaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="23" selection-start="4122" selection-end="4122" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1972" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp-emas/src/main/java/org/jage/algorithms/jssp/jp/emas/InputDataHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="14" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp-emas/src/main/java/org/jage/algorithms/jssp/jp/emas/rechenberg/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="10" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="629" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jssp-jp-emas/src/main/resources/age.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="80" selection-start="6617" selection-end="6617" vertical-scroll-proportion="0.0" vertical-offset="1443" max-vertical-offset="1972" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp-emas/src/main/java/org/jage/algorithms/jssp/jp/emas/rechenberg/RechenbergSwapMutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="13" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0" vertical-offset="265" max-vertical-offset="850">
+        <state line="6" column="85" selection-start="413" selection-end="436" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1972">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p-median/src/main/resources/age.properties">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1.jar!/org/jage/workplace/IsolatedSimpleWorkplace.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+        <state line="6" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.20833333" vertical-offset="0" max-vertical-offset="408">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p-median/src/main/java/org/jage/algorithms/p/median/rechenberg/RechenbergSwapMutation.java">
+    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/resources/base.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="13" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="850">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p-median-emas/src/main/java/org/jage/algorithms/p/median/emas/evaluate/Evaluator.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1.jar!/org/jage/workplace/ConnectedSimpleWorkplace.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="22" selection-start="2395" selection-end="2395" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="1207">
+        <state line="6" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.20833333" vertical-offset="0" max-vertical-offset="408">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jssp-jp-emas/src/main/java/org/jage/algorithms/jssp/jp/emas/rechenberg/RechenbergDefaultIslandAgent.java">
+    <entry file="file://$PROJECT_DIR$/../jad/org/jage/workplace/ConnectedSimpleWorkplace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="230" column="26" selection-start="7602" selection-end="7602" vertical-scroll-proportion="0.0" vertical-offset="2652" max-vertical-offset="4063">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8986784" vertical-offset="408" max-vertical-offset="1496">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p-median-emas/src/main/java/org/jage/algorithms/p/median/emas/rechenberg/RechenbergDefaultIslandAgent.java">
+    <entry file="file://$PROJECT_DIR$/../jad/org/jage/workplace/IsolatedSimpleWorkplace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="26" selection-start="7641" selection-end="7641" vertical-scroll-proportion="0.0" vertical-offset="2938" max-vertical-offset="4437">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median-emas/src/main/java/org/jage/algorithms/p/median/emas/rechenberg/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="10" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.0" vertical-offset="98" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median/src/main/java/org/jage/algorithms/p/median/evaluate/Evaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="22" selection-start="2382" selection-end="2382" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median/src/main/java/org/jage/algorithms/p/median/rechenberg/RechenbergSequentialPopulationEvaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="81" selection-start="4049" selection-end="4049" vertical-scroll-proportion="0.0" vertical-offset="825" max-vertical-offset="1751">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p-median/src/main/java/org/jage/algorithms/p/median/rechenberg/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="23" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.21473685" vertical-offset="0" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op/log.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="453526">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="3" selection-start="1609" selection-end="1684" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
+        <state line="89" column="1" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="1547">
           <folding>
+            <element signature="e#0#1549#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1.jar!/org/jage/workplace/SimpleWorkplace.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-sources.jar!/org/jage/workplace/IsolatedSimpleWorkplace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="13" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/test/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="23" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.33183858" vertical-offset="56" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-sources.jar!/org/jage/workplace/Workplace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="17" selection-start="1415" selection-end="1415" vertical-scroll-proportion="0.0" vertical-offset="910" max-vertical-offset="1581">
+          <folding>
+            <element signature="e#0#2842#0" expanded="false" />
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Java/jdk1.7.0_51/src.zip!/java/util/Arrays.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-sources.jar!/org/jage/query/cache/IWorkplaceBasedQueryResultCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2839" column="8" selection-start="128960" selection-end="128960" vertical-scroll-proportion="-0.445215" vertical-offset="48193" max-vertical-offset="62152">
+        <state line="58" column="13" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="816">
+          <folding>
+            <element signature="e#0#2075#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-sources.jar!/org/jage/workplace/manager/DefaultWorkplaceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="18" selection-start="5166" selection-end="5166" vertical-scroll-proportion="0.0" vertical-offset="788" max-vertical-offset="8398">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-sources.jar!/org/jage/agent/SimpleAggregate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="18" selection-start="2983" selection-end="2983" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8347">
+          <folding>
+            <element signature="e#0#17827#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4607#4888#0" expanded="false" />
+            <element signature="e#4883#4884#0" expanded="false" />
+            <element signature="e#4968#5109#0" expanded="false" />
+            <element signature="e#5104#5105#0" expanded="false" />
+            <element signature="e#5595#5738#0" expanded="false" />
+            <element signature="e#5733#5734#0" expanded="false" />
+            <element signature="e#5879#6000#0" expanded="false" />
+            <element signature="e#5995#5996#0" expanded="false" />
+            <element signature="e#6141#6260#0" expanded="false" />
+            <element signature="e#6255#6256#0" expanded="false" />
+            <element signature="e#6390#6494#0" expanded="false" />
+            <element signature="e#6489#6490#0" expanded="false" />
+            <element signature="e#7087#7233#0" expanded="false" />
+            <element signature="e#7228#7229#0" expanded="false" />
+            <element signature="e#7351#7475#0" expanded="false" />
+            <element signature="e#7470#7471#0" expanded="false" />
+            <element signature="e#7630#7856#0" expanded="false" />
+            <element signature="e#7851#7852#0" expanded="false" />
+            <element signature="e#7919#8000#0" expanded="false" />
+            <element signature="e#7995#7996#0" expanded="false" />
+            <element signature="e#8108#8218#0" expanded="false" />
+            <element signature="e#8213#8214#0" expanded="false" />
+            <element signature="e#8336#8453#0" expanded="false" />
+            <element signature="e#8448#8449#0" expanded="false" />
+            <element signature="e#8527#8630#0" expanded="false" />
+            <element signature="e#8625#8626#0" expanded="false" />
+            <element signature="e#8943#9107#0" expanded="false" />
+            <element signature="e#9102#9103#0" expanded="false" />
+            <element signature="e#9258#9400#0" expanded="false" />
+            <element signature="e#9395#9396#0" expanded="false" />
+            <element signature="e#9517#9632#0" expanded="false" />
+            <element signature="e#9627#9628#0" expanded="false" />
+            <element signature="e#9749#9864#0" expanded="false" />
+            <element signature="e#9859#9860#0" expanded="false" />
+            <element signature="e#9931#10031#0" expanded="false" />
+            <element signature="e#10026#10027#0" expanded="false" />
+            <element signature="e#10106#10220#0" expanded="false" />
+            <element signature="e#10215#10216#0" expanded="false" />
+            <element signature="e#10324#10429#0" expanded="false" />
+            <element signature="e#10424#10425#0" expanded="false" />
+            <element signature="e#16370#16371#0" expanded="false" />
+            <element signature="e#16396#16397#0" expanded="false" />
+            <element signature="e#16644#16645#0" expanded="false" />
+            <element signature="e#16683#16684#0" expanded="false" />
+            <element signature="e#16850#16851#0" expanded="false" />
+            <element signature="e#16877#16878#0" expanded="false" />
+            <element signature="e#17131#17132#0" expanded="false" />
+            <element signature="e#17172#17173#0" expanded="false" />
+            <element signature="e#17351#17352#0" expanded="false" />
+            <element signature="e#17381#17382#0" expanded="false" />
+            <element signature="e#17583#17584#0" expanded="false" />
+            <element signature="e#17630#17631#0" expanded="false" />
+            <element signature="e#17799#17800#0" expanded="false" />
+            <element signature="e#17823#17824#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="26" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/platform/cli-bootstrapper/2.6.2-SNAPSHOT/cli-bootstrapper-2.6.2-20121201.161818-1.jar!/org/jage/platform/cli/CommandLineArgumentsService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../jad/org/jage/platform/cli/CliNodeBootstrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="13" selection-start="894" selection-end="894" vertical-scroll-proportion="0.6605505" vertical-offset="910" max-vertical-offset="2499">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/platform/component/2.6.2-SNAPSHOT/component-2.6.2-20121201.161618-1.jar!/org/jage/platform/component/provider/IComponentInstanceProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="10" selection-start="276" selection-end="276" vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-cli/commons-cli/1.2/commons-cli-1.2.jar!/org/apache/commons/cli/CommandLineParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="38" selection-start="227" selection-end="227" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/platform/cli-bootstrapper/2.6.2-SNAPSHOT/cli-bootstrapper-2.6.2-20121201.161818-1-sources.jar!/org/jage/platform/cli/CommandLineArgumentsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="0" selection-start="3372" selection-end="3372" vertical-scroll-proportion="0.0" vertical-offset="871" max-vertical-offset="2159">
+          <folding>
+            <element signature="e#0#5145#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4518#4552#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/resources/age.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="32" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/jage/algorithms/applications/2.6.2-SNAPSHOT/applications-2.6.2-SNAPSHOT.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="65" selection-start="1436" selection-end="1449" vertical-scroll-proportion="0.0" vertical-offset="591" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/platform/config-loader-xml/2.6.2-SNAPSHOT/config-loader-xml-2.6.2-20121201.161656-1.jar!/org/jage/platform/config/xml/loaders/PlaceholderResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.0" vertical-offset="164" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/lifecycle/2.6.2-SNAPSHOT/lifecycle-2.6.2-20121201.161808-1.jar!/org/jage/lifecycle/DefaultLifecycleManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="0" selection-start="5506" selection-end="5506" vertical-scroll-proportion="-7.72" vertical-offset="2034" max-vertical-offset="2329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/resources/age.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.51944447" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="58" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.0" vertical-offset="643" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.7.0_51/src.zip!/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="949" column="18" selection-start="38410" selection-end="38410" vertical-scroll-proportion="0.0" vertical-offset="15472" max-vertical-offset="18513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/platform/component/2.6.2-SNAPSHOT/component-2.6.2-20121201.161618-1.jar!/org/jage/platform/component/provider/IMutableComponentInstanceProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8" selection-start="524" selection-end="524" vertical-scroll-proportion="-7.6" vertical-offset="14" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/platform/config-loader-xml/2.6.2-SNAPSHOT/config-loader-xml-2.6.2-20121201.161656-1-sources.jar!/org/jage/platform/config/xml/loaders/BlockUnwrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/platform/config-loader-xml/2.6.2-SNAPSHOT/config-loader-xml-2.6.2-20121201.161656-1-sources.jar!/org/jage/platform/config/xml/loaders/ComponentsNormalizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="0" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.0" vertical-offset="325" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/platform/config-loader-xml/2.6.2-SNAPSHOT/config-loader-xml-2.6.2-20121201.161656-1-sources.jar!/org/jage/platform/config/xml/loaders/ArgumentShortcutExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="0" selection-start="2453" selection-end="2453" vertical-scroll-proportion="0.31678486" vertical-offset="325" max-vertical-offset="2380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/platform/config-loader-xml/2.6.2-SNAPSHOT/config-loader-xml-2.6.2-20121201.161656-1-sources.jar!/org/jage/platform/config/xml/loaders/DocumentResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="0" selection-start="3204" selection-end="3204" vertical-scroll-proportion="0.31678486" vertical-offset="410" max-vertical-offset="2686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/platform/cli-bootstrapper/2.6.2-SNAPSHOT/cli-bootstrapper-2.6.2-20121201.161818-1-sources.jar!/org/jage/platform/cli/CliNodeBootstrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="0" selection-start="2924" selection-end="2924" vertical-scroll-proportion="0.31678486" vertical-offset="852" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/platform/config-loader-xml/2.6.2-SNAPSHOT/config-loader-xml-2.6.2-20121201.161656-1-sources.jar!/org/jage/platform/config/xml/loaders/PlaceholderResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="0" selection-start="3535" selection-end="3535" vertical-scroll-proportion="0.0" vertical-offset="631" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/input/InputDataHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="39" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/genetic/2.6.2-SNAPSHOT/genetic-2.6.2-20121201.162014-1.jar!/org/jage/genetic/action/VariationActionStrategy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="15" selection-start="511" selection-end="511" vertical-scroll-proportion="0.5604396" vertical-offset="0" max-vertical-offset="364">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-sources.jar!/org/jage/agent/AggregateActionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="0" selection-start="6057" selection-end="6057" vertical-scroll-proportion="0.31678486" vertical-offset="1651" max-vertical-offset="12580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-sources.jar!/org/jage/workplace/SimpleWorkplace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="0" selection-start="5143" selection-end="5143" vertical-scroll-proportion="0.31678486" vertical-offset="2212" max-vertical-offset="3842">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.7.0_51/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="743" column="0" selection-start="27685" selection-end="27685" vertical-scroll-proportion="0.31678486" vertical-offset="11868" max-vertical-offset="34238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1.jar!/org/jage/solution/VectorSolution.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="34" selection-start="400" selection-end="400" vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/it/unimi/dsi/fastutil/6.4.1/fastutil-6.4.1.jar!/it/unimi/dsi/fastutil/ints/IntArrayList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="14" selection-start="2298" selection-end="2298" vertical-scroll-proportion="-5.12" vertical-offset="909" max-vertical-offset="1700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1.jar!/org/jage/evaluation/SequentialPopulationEvaluator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="1" selection-start="610" selection-end="610" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.7.0_51/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="16" selection-start="7106" selection-end="7106" vertical-scroll-proportion="0.0" vertical-offset="2681" max-vertical-offset="19635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/VariationOperatorMutationOnly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="35" selection-start="1936" selection-end="1936" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Java/jdk1.7.0_51/src.zip!/java/util/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="497" column="71" selection-start="21717" selection-end="21717" vertical-scroll-proportion="0.38002774" vertical-offset="7733" max-vertical-offset="67218">
+        <state line="3461" column="30" selection-start="135075" selection-end="135075" vertical-scroll-proportion="0.0" vertical-offset="58162" max-vertical-offset="67218">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/solution/SolutionFactory.java">
+    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="7" selection-start="2392" selection-end="2392" vertical-scroll-proportion="1.1113446" vertical-offset="814" max-vertical-offset="2584">
-          <folding>
-            <element signature="e#0#4011#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#2287#2296#0" expanded="true" />
-          </folding>
+        <state line="109" column="28" selection-start="3247" selection-end="3247" vertical-scroll-proportion="0.39873418" vertical-offset="996" max-vertical-offset="1428">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1681,6 +2101,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Python 3.3.3 (C:/Python33/python.exe) interpreter library</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1692,7 +2113,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1704,12 +2125,23 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>jssp-sp-emas</last-edited>
+          <last-edited>age-solvers</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1717,10 +2149,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: org.jage.services:address:2.6.2-SNAPSHOT</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.4750869" />
               </list>
             </option>
           </splitter-proportions>

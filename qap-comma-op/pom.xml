@@ -39,4 +39,25 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>org.jage.platform.cli.CliNodeBootstrapper</mainClass>
+                    <arguments>
+                        <argument>-Dage.node.conf=classpath:age.xml</argument>
+                    </arguments>
+                    <systemProperties>
+                        <systemProperty>
+                            <key>age.config.properties</key>
+                            <value>${age.props}</value>
+                        </systemProperty>
+                    </systemProperties>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>

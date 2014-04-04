@@ -80,7 +80,7 @@ public class SolutionFactory extends ClassPropertyContainer implements
       }
       Collections.shuffle(list);
 
-      LOG.info("Initialized solution: " + list);
+      LOG.debug("Initialized solution: " + list);
 
       return new VectorSolution<Integer>(new FastIntArrayList(ArrayUtils.toPrimitive(list.toArray(new Integer[problem.getDimension()]))));
    }

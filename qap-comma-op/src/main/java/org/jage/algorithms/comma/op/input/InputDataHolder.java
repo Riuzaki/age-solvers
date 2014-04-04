@@ -40,7 +40,9 @@ import java.io.IOException;
  */
 public class InputDataHolder {
     //private static final String FILE_PATH = "input/tai12a.dat";
-    private static final String FILE_PATH = "input/example";
+    //private static final String FILE_PATH = "input/example";
+    private static final String FILE_PATH = "input/jensen-example"; // optimum: 3260
+
     private static InputDataHolder instance;
     private InputData inputData;
 
