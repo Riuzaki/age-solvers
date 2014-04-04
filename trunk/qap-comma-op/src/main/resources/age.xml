@@ -29,7 +29,7 @@
             </strategy>
             <strategy name="solutionFactory" class="org.jage.algorithms.comma.op.solution.SolutionFactory"/>
 
-            <strategy name="populationEvaluator" class="org.jage.evaluation.SequentialPopulationEvaluator"/>
+            <strategy name="populationEvaluator" class="org.jage.algorithms.comma.op.evaluate.SequentialPopulationEvaluator"/>
             <strategy name="solutionEvaluator" class="org.jage.algorithms.comma.op.evaluate.Evaluator"/>
             <strategy name="problem" class="org.jage.algorithms.comma.op.solution.Problem"/>
 
