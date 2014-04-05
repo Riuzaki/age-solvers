@@ -45,11 +45,12 @@
 
             <strategy name="geneticOperators"
                       class="org.jage.algorithms.comma.op.mutation.VariationOperatorMutationOnly">
-                <strategy name="mutatePopulation" class="org.jage.variation.mutation.IndividuallyMutatePopulation">
+                <strategy name="mutatePopulation" class="org.jage.algorithms.comma.op.mutation.IndividuallyMutatePopulation">
                     <property name="chanceToMutate" type="Double" value="${individual.chanceToMutate}"/>
                     <strategy name="mutateSolution"
                               class="org.jage.algorithms.comma.op.mutation.SwapMutation">
-                        <property name="chanceToMutate" type="Double" value="${feature.chanceToMutate}"/>
+                        <constructor-arg name="steps" type="Integer" value="${steps}"/>
+                        <constructor-arg name="populationSize" type="Integer" value="${population.size}"/>
                     </strategy>
                 </strategy>
             </strategy>

@@ -40,6 +40,7 @@ import org.jage.solution.ISolution;
 import javax.inject.Inject;
 import java.util.SortedMap;
 import java.util.concurrent.ConcurrentSkipListMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Simple {@link IPopulationEvaluator} strategy, which evaluates solutions sequentially, one by one.
@@ -59,15 +60,20 @@ public class SequentialPopulationEvaluator<S extends ISolution, E> extends Class
    private static Object instance;
 
    private SortedMap<E, S> sortedPop = new ConcurrentSkipListMap<E, S>();
+   private AtomicInteger popSize = new AtomicInteger();
+   private AtomicInteger epoch = new AtomicInteger(1);
 
    @Override
    public void evaluatePopulation(final IPopulation<S, E> population) {
       init();
+      popSize.set(population.size());
+      sortedPop.clear();
       for (final S solution : population) {
          final E evaluation = evaluator.evaluate(solution);
          population.setEvaluation(solution, evaluation);
          sortedPop.put(evaluation, solution);
       }
+      epoch.incrementAndGet();
    }
 
    private void init ()
@@ -84,6 +90,7 @@ public class SequentialPopulationEvaluator<S extends ISolution, E> extends Class
    }
 
    public static <S extends ISolution> int getRank(final S solution) {
+      getInstance().sortedPop.put(getInstance().evaluator.evaluate(solution), solution);
       int rank = getInstance().sortedPop.size() - 1;
       for (ISolution s : getInstance().sortedPop.values()) {
          if (solution == s) {
@@ -92,5 +99,13 @@ public class SequentialPopulationEvaluator<S extends ISolution, E> extends Class
          rank++;
       }
       throw new RuntimeException("getRank() error: parameter not in sortedpop");
+   }
+
+   public static int getPopSize() {
+      return getInstance().popSize.get();
+   }
+
+   public static int getEpoch() {
+      return getInstance().epoch.get();
    }
 }
