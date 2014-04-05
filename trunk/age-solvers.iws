@@ -26,12 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="68499ffd-c6c9-426d-b6c7-fe5f6b2eeb5d" name="Default" comment="Tailard instances.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op/input/tailard/tai12a.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op/input/tailard/tai12b.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op/input/tailard/tai15a.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op/input/tailard/tai15b.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op/input/tailard/tai20a.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op/input/tailard/tai20b.dat" />
+      <change type="DELETED" beforePath="C:\temp\age\qap-comma-op\input\tai12a.dat" afterPath="" />
+      <change type="DELETED" beforePath="C:\temp\age\qap-comma-op\input\tai12b.dat" afterPath="" />
+      <change type="DELETED" beforePath="C:\temp\age\qap-comma-op\input\tai15a.dat" afterPath="" />
+      <change type="DELETED" beforePath="C:\temp\age\qap-comma-op\input\tai15b.dat" afterPath="" />
+      <change type="DELETED" beforePath="C:\temp\age\qap-comma-op\input\tai20a.dat" afterPath="" />
+      <change type="DELETED" beforePath="C:\temp\age\qap-comma-op\input\tai20b.dat" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/age-solvers.iws" afterPath="$PROJECT_DIR$/age-solvers.iws" />
     </list>
     <ignored path="age-solvers.iws" />
@@ -1202,7 +1202,7 @@
       <changelist id="68499ffd-c6c9-426d-b6c7-fe5f6b2eeb5d" name="Default" comment="" />
       <created>1386461481055</created>
       <updated>1386461481055</updated>
-      <workItem from="1396597207122" duration="25873000" />
+      <workItem from="1396597207122" duration="25912000" />
     </task>
     <task id="LOCAL-00001" summary="Time based results.">
       <created>1393086115093</created>
@@ -1280,11 +1280,15 @@
       <created>1396699464102</created>
       <updated>1396699464102</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Tailard instances.">
+      <created>1396699509103</created>
+      <updated>1396699509103</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25873000" />
+    <option name="totallyTimeSpent" value="25912000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
