@@ -38,37 +38,47 @@ import java.io.IOException;
  * Date: 20.11.13
  * Time: 07:48
  */
-public class InputDataHolder {
-    //private static final String FILE_PATH = "input/tai12a.dat";
-    //private static final String FILE_PATH = "input/example";
-    private static final String FILE_PATH = "input/jensen-example"; // optimum: 3260
+public class InputDataHolder
+{
+   //private static final String FILE_PATH = "input/example";
+   //private static final String FILE_PATH = "input/jensen-example"; // optimum: 3260
 
-    private static InputDataHolder instance;
-    private InputData inputData;
+   private static final String FILE_PATH = "input/tailard/tai12a.dat"; // optimum: 224416
 
-    private InputDataHolder() throws IOException {
-        inputData = new InputData(FILE_PATH);
-    }
+   private static InputDataHolder instance;
 
-    private InputDataHolder(String src) throws IOException {
-        inputData = new InputData(src);
-    }
+   private InputData inputData;
 
-    public static InputDataHolder getInstance() throws IOException {
-        if (instance == null) {
-            instance = new InputDataHolder();
-        }
-        return instance;
-    }
+   private InputDataHolder () throws IOException
+   {
+      inputData = new InputData(FILE_PATH);
+   }
 
-    public static InputDataHolder getInstance(String src) throws IOException {
-        if (instance == null) {
-            instance = new InputDataHolder(src);
-        }
-        return instance;
-    }
+   private InputDataHolder (String src) throws IOException
+   {
+      inputData = new InputData(src);
+   }
 
-    public InputData getInputData() {
-        return inputData;
-    }
+   public static InputDataHolder getInstance () throws IOException
+   {
+      if (instance == null)
+      {
+         instance = new InputDataHolder();
+      }
+      return instance;
+   }
+
+   public static InputDataHolder getInstance (String src) throws IOException
+   {
+      if (instance == null)
+      {
+         instance = new InputDataHolder(src);
+      }
+      return instance;
+   }
+
+   public InputData getInputData ()
+   {
+      return inputData;
+   }
 }
