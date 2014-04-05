@@ -43,8 +43,8 @@ public class InputDataHolder
    //private static final String FILE_PATH = "input/example";
    //private static final String FILE_PATH = "input/jensen-example"; // optimum: 3260
 
-   //private static final String FILE_PATH = "input/tailard/tai12a.dat"; // optimum: 224416
-   private static final String FILE_PATH = "input/tailard/tai20a.dat"; // optimum: 703482
+   private static final String FILE_PATH = "input/tailard/tai12a.dat"; // optimum: 224416
+   //private static final String FILE_PATH = "input/tailard/tai20a.dat"; // optimum: 703482
 
    private static InputDataHolder instance;
 

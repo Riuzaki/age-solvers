@@ -68,13 +68,15 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
    {
       try
       {
-         maxEvalStep = 30000 * (int) Math.pow(InputDataHolder.getInstance().getInputData().getN(), 2);
+         maxEvalStep = 1000 * (int) Math.pow(InputDataHolder.getInstance().getInputData().getN(), 2);
       }
       catch (IOException e)
       {
          e.printStackTrace();
       }
    }
+
+   private static Evaluator instance;
 
    private InputData inputData;
 
@@ -83,6 +85,12 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
    public Evaluator () throws IOException
    {
       inputData = InputDataHolder.getInstance().getInputData();
+      instance = this;
+   }
+
+   public static Evaluator getInstance ()
+   {
+      return instance;
    }
 
    @Override
@@ -141,5 +149,10 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
       currentEvalStep.incrementAndGet();
 
       return (double) -total;
+   }
+
+   public double getRate ()
+   {
+      return ((double) currentEvalStep.get()) / ((double) maxEvalStep);
    }
 }

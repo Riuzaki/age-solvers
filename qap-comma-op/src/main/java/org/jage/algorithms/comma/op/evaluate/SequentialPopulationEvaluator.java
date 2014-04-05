@@ -100,7 +100,7 @@ public class SequentialPopulationEvaluator<S extends ISolution, E> extends Class
    public static <S extends ISolution> int getRank (final S solution)
    {
       //getInstance().sortedPop.put(getInstance().evaluator.evaluate(solution), solution);
-      if (getInstance().sortedPop.size() > 100)
+      if (getInstance().sortedPop.size() > 200)
       {
          System.exit(0);
       }
@@ -124,6 +124,10 @@ public class SequentialPopulationEvaluator<S extends ISolution, E> extends Class
    public static int getEpoch ()
    {
       return getInstance().epoch.get();
+   }
+
+   public E evaluate(S solution) {
+      return evaluator.evaluate(solution);
    }
 
    @Override
