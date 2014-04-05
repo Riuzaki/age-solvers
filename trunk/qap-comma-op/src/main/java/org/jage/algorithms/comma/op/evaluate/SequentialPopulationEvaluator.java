@@ -96,7 +96,7 @@ public class SequentialPopulationEvaluator<S extends ISolution, E> extends Class
          if (solution == s) {
             return rank;
          }
-         rank++;
+         rank--;
       }
       throw new RuntimeException("getRank() error: parameter not in sortedpop");
    }
