@@ -39,7 +39,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Timer;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * User: Norbert Tusiński
@@ -51,13 +55,30 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
    private static final Logger LOG = LoggerFactory.getLogger(Evaluator.class);
 
    private static final AtomicDouble best = new AtomicDouble(Double.MAX_VALUE);
+
    private static List<Integer> bestList;
 
    private static Timer timer;
 
    private static long startTime;
 
+   private static int maxEvalStep;
+
+   static
+   {
+      try
+      {
+         maxEvalStep = 1000 * (int) Math.pow(InputDataHolder.getInstance().getInputData().getN(), 2);
+      }
+      catch (IOException e)
+      {
+         e.printStackTrace();
+      }
+   }
+
    private InputData inputData;
+
+   private AtomicInteger currentEvalStep = new AtomicInteger(0);
 
    public Evaluator () throws IOException
    {
@@ -71,17 +92,19 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
       {
          startTime = System.currentTimeMillis();
 
-         timer = new Timer();
-
-         timer.schedule(new TimerTask()
+         if (currentEvalStep.get() % 5000 == 0)
          {
-            @Override
-            public void run ()
+            if (currentEvalStep.get() < maxEvalStep)
             {
                if (bestList != null)
                   LOG.warn("{} {} {}", (System.currentTimeMillis() - startTime) / 1000., best.get(), bestList);
             }
-         }, 0, 500);
+            else
+            {
+               LOG.warn("FINISHED EXECUTION");
+               System.exit(0);
+            }
+         }
       }
 
       LOG.debug("Solution vector: " + solution.getRepresentation());
@@ -114,6 +137,8 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
       }
 
       LOG.debug("Current: " + total + ", best: " + best.get());
+
+      currentEvalStep.incrementAndGet();
 
       return (double) -total;
    }
