@@ -54,6 +54,9 @@ public class SwapMutation extends AbstractStochasticMutate<Integer>
       super(steps, populationSize);
    }
 
+   int index1;
+   int index2;
+
    @Override
    protected void doMutate (List<Integer> integers, int index, int range)
    {
@@ -71,8 +74,17 @@ public class SwapMutation extends AbstractStochasticMutate<Integer>
       {
          indexToSwap = index - realDistance;
       }
+      index1 = index;
+      index2 = indexToSwap;
       int tmp = integers.get(index);
       integers.set(index, integers.get(indexToSwap));
       integers.set(indexToSwap, tmp);
+   }
+
+   @Override
+   protected void revert(List<Integer> integers) {
+      int tmp = integers.get(index1);
+      integers.set(index1, integers.get(index2));
+      integers.set(index2, tmp);
    }
 }

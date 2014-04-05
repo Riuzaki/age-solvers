@@ -31,6 +31,7 @@
 
 package org.jage.algorithms.comma.op.mutation;
 
+import org.jage.algorithms.comma.op.evaluate.Evaluator;
 import org.jage.algorithms.comma.op.evaluate.SequentialPopulationEvaluator;
 import org.jage.random.IDoubleRandomGenerator;
 import org.jage.random.IIntRandomGenerator;
@@ -98,7 +99,7 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
       mutatedBitsCount += extraBit;
 
       final boolean[] alreadyChecked = new boolean[size];
-      for (int i = 0; i < mutatedBitsCount; i++)
+      for (int i = 0; i < 1; i++)
       {
          int k = intRand.nextInt(size);
          while (alreadyChecked[k])
@@ -106,14 +107,24 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
             k = intRand.nextInt(size);
          }
          alreadyChecked[k] = true;
+
+         double fitness = (Double) SequentialPopulationEvaluator.getInstance().evaluate(solution);
+
          doMutate(representation, k, calculateRange(solution));
+
+         double fitness2 = (Double) SequentialPopulationEvaluator.getInstance().evaluate(solution);
+
+         if (fitness2 < fitness) {
+            revert(representation);
+         }
       }
    }
 
    private int calculateRange (final IVectorSolution<R> solution)
    {
       int r = SequentialPopulationEvaluator.getInstance().getRank(solution);
-      double rate = 1.0 - ((double) SequentialPopulationEvaluator.getEpoch() / (double) steps);
+      double rate = 1.0 - Evaluator.getInstance().getRate();
+//      System.out.println(rate);
       double rMinus = (((double) (r * distances.length)) / ((double) populationSize)) - rate * ((double) distances.length);
       if (rMinus < 0.0)
       {
@@ -141,4 +152,6 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
     * @param index          the index at which mutation should occur
     */
    protected abstract void doMutate (List<R> representation, int index, int range);
+
+   protected abstract void revert (List<R> representation);
 }
