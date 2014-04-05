@@ -25,11 +25,61 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="68499ffd-c6c9-426d-b6c7-fe5f6b2eeb5d" name="Default" comment="Comma OP fix.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/AbstractStochasticMutate.java" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/AbstractStochasticMutate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/SequentialPopulationEvaluator.java" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/SequentialPopulationEvaluator.java" />
+    <list default="true" readonly="true" id="68499ffd-c6c9-426d-b6c7-fe5f6b2eeb5d" name="Default" comment="Comma OP Emas project added.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/etc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/evaluate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/input" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/input" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/test/java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/solution" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/strategy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/input/tailard" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/AbstractStochasticMutate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/evaluate/Evaluator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/input/FileContentReader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/IndividuallyMutatePopulation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/input/InputData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/input/InputDataHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/strategy/NopePreselectionActionStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/solution/Problem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/evaluate/SequentialPopulationEvaluator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/solution/SolutionFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/SwapMutation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/test/java/Test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/VariationOperatorMutationOnly.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/base.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/input/example" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/input/jensen-example" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/etc/license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/log.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/log4j.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/qap-comma-op-emas.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/qap-comma-op.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/input/tailard/tai12a.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/input/tailard/tai12b.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/input/tailard/tai15a.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/input/tailard/tai15b.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/input/tailard/tai20a.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/input/tailard/tai20b.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/age-solvers.ipr" afterPath="$PROJECT_DIR$/age-solvers.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/age-solvers.iws" afterPath="$PROJECT_DIR$/age-solvers.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="age-solvers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -241,16 +291,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Evaluator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Evaluator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="38" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.6884058" vertical-offset="956" max-vertical-offset="2567">
+            <state line="73" column="38" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2533">
               <folding>
                 <element signature="e#0#4523#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#2591#2592#0" expanded="true" />
-                <element signature="e#2622#2623#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="license.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/etc/license.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="38" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="age.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="26" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Evaluator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/p-median-emas/src/main/java/org/jage/algorithms/p/median/emas/evaluate/Evaluator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="13" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1207">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Evaluator.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/evaluate/Evaluator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="13" selection-start="1574" selection-end="1574" vertical-scroll-proportion="-0.036144577" vertical-offset="202" max-vertical-offset="1836">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -258,7 +351,7 @@
       <file leaf-file-name="InputDataHolder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/input/InputDataHolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="37" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1003">
+            <state line="45" column="37" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1547">
               <folding />
             </state>
           </provider>
@@ -279,8 +372,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/jssp-jp/src/main/java/org/jage/algorithms/jssp/jp/VariationOperatorMutationOnly.java" />
-        <option value="$PROJECT_DIR$/jssp-jp/src/main/java/org/jage/algorithms/jssp/jp/Settings.java" />
         <option value="$PROJECT_DIR$/jssp-jp/src/main/java/org/jage/algorithms/jssp/jp/rechenberg/RechenbergIndividuallyMutatePopulation.java" />
         <option value="$PROJECT_DIR$/jssp-jp/src/main/java/org/jage/algorithms/jssp/jp/SwapMutation.java" />
         <option value="$PROJECT_DIR$/p-median/src/main/java/org/jage/algorithms/p/radian/rechenberg/RechenbergIndividuallyMutatePopulation.java" />
@@ -330,6 +421,8 @@
         <option value="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/AbstractStochasticMutate.java" />
         <option value="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/SequentialPopulationEvaluator.java" />
         <option value="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml" />
       </list>
     </option>
   </component>
@@ -523,7 +616,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="2" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -542,8 +635,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -572,7 +665,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="qap-comma-op" />
+              <option name="myItemId" value="qap-comma-op-emas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -586,7 +679,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="qap-comma-op" />
+              <option name="myItemId" value="qap-comma-op-emas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -604,29 +697,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="qap-comma-op" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="age-solvers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Magisterka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qap-comma-op" />
+              <option name="myItemId" value="qap-comma-op-emas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -638,11 +709,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="op" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -656,7 +723,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="qap-comma-op" />
+              <option name="myItemId" value="qap-comma-op-emas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -672,11 +739,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="op" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="input" />
+              <option name="myItemId" value="emas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -690,7 +753,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="qap-comma-op" />
+              <option name="myItemId" value="qap-comma-op-emas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -706,51 +769,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="op" />
+              <option name="myItemId" value="emas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="evaluate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="age-solvers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Magisterka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qap-comma-op" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="input" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="age-solvers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Magisterka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qap-comma-op" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="input" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tailard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -776,7 +799,7 @@
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="LayoutCode.rearrangeEntriesJava" value="true" />
-    <property name="options.lastSelected" value="net.stevechaloner.intellijad.config.ProjectConfigComponent" />
+    <property name="options.lastSelected" value="org.jetbrains.contest.keypromoter.KeyPromoterConfiguration" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -808,7 +831,7 @@
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5" value="817" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="dynamic.classpath" value="false" />
@@ -826,12 +849,13 @@
       <recent name="org.jage.algorithms.p.radian.rechenberg" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IntelliJ_Projects\Magisterka" />
       <recent name="D:\IntelliJ_Projects\age-solvers\p-median-emas\src\main\java\org\jage\algorithms\p\median\emas\rechenberg" />
       <recent name="D:\IntelliJ_Projects\age-solvers\jssp-jp-emas\src\main\java\org\jage\algorithms\jssp\jp\emas\rechenberg" />
       <recent name="D:\IntelliJ_Projects\age-solvers\p-median\src\main\java\org\jage\algorithms\p\radian\rechenberg" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CliNodeBootstrapper">
+  <component name="RunManager" selected="Application.CliNodeBootstrapper2">
     <configuration default="false" name="CliNodeBootstrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -860,6 +884,26 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -882,32 +926,25 @@
       </MavenSettings>
       <method />
     </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -936,19 +973,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1004,6 +1028,28 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CliNodeBootstrapper2" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.jage.platform.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.jage.platform.cli.CliNodeBootstrapper" />
+      <option name="VM_PARAMETERS" value="-Dage.config.properties=classpath:age.properties" />
+      <option name="PROGRAM_PARAMETERS" value="-Dage.node.conf=classpath:age.xml" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/qap-comma-op-emas" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="qap-comma-op" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="clean install" type="MavenRunConfiguration" factoryName="Maven">
@@ -1105,12 +1151,13 @@
       <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Maven.clean install" />
-      <item index="1" class="java.lang.String" itemvalue="Maven.jssp-sp" />
-      <item index="2" class="java.lang.String" itemvalue="Maven.jssp-sp-emas" />
-      <item index="3" class="java.lang.String" itemvalue="Remote.Remote Debug" />
-      <item index="4" class="java.lang.String" itemvalue="Application.CliNodeBootstrapper" />
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Application.CliNodeBootstrapper2" />
+      <item index="1" class="java.lang.String" itemvalue="Application.CliNodeBootstrapper" />
+      <item index="2" class="java.lang.String" itemvalue="Maven.clean install" />
+      <item index="3" class="java.lang.String" itemvalue="Maven.jssp-sp" />
+      <item index="4" class="java.lang.String" itemvalue="Maven.jssp-sp-emas" />
+      <item index="5" class="java.lang.String" itemvalue="Remote.Remote Debug" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -1307,20 +1354,19 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33979475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39794755" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868758" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32797858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32611173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32536975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18292683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25686592" sideWeight="0.6706444" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48346636" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48232612" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="676" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Aspects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1328,6 +1374,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33979475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1370,7 +1417,8 @@
     <MESSAGE value="Comma OP." />
     <MESSAGE value="Tailard instances." />
     <MESSAGE value="Comma OP fix." />
-    <option name="LAST_COMMIT_MESSAGE" value="Comma OP fix." />
+    <MESSAGE value="Comma OP Emas project added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Comma OP Emas project added." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="VssConfiguration">
@@ -1437,6 +1485,23 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="38" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2567">
+          <folding>
+            <element signature="e#0#4523#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/input/InputDataHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="37" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/AbstractStochasticMutate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="139" column="0" selection-start="4521" selection-end="4521" vertical-scroll-proportion="0.0" vertical-offset="2108" max-vertical-offset="2108">
@@ -1467,8 +1532,6 @@
           <folding>
             <element signature="e#0#4523#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1494,9 +1557,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/SwapMutation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="47" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1632">
-          <folding />
-        </state>
+        <state line="44" column="47" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1632" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jssp-jp/src/main/java/org/jage/algorithms/jssp/jp/rechenberg/RechenbergSequentialPopulationEvaluator.java">
@@ -1561,9 +1622,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/IndividuallyMutatePopulation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="0" selection-start="2806" selection-end="2806" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1054">
-          <folding />
-        </state>
+        <state line="89" column="0" selection-start="2806" selection-end="2806" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1054" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/13.0.1/guava-13.0.1.jar!/com/google/common/collect/Multimap.class">
@@ -1618,9 +1677,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/solution/SolutionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="2976" selection-end="2976" vertical-scroll-proportion="0.0" vertical-offset="754" max-vertical-offset="1972">
-          <folding />
-        </state>
+        <state line="98" column="0" selection-start="2976" selection-end="2976" vertical-scroll-proportion="0.0" vertical-offset="754" max-vertical-offset="1972" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/resources/age.xml">
@@ -1637,16 +1694,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/SwapMutation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="1071">
-          <folding />
-        </state>
+        <state line="66" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="1071" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-sources.jar!/org/jage/agent/AggregateActionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="283" column="25" selection-start="9896" selection-end="9896" vertical-scroll-proportion="0.0" vertical-offset="3199" max-vertical-offset="12580">
-          <folding />
-        </state>
+        <state line="283" column="25" selection-start="9896" selection-end="9896" vertical-scroll-proportion="0.0" vertical-offset="3199" max-vertical-offset="12580" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/AbstractStochasticMutate.java">
@@ -1658,9 +1711,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1.jar!/org/jage/evaluation/ISolutionEvaluator.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="166" selection-end="166" vertical-scroll-proportion="-3.4" vertical-offset="0" max-vertical-offset="221">
-          <folding />
-        </state>
+        <state line="6" column="17" selection-start="166" selection-end="166" vertical-scroll-proportion="-3.4" vertical-offset="0" max-vertical-offset="221" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/SequentialPopulationEvaluator.java">
@@ -1682,13 +1733,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="38" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.6884058" vertical-offset="956" max-vertical-offset="2567">
+        <state line="73" column="38" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2533">
           <folding>
             <element signature="e#0#4523#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/etc/license.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="853">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="38" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="26" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p-median-emas/src/main/java/org/jage/algorithms/p/median/emas/evaluate/Evaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="13" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/evaluate/Evaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="13" selection-start="1574" selection-end="1574" vertical-scroll-proportion="-0.036144577" vertical-offset="202" max-vertical-offset="1836">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1733,7 +1817,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1745,11 +1829,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>age-solvers</last-edited>
+          <last-edited>qap-comma-op-emas</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1773,7 +1858,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.4750869" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

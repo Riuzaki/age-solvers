@@ -22,6 +22,7 @@
         <module>jssp-sp-emas</module>
         <module>jssp-jp-emas</module>
         <module>p-median-emas</module>
+        <module>qap-comma-op-emas</module>
     </modules>
 
     <repositories>
