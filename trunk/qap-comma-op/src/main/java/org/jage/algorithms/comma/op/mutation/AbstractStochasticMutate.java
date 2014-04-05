@@ -114,15 +114,15 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
    {
       int r = SequentialPopulationEvaluator.getInstance().getRank(solution);
       double rate = 1.0 - ((double) SequentialPopulationEvaluator.getEpoch() / (double) steps);
-      double rMinus = ((double) (r * distances.length)) / ((double) populationSize) - rate * ((double) populationSize);
+      double rMinus = (((double) (r * distances.length)) / ((double) populationSize)) - rate * ((double) distances.length);
       if (rMinus < 0.0)
       {
          rMinus = 0.0;
       }
-      double rPlus = ((double) (r * distances.length)) / ((double) populationSize) + rate * ((double) populationSize);
-      if (rPlus > populationSize - 1)
+      double rPlus = (((double) (r * distances.length)) / ((double) populationSize)) + rate * ((double) distances.length);
+      if (rPlus > distances.length - 1)
       {
-         rPlus = populationSize - 1;
+         rPlus = distances.length - 1;
       }
       int modulo = ((int) rPlus) - ((int) rMinus);
       int rPrim = modulo == 0 ? 0 : (Math.abs(random.nextInt()) % modulo) + ((int) rMinus);

@@ -68,7 +68,7 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
    {
       try
       {
-         maxEvalStep = 1000 * (int) Math.pow(InputDataHolder.getInstance().getInputData().getN(), 2);
+         maxEvalStep = 30000 * (int) Math.pow(InputDataHolder.getInstance().getInputData().getN(), 2);
       }
       catch (IOException e)
       {
