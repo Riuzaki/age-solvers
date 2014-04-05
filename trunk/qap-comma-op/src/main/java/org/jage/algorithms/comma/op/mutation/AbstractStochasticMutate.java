@@ -124,9 +124,11 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
       {
          rPlus = distances.length - 1;
       }
-      int modulo = ((int) rPlus) - ((int) rMinus);
-      int rPrim = modulo == 0 ? 0 : (Math.abs(random.nextInt()) % modulo) + ((int) rMinus);
-      return rPrim;
+      if(rMinus >  rPlus)
+      {
+         throw new RuntimeException("that's bad");
+      }
+      return (int) (rMinus + random.nextInt((int) (rPlus - rMinus + 1)));
    }
 
    /**
