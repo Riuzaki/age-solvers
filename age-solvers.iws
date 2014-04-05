@@ -26,13 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="68499ffd-c6c9-426d-b6c7-fe5f6b2eeb5d" name="Default" comment="Comma OP.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/AbstractStochasticMutate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/IndividuallyMutatePopulation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/SequentialPopulationEvaluator.java" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/SequentialPopulationEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/SwapMutation.java" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/SwapMutation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op/input/tailard" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/age-solvers.iws" afterPath="$PROJECT_DIR$/age-solvers.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/p-median/src/main/resources/age.properties" afterPath="$PROJECT_DIR$/p-median/src/main/resources/age.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/src/main/resources/age.xml" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/resources/age.xml" />
     </list>
     <ignored path="age-solvers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -258,7 +253,7 @@
       <file leaf-file-name="AbstractStochasticMutate.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/AbstractStochasticMutate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="7" selection-start="4149" selection-end="4149" vertical-scroll-proportion="0.6932773" vertical-offset="1302" max-vertical-offset="2023">
+            <state line="126" column="46" selection-start="4196" selection-end="4196" vertical-scroll-proportion="0.72899157" vertical-offset="1302" max-vertical-offset="2023">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -548,6 +543,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="age" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="age-solvers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="age" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qap-comma-op" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="age-solvers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="age" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qap-comma-op" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="input" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1148,7 +1175,7 @@
       <changelist id="68499ffd-c6c9-426d-b6c7-fe5f6b2eeb5d" name="Default" comment="" />
       <created>1386461481055</created>
       <updated>1386461481055</updated>
-      <workItem from="1396597207122" duration="24323000" />
+      <workItem from="1396597207122" duration="25639000" />
     </task>
     <task id="LOCAL-00001" summary="Time based results.">
       <created>1393086115093</created>
@@ -1218,11 +1245,15 @@
       <created>1396621098103</created>
       <updated>1396621098103</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Comma OP.">
+      <created>1396695336106</created>
+      <updated>1396695336106</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24323000" />
+    <option name="totallyTimeSpent" value="25639000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1238,7 +1269,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="676" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1261,7 +1292,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18292683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25224647" sideWeight="0.6706444" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25224647" sideWeight="0.6706444" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4966533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Aspects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1732,7 +1763,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/AbstractStochasticMutate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="7" selection-start="4149" selection-end="4149" vertical-scroll-proportion="0.6932773" vertical-offset="1302" max-vertical-offset="2023">
+        <state line="126" column="46" selection-start="4196" selection-end="4196" vertical-scroll-proportion="0.72899157" vertical-offset="1302" max-vertical-offset="2023">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
