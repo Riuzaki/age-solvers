@@ -57,6 +57,8 @@ public class SolutionFactory extends ClassPropertyContainer implements
 {
    private static final Logger LOG = LoggerFactory.getLogger(SolutionFactory.class);
 
+   int count = 0;
+
    @Inject
    private IIntRandomGenerator rand;
 
@@ -73,6 +75,9 @@ public class SolutionFactory extends ClassPropertyContainer implements
    @Override
    public IVectorSolution<Integer> createInitializedSolution ()
    {
+      count++;
+      LOG.debug("count: " + count);
+
       List<Integer> list = new ArrayList<Integer>();
       for (int i = 0; i < problem.getDimension(); i++)
       {
@@ -88,6 +93,8 @@ public class SolutionFactory extends ClassPropertyContainer implements
    @Override
    public IVectorSolution<Integer> copySolution (final IVectorSolution<Integer> solution)
    {
+      //throw new RuntimeException("mutacja ma byc in situ");
+      //return solution;
       final IntArrayList representation = (IntArrayList) solution.getRepresentation();
       return new VectorSolution<Integer>(new FastIntArrayList(representation));
    }

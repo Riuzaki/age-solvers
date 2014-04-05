@@ -16,7 +16,7 @@
                 <strategy name="geneticActionComparator" class="org.jage.genetic.action.GeneticActionComparator"/>
 
                 <strategy name="initializationAction" class="org.jage.genetic.action.InitializationActionStrategy"/>
-                <strategy name="preselectionAction" class="org.jage.genetic.action.PreselectionActionStrategy"/>
+                <strategy name="preselectionAction" class="org.jage.algorithms.comma.op.strategy.NopePreselectionActionStrategy"/>
                 <strategy name="variationAction" class="org.jage.genetic.action.VariationActionStrategy"/>
                 <strategy name="evaluationAction" class="org.jage.genetic.action.EvaluationActionStrategy"/>
                 <strategy name="statisticsUpdateAction" class="org.jage.genetic.action.StatisticsUpdateActionStrategy"/>
