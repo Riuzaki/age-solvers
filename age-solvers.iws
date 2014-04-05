@@ -26,10 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="68499ffd-c6c9-426d-b6c7-fe5f6b2eeb5d" name="Default" comment="Comma OP fix.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/input/InputDataHolder.java" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/input/InputDataHolder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/SequentialPopulationEvaluator.java" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/SequentialPopulationEvaluator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/age-solvers.iws" afterPath="$PROJECT_DIR$/age-solvers.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op/src/main/resources/age.properties" afterPath="$PROJECT_DIR$/qap-comma-op/src/main/resources/age.properties" />
     </list>
     <ignored path="age-solvers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -282,7 +280,7 @@
       <file leaf-file-name="SequentialPopulationEvaluator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/SequentialPopulationEvaluator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="29" selection-start="3096" selection-end="3096" vertical-scroll-proportion="0.72899157" vertical-offset="775" max-vertical-offset="1496">
+            <state line="98" column="15" selection-start="3148" selection-end="3148" vertical-scroll-proportion="0.5520111" vertical-offset="775" max-vertical-offset="1496">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1988#1994#0" expanded="true" />
@@ -1394,7 +1392,7 @@
       <changelist id="68499ffd-c6c9-426d-b6c7-fe5f6b2eeb5d" name="Default" comment="" />
       <created>1386461481055</created>
       <updated>1386461481055</updated>
-      <workItem from="1396597207122" duration="29618000" />
+      <workItem from="1396597207122" duration="29647000" />
     </task>
     <task id="LOCAL-00001" summary="Time based results.">
       <created>1393086115093</created>
@@ -1480,11 +1478,15 @@
       <created>1396699533103</created>
       <updated>1396699533103</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Comma OP fix.">
+      <created>1396703497102</created>
+      <updated>1396703497102</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29618000" />
+    <option name="totallyTimeSpent" value="29647000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1518,7 +1520,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32797858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32797858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32797858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18292683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1993,7 +1995,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/SequentialPopulationEvaluator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="29" selection-start="3096" selection-end="3096" vertical-scroll-proportion="0.72899157" vertical-offset="775" max-vertical-offset="1496">
+        <state line="98" column="15" selection-start="3148" selection-end="3148" vertical-scroll-proportion="0.5520111" vertical-offset="775" max-vertical-offset="1496">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1988#1994#0" expanded="true" />
