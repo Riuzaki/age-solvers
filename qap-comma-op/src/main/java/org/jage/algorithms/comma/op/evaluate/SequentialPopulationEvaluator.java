@@ -31,6 +31,8 @@
 
 package org.jage.algorithms.comma.op.evaluate;
 
+import com.google.common.collect.SortedSetMultimap;
+import com.google.common.collect.TreeMultimap;
 import org.jage.evaluation.IPopulationEvaluator;
 import org.jage.evaluation.ISolutionEvaluator;
 import org.jage.population.IPopulation;
@@ -38,62 +40,75 @@ import org.jage.property.ClassPropertyContainer;
 import org.jage.solution.ISolution;
 
 import javax.inject.Inject;
-import java.util.SortedMap;
-import java.util.concurrent.ConcurrentSkipListMap;
+import java.util.Comparator;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Simple {@link IPopulationEvaluator} strategy, which evaluates solutions sequentially, one by one.
  *
- * @param <S>
- *            The type of {@link ISolution} to be evaluated
- * @param <E>
- *            the type of evaluation
+ * @param <S> The type of {@link ISolution} to be evaluated
+ * @param <E> the type of evaluation
  * @author AGH AgE Team
  */
 public class SequentialPopulationEvaluator<S extends ISolution, E> extends ClassPropertyContainer implements
   IPopulationEvaluator<S, E>
 {
+   private static Object instance;
+
    @Inject
    private ISolutionEvaluator<S, E> evaluator;
 
-   private static Object instance;
+   private SortedSetMultimap<Double, S> sortedPop = TreeMultimap.create(new Comparator<Double>()
+                                                                        {
+                                                                           @Override
+                                                                           public int compare (Double o1, Double o2)
+                                                                           {
+                                                                              return o1.compareTo(o2);
+                                                                           }
 
-   private SortedMap<E, S> sortedPop = new ConcurrentSkipListMap<E, S>();
+                                                                           @Override
+                                                                           public boolean equals (Object obj)
+                                                                           {
+                                                                              return obj == this;
+                                                                           }
+                                                                        }, new Comparator<S>()
+                                                                        {
+                                                                           @Override
+                                                                           public int compare (S o1, S o2)
+                                                                           {
+                                                                              return -1;
+                                                                           }
+
+                                                                           @Override
+                                                                           public boolean equals (Object obj)
+                                                                           {
+                                                                              return false;
+                                                                           }
+                                                                        }
+   );
+
+   //= new SynchronizedSortedSetMultimap<E, S>();
    private AtomicInteger popSize = new AtomicInteger();
+
    private AtomicInteger epoch = new AtomicInteger(1);
 
-   @Override
-   public void evaluatePopulation(final IPopulation<S, E> population) {
-      init();
-      popSize.set(population.size());
-      sortedPop.clear();
-      for (final S solution : population) {
-         final E evaluation = evaluator.evaluate(solution);
-         population.setEvaluation(solution, evaluation);
-         sortedPop.put(evaluation, solution);
-      }
-      epoch.incrementAndGet();
-   }
-
-   private void init ()
-   {
-      if(instance == null)
-      {
-         instance = this;
-      }
-   }
-
-   public  static <S extends ISolution, E> SequentialPopulationEvaluator<S, E> getInstance()
+   public static <S extends ISolution, E> SequentialPopulationEvaluator<S, E> getInstance ()
    {
       return (SequentialPopulationEvaluator<S, E>) instance;
    }
 
-   public static <S extends ISolution> int getRank(final S solution) {
-      getInstance().sortedPop.put(getInstance().evaluator.evaluate(solution), solution);
+   public static <S extends ISolution> int getRank (final S solution)
+   {
+      //getInstance().sortedPop.put(getInstance().evaluator.evaluate(solution), solution);
+      if (getInstance().sortedPop.size() > 100)
+      {
+         System.exit(0);
+      }
       int rank = getInstance().sortedPop.size() - 1;
-      for (ISolution s : getInstance().sortedPop.values()) {
-         if (solution == s) {
+      for (ISolution s : getInstance().sortedPop.values())
+      {
+         if (solution == s)
+         {
             return rank;
          }
          rank--;
@@ -101,11 +116,41 @@ public class SequentialPopulationEvaluator<S extends ISolution, E> extends Class
       throw new RuntimeException("getRank() error: parameter not in sortedpop");
    }
 
-   public static int getPopSize() {
+   public static int getPopSize ()
+   {
       return getInstance().popSize.get();
    }
 
-   public static int getEpoch() {
+   public static int getEpoch ()
+   {
       return getInstance().epoch.get();
+   }
+
+   @Override
+   public void evaluatePopulation (final IPopulation<S, E> population)
+   {
+      init();
+      popSize.set(population.size());
+      sortedPop.clear();
+      for (final S solution : population)
+      {
+         final E evaluation = evaluator.evaluate(solution);
+         population.setEvaluation(solution, evaluation);
+         int siz = sortedPop.size();
+         sortedPop.put((Double) evaluation, solution);
+         if (siz == sortedPop.size())
+         {
+            System.out.println("");
+         }
+      }
+      epoch.incrementAndGet();
+   }
+
+   private void init ()
+   {
+      if (instance == null)
+      {
+         instance = this;
+      }
    }
 }
