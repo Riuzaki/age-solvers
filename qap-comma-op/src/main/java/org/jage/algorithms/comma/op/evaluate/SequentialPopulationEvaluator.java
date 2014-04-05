@@ -51,110 +51,92 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @author AGH AgE Team
  */
 public class SequentialPopulationEvaluator<S extends ISolution, E> extends ClassPropertyContainer implements
-  IPopulationEvaluator<S, E>
-{
-   private static Object instance;
+        IPopulationEvaluator<S, E> {
+    private static Object instance;
 
-   @Inject
-   private ISolutionEvaluator<S, E> evaluator;
+    @Inject
+    private ISolutionEvaluator<S, E> evaluator;
 
-   private SortedSetMultimap<Double, S> sortedPop = TreeMultimap.create(new Comparator<Double>()
-                                                                        {
-                                                                           @Override
-                                                                           public int compare (Double o1, Double o2)
-                                                                           {
-                                                                              return o1.compareTo(o2);
-                                                                           }
+    private SortedSetMultimap<Double, S> sortedPop = TreeMultimap.create(new Comparator<Double>() {
+                                                                             @Override
+                                                                             public int compare(Double o1, Double o2) {
+                                                                                 return o1.compareTo(o2);
+                                                                             }
 
-                                                                           @Override
-                                                                           public boolean equals (Object obj)
-                                                                           {
-                                                                              return obj == this;
-                                                                           }
-                                                                        }, new Comparator<S>()
-                                                                        {
-                                                                           @Override
-                                                                           public int compare (S o1, S o2)
-                                                                           {
-                                                                              return -1;
-                                                                           }
+                                                                             @Override
+                                                                             public boolean equals(Object obj) {
+                                                                                 return obj == this;
+                                                                             }
+                                                                         }, new Comparator<S>() {
+                                                                             @Override
+                                                                             public int compare(S o1, S o2) {
+                                                                                 return -1;
+                                                                             }
 
-                                                                           @Override
-                                                                           public boolean equals (Object obj)
-                                                                           {
-                                                                              return false;
-                                                                           }
-                                                                        }
-   );
+                                                                             @Override
+                                                                             public boolean equals(Object obj) {
+                                                                                 return false;
+                                                                             }
+                                                                         }
+    );
 
-   //= new SynchronizedSortedSetMultimap<E, S>();
-   private AtomicInteger popSize = new AtomicInteger();
+    //= new SynchronizedSortedSetMultimap<E, S>();
+    private AtomicInteger popSize = new AtomicInteger();
 
-   private AtomicInteger epoch = new AtomicInteger(1);
+    private AtomicInteger epoch = new AtomicInteger(1);
 
-   public static <S extends ISolution, E> SequentialPopulationEvaluator<S, E> getInstance ()
-   {
-      return (SequentialPopulationEvaluator<S, E>) instance;
-   }
+    public static <S extends ISolution, E> SequentialPopulationEvaluator<S, E> getInstance() {
+        return (SequentialPopulationEvaluator<S, E>) instance;
+    }
 
-   public static <S extends ISolution> int getRank (final S solution)
-   {
-      //getInstance().sortedPop.put(getInstance().evaluator.evaluate(solution), solution);
-      if (getInstance().sortedPop.size() > 200)
-      {
-         System.exit(0);
-      }
-      int rank = getInstance().sortedPop.size() - 1;
-      for (ISolution s : getInstance().sortedPop.values())
-      {
-         if (solution == s)
-         {
-            return rank;
-         }
-         rank--;
-      }
-      throw new RuntimeException("getRank() error: parameter not in sortedpop");
-   }
+    public static <S extends ISolution> int getRank(final S solution) {
+        //getInstance().sortedPop.put(getInstance().evaluator.evaluate(solution), solution);
+        if (getInstance().sortedPop.size() > 200) {
+            System.exit(0);
+        }
+        int rank = getInstance().sortedPop.size() - 1;
+        for (ISolution s : getInstance().sortedPop.values()) {
+            if (solution == s) {
+                return rank;
+            }
+            rank--;
+        }
+        throw new RuntimeException("getRank() error: parameter not in sortedpop");
+    }
 
-   public static int getPopSize ()
-   {
-      return getInstance().popSize.get();
-   }
+    public static int getPopSize() {
+        return getInstance().popSize.get();
+    }
 
-   public static int getEpoch ()
-   {
-      return getInstance().epoch.get();
-   }
+    public static int getEpoch() {
+        return getInstance().epoch.get();
+    }
 
-   public E evaluate(S solution) {
-      return evaluator.evaluate(solution);
-   }
+    public E evaluate(S solution) {
+        ((Evaluator) evaluator).decrStep();
+        return evaluator.evaluate(solution);
+    }
 
-   @Override
-   public void evaluatePopulation (final IPopulation<S, E> population)
-   {
-      init();
-      popSize.set(population.size());
-      sortedPop.clear();
-      for (final S solution : population)
-      {
-         final E evaluation = evaluator.evaluate(solution);
-         population.setEvaluation(solution, evaluation);
-         int siz = sortedPop.size();
-         sortedPop.put((Double) evaluation, solution);
-         if (siz == sortedPop.size())
-         {
-            System.out.println("");
-         }
-      }
-      epoch.incrementAndGet();
-   }
+    @Override
+    public void evaluatePopulation(final IPopulation<S, E> population) {
+        init();
+        popSize.set(population.size());
+        sortedPop.clear();
+        for (final S solution : population) {
+            final E evaluation = evaluator.evaluate(solution);
+            population.setEvaluation(solution, evaluation);
+            int siz = sortedPop.size();
+            sortedPop.put((Double) evaluation, solution);
+            if (siz == sortedPop.size()) {
+                System.out.println("");
+            }
+        }
+        epoch.incrementAndGet();
+    }
 
-   private void init ()
-   {
-      if (instance == null)
-      {
-         instance = this;
-      }
-   }
+    private void init() {
+        if (instance == null) {
+            instance = this;
+        }
+    }
 }

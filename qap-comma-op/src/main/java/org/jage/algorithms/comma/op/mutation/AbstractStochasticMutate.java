@@ -126,20 +126,22 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
       double rate = 1.0 - Evaluator.getInstance().getRate();
 //      System.out.println(rate);
       double rMinus = (((double) (r * distances.length)) / ((double) populationSize)) - rate * ((double) distances.length);
-      if (rMinus < 0.0)
+      int rMinusInt = (int) rMinus;
+      if (rMinusInt < 0)
       {
-         rMinus = 0.0;
+         rMinusInt = 0;
       }
       double rPlus = (((double) (r * distances.length)) / ((double) populationSize)) + rate * ((double) distances.length);
-      if (rPlus > distances.length - 1)
+       int rPlusInt = (int) rPlus;
+      if (rPlusInt > distances.length - 1)
       {
-         rPlus = distances.length - 1;
+         rPlusInt = distances.length - 1;
       }
-      if(rMinus >  rPlus)
+      if(rMinusInt >  rPlusInt)
       {
          throw new RuntimeException("that's bad");
       }
-      return (int) (rMinus + random.nextInt((int) (rPlus - rMinus + 1)));
+      return (rMinusInt + random.nextInt((rPlusInt - rMinusInt + 1)));
    }
 
    /**

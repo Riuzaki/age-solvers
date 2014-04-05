@@ -50,109 +50,96 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Date: 11/27/13
  * Time: 3:44 PM
  */
-public class Evaluator extends org.jage.property.ClassPropertyContainer implements org.jage.evaluation.ISolutionEvaluator<org.jage.solution.IVectorSolution<Integer>, Double>
-{
-   private static final Logger LOG = LoggerFactory.getLogger(Evaluator.class);
+public class Evaluator extends org.jage.property.ClassPropertyContainer implements org.jage.evaluation.ISolutionEvaluator<org.jage.solution.IVectorSolution<Integer>, Double> {
+    private static final Logger LOG = LoggerFactory.getLogger(Evaluator.class);
 
-   private static final AtomicDouble best = new AtomicDouble(Double.MAX_VALUE);
+    private static final AtomicDouble best = new AtomicDouble(Double.MAX_VALUE);
 
-   private static List<Integer> bestList;
+    private static List<Integer> bestList;
 
-   private static Timer timer;
+    private static Timer timer;
 
-   private static long startTime;
+    private static long startTime;
 
-   private static int maxEvalStep;
+    private static int maxEvalStep;
 
-   static
-   {
-      try
-      {
-         maxEvalStep = 1000 * (int) Math.pow(InputDataHolder.getInstance().getInputData().getN(), 2);
-      }
-      catch (IOException e)
-      {
-         e.printStackTrace();
-      }
-   }
+    static {
+        try {
+            maxEvalStep = 1000 * (int) Math.pow(InputDataHolder.getInstance().getInputData().getN(), 2);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-   private static Evaluator instance;
+    private static Evaluator instance;
 
-   private InputData inputData;
+    private InputData inputData;
 
-   private AtomicInteger currentEvalStep = new AtomicInteger(0);
+    private AtomicInteger currentEvalStep = new AtomicInteger(0);
 
-   public Evaluator () throws IOException
-   {
-      inputData = InputDataHolder.getInstance().getInputData();
-      instance = this;
-   }
+    public Evaluator() throws IOException {
+        inputData = InputDataHolder.getInstance().getInputData();
+        instance = this;
+    }
 
-   public static Evaluator getInstance ()
-   {
-      return instance;
-   }
+    public static Evaluator getInstance() {
+        return instance;
+    }
 
-   @Override
-   public Double evaluate (IVectorSolution<Integer> solution)
-   {
-      if (timer == null)
-      {
-         startTime = System.currentTimeMillis();
+    @Override
+    public Double evaluate(IVectorSolution<Integer> solution) {
+        if (timer == null) {
+            startTime = System.currentTimeMillis();
 
-         if (currentEvalStep.get() % 5000 == 0)
-         {
-            if (currentEvalStep.get() < maxEvalStep)
-            {
-               if (bestList != null)
-                  LOG.warn("{} {} {}", (System.currentTimeMillis() - startTime) / 1000., best.get(), bestList);
+            if (currentEvalStep.get() % 5000 == 0) {
+                if (currentEvalStep.get() < maxEvalStep) {
+                    if (bestList != null)
+                        LOG.warn("{} {} {}", (System.currentTimeMillis() - startTime) / 1000., best.get(), bestList);
+                } else {
+                    LOG.warn("FINISHED EXECUTION");
+                    System.exit(0);
+                }
             }
-            else
-            {
-               LOG.warn("FINISHED EXECUTION");
-               System.exit(0);
+        }
+
+        LOG.debug("Solution vector: " + solution.getRepresentation());
+
+        int n = inputData.getN();
+
+        int total = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                int flow = inputData.getFlow(solution.getRepresentation().get(i),
+                        solution.getRepresentation().get(j)) + inputData.getFlow(solution.getRepresentation().get(j),
+                        solution.getRepresentation().get(i));
+
+                total += inputData.getDistance(i, j) * flow;
             }
-         }
-      }
+        }
 
-      LOG.debug("Solution vector: " + solution.getRepresentation());
+        LOG.debug("Evaluator returns: {}", -total);
 
-      int n = inputData.getN();
+        if (total < best.get()) {
+            best.set(total);
+            synchronized (best) {
+                bestList = new ArrayList<Integer>(Collections.nCopies(solution.getRepresentation().size(), 0));
+                Collections.copy(bestList, solution.getRepresentation());
+            }
+        }
 
-      int total = 0;
-      for (int i = 0; i < n; i++)
-      {
-         for (int j = i + 1; j < n; j++)
-         {
-            int flow = inputData.getFlow(solution.getRepresentation().get(i),
-              solution.getRepresentation().get(j)) + inputData.getFlow(solution.getRepresentation().get(j),
-              solution.getRepresentation().get(i));
+        LOG.debug("Current: " + total + ", best: " + best.get());
 
-            total += inputData.getDistance(i, j) * flow;
-         }
-      }
+        currentEvalStep.incrementAndGet();
 
-      LOG.debug("Evaluator returns: {}", -total);
+        return (double) -total;
+    }
 
-      if (total < best.get())
-      {
-         best.set(total);
-         synchronized (best)
-         {
-            bestList = new ArrayList<Integer>(Collections.nCopies(solution.getRepresentation().size(), 0));
-            Collections.copy(bestList, solution.getRepresentation());
-         }
-      }
+    public double getRate() {
+        double rate = ((double) currentEvalStep.get()) / ((double) maxEvalStep);
+        return rate > 1. ? 1. : rate;
+    }
 
-      LOG.debug("Current: " + total + ", best: " + best.get());
-
-      currentEvalStep.incrementAndGet();
-
-      return (double) -total;
-   }
-
-   public double getRate ()
-   {
-      return ((double) currentEvalStep.get()) / ((double) maxEvalStep);
-   }
+    public void decrStep() {
+        currentEvalStep.decrementAndGet();
+    }
 }
