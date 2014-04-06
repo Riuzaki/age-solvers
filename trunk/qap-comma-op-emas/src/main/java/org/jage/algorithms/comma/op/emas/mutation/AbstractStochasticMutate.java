@@ -29,10 +29,10 @@
  * $Id: AbstractStochasticMutate.java 471 2012-10-30 11:17:00Z faber $
  */
 
-package org.jage.algorithms.comma.op.mutation;
+package org.jage.algorithms.comma.op.emas.mutation;
 
-import org.jage.algorithms.comma.op.evaluate.Evaluator;
-import org.jage.algorithms.comma.op.evaluate.SequentialPopulationEvaluator;
+import org.jage.algorithms.comma.op.emas.evaluate.Evaluator;
+import org.jage.algorithms.comma.op.emas.evaluate.SequentialPopulationEvaluator;
 import org.jage.random.IDoubleRandomGenerator;
 import org.jage.random.IIntRandomGenerator;
 import org.jage.solution.IVectorSolution;
@@ -53,107 +53,97 @@ import java.util.Random;
  * @param <R> the representation type of the solution to be mutated
  * @author AGH AgE Team
  */
-public abstract class AbstractStochasticMutate<R> extends AbstractStrategy implements IMutateSolution<IVectorSolution<R>>
-{
+public abstract class AbstractStochasticMutate<R> extends AbstractStrategy implements IMutateSolution<IVectorSolution<R>> {
 
-   private static final double DEFAULT_CHANCE_TO_MUTATE = 1.0;
+    private static final double DEFAULT_CHANCE_TO_MUTATE = 1.0;
 
-   private double chanceToMutate = DEFAULT_CHANCE_TO_MUTATE;
+    private double chanceToMutate = DEFAULT_CHANCE_TO_MUTATE;
 
-   private final int steps;
+    private final int steps;
 
-   private final int populationSize;
+    private final int populationSize;
 
-   private int[] distances;
+    private int[] distances;
 
-   @Inject
-   private IDoubleRandomGenerator doubleRand;
+    @Inject
+    private IDoubleRandomGenerator doubleRand;
 
-   @Inject
-   private IIntRandomGenerator intRand;
+    @Inject
+    private IIntRandomGenerator intRand;
 
-   private Random random = new Random();
+    private Random random = new Random();
 
-   protected AbstractStochasticMutate (int steps, int populationSize)
-   {
-      this.steps = steps;
-      this.populationSize = populationSize;
+    protected AbstractStochasticMutate(int steps, int populationSize) {
+        this.steps = steps;
+        this.populationSize = populationSize;
 
-      int size = populationSize / 2;
-      distances = new int[size];
-      for (int i = 0; i < size; i++)
-      {
-         distances[i] = i + 1;
-      }
-   }
+        int size = populationSize / 2;
+        distances = new int[size];
+        for (int i = 0; i < size; i++) {
+            distances[i] = i + 1;
+        }
+    }
 
-   @Override
-   public final void mutateSolution (final IVectorSolution<R> solution)
-   {
-      final List<R> representation = solution.getRepresentation();
-      final int size = representation.size();
+    @Override
+    public final void mutateSolution(final IVectorSolution<R> solution) {
+        final List<R> representation = solution.getRepresentation();
+        final int size = representation.size();
 
-      int mutatedBitsCount = (int) (chanceToMutate * size);
-      final double chanceForExtraBit = chanceToMutate * size - mutatedBitsCount;
-      final int extraBit = (doubleRand.nextDouble() < chanceForExtraBit) ? 1 : 0;
-      mutatedBitsCount += extraBit;
+        int mutatedBitsCount = (int) (chanceToMutate * size);
+        final double chanceForExtraBit = chanceToMutate * size - mutatedBitsCount;
+        final int extraBit = (doubleRand.nextDouble() < chanceForExtraBit) ? 1 : 0;
+        mutatedBitsCount += extraBit;
 
-      final boolean[] alreadyChecked = new boolean[size];
-      for (int i = 0; i < 1; i++)
-      {
-         int k = intRand.nextInt(size);
-         while (alreadyChecked[k])
-         {
-            k = intRand.nextInt(size);
-         }
-         alreadyChecked[k] = true;
+        final boolean[] alreadyChecked = new boolean[size];
+        for (int i = 0; i < 1; i++) {
+            int k = intRand.nextInt(size);
+            while (alreadyChecked[k]) {
+                k = intRand.nextInt(size);
+            }
+            alreadyChecked[k] = true;
 
-         double fitness = (Double) SequentialPopulationEvaluator.getInstance().evaluate(solution);
+            double fitness = (Double) SequentialPopulationEvaluator.getInstance().evaluate(solution);
 
-         doMutate(representation, k, calculateRange(solution));
+            doMutate(representation, k, calculateRange(solution));
 
-         double fitness2 = (Double) SequentialPopulationEvaluator.getInstance().evaluate(solution);
+            double fitness2 = (Double) SequentialPopulationEvaluator.getInstance().evaluate(solution);
 
-         if (fitness2 < fitness) {
-            revert(representation);
-         }
-      }
-   }
+            if (fitness2 < fitness) {
+                revert(representation);
+            }
+        }
+    }
 
-   private int calculateRange (final IVectorSolution<R> solution)
-   {
-      int r = SequentialPopulationEvaluator.getInstance().getRank(solution);
-      double rate = 1.0 - Evaluator.getInstance().getRate();
+    private int calculateRange(final IVectorSolution<R> solution) {
+        int r = SequentialPopulationEvaluator.getInstance().getRank(solution);
+        double rate = 1.0 - Evaluator.getInstance().getRate();
 //      System.out.println(rate);
-      double rMinus = (((double) (r * distances.length)) / ((double) populationSize)) - rate * ((double) distances.length);
-      int rMinusInt = (int) rMinus;
-      if (rMinusInt < 0)
-      {
-         rMinusInt = 0;
-      }
-      double rPlus = (((double) (r * distances.length)) / ((double) populationSize)) + rate * ((double) distances.length);
-       int rPlusInt = (int) rPlus;
-      if (rPlusInt > distances.length - 1)
-      {
-         rPlusInt = distances.length - 1;
-      }
-      if(rMinusInt >  rPlusInt)
-      {
-         throw new RuntimeException("that's bad");
-      }
-      return (rMinusInt + random.nextInt((rPlusInt - rMinusInt + 1)));
-   }
+        double rMinus = (((double) (r * distances.length)) / ((double) populationSize)) - rate * ((double) distances.length);
+        int rMinusInt = (int) rMinus;
+        if (rMinusInt < 0) {
+            rMinusInt = 0;
+        }
+        double rPlus = (((double) (r * distances.length)) / ((double) populationSize)) + rate * ((double) distances.length);
+        int rPlusInt = (int) rPlus;
+        if (rPlusInt > distances.length - 1) {
+            rPlusInt = distances.length - 1;
+        }
+        if (rMinusInt > rPlusInt) {
+            throw new RuntimeException("that's bad");
+        }
+        return (rMinusInt + random.nextInt((rPlusInt - rMinusInt + 1)));
+    }
 
-   /**
-    * Mutate the representation at the given index. <br />
-    * <br />
-    * This method purpose is to allow efficient unboxing in case of representations of primitives. Subclasses can then
-    * cast the given representation in the corresponding fastutil collection.
-    *
-    * @param representation the representation to be mutated
-    * @param index          the index at which mutation should occur
-    */
-   protected abstract void doMutate (List<R> representation, int index, int range);
+    /**
+     * Mutate the representation at the given index. <br />
+     * <br />
+     * This method purpose is to allow efficient unboxing in case of representations of primitives. Subclasses can then
+     * cast the given representation in the corresponding fastutil collection.
+     *
+     * @param representation the representation to be mutated
+     * @param index          the index at which mutation should occur
+     */
+    protected abstract void doMutate(List<R> representation, int index, int range);
 
-   protected abstract void revert (List<R> representation);
+    protected abstract void revert(List<R> representation);
 }

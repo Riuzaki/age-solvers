@@ -29,7 +29,7 @@
  * $Id: IntegerSolutionFactory.java 471 2012-10-30 11:17:00Z faber $
  */
 
-package org.jage.algorithms.comma.op.input;
+package org.jage.algorithms.comma.op.emas.input;
 
 import java.io.IOException;
 
