@@ -61,13 +61,13 @@ public class InputData {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                flow[j][i] = Integer.parseInt(fileContent[index++]);
+                distances[j][i] = Integer.parseInt(fileContent[index++]);
             }
         }
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                distances[j][i] = Integer.parseInt(fileContent[index++]);
+                flow[j][i] = Integer.parseInt(fileContent[index++]);
             }
         }
     }

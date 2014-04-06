@@ -29,7 +29,7 @@
  * $Id: InitializationActionStrategy.java 471 2012-10-30 11:17:00Z faber $
  */
 
-package org.jage.algorithms.comma.op.mutation;
+package org.jage.algorithms.comma.op.emas.mutation;
 
 import org.jage.population.IPopulation;
 import org.jage.solution.ISolution;

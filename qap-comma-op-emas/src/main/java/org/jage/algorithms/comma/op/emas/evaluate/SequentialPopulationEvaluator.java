@@ -29,7 +29,7 @@
  * $Id: SequentialPopulationEvaluator.java 471 2012-10-30 11:17:00Z faber $
  */
 
-package org.jage.algorithms.comma.op.evaluate;
+package org.jage.algorithms.comma.op.emas.evaluate;
 
 import com.google.common.collect.SortedSetMultimap;
 import com.google.common.collect.TreeMultimap;

@@ -29,11 +29,11 @@
  * $Id: IntegerSolutionFactory.java 471 2012-10-30 11:17:00Z faber $
  */
 
-package org.jage.algorithms.comma.op.evaluate;
+package org.jage.algorithms.comma.op.emas.evaluate;
 
 import com.google.common.util.concurrent.AtomicDouble;
-import org.jage.algorithms.comma.op.input.InputData;
-import org.jage.algorithms.comma.op.input.InputDataHolder;
+import org.jage.algorithms.comma.op.emas.input.InputData;
+import org.jage.algorithms.comma.op.emas.input.InputDataHolder;
 import org.jage.solution.IVectorSolution;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

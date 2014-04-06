@@ -29,7 +29,7 @@
  * $Id: NopePreselectionActionStrategy.java 471 2012-10-30 11:17:00Z faber $
  */
 
-package org.jage.algorithms.comma.op.strategy;
+package org.jage.algorithms.comma.op.emas.strategy;
 
 import org.jage.action.AbstractPerformActionStrategy;
 import org.jage.action.IActionContext;
