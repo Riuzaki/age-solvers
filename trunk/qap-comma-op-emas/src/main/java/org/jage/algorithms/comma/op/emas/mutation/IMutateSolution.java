@@ -49,5 +49,5 @@ public interface IMutateSolution<S extends ISolution> extends IStrategy {
 	 * @param solution
 	 *            The solution to be mutated
 	 */
-	public void mutateSolution (S solution, double energy);
+	public void mutateSolution (S solution, int rank);
 }
