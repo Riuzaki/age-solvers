@@ -33,10 +33,6 @@
                         <strategy name="reproductionPredicate" class="org.jage.emas.predicate.HighEnergyPredicate">
                             <property name="threshold" type="Double" value="90"/>
                         </strategy>
-                        <!--<strategy name="sexualReproductionStrategy"-->
-                                  <!--class="org.jage.emas.reproduction.DefaultSexualReproduction"/>-->
-                        <strategy name="asexualReproductionStrategy"
-                                  class="org.jage.emas.reproduction.DefaultAsexualReproduction"/>
                         <strategy name="battleStrategy" class="org.jage.emas.battle.DeterministicFitnessBattle"/>
                         <strategy name="battleEnergyTransfer" class="org.jage.emas.energy.ConstantEnergyTransfer">
                             <property name="transferredEnergy" type="Double" value="20.0"/>

@@ -25,13 +25,13 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="68499ffd-c6c9-426d-b6c7-fe5f6b2eeb5d" name="Default" comment="CommaOP EMAS -- take 1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/action" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/action/EncounterAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op-emas/log.out" afterPath="$PROJECT_DIR$/qap-comma-op-emas/log.out" />
+    <list default="true" readonly="true" id="68499ffd-c6c9-426d-b6c7-fe5f6b2eeb5d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/action/EncounterAction.java" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/action/EncounterAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/age-solvers.iws" afterPath="$PROJECT_DIR$/age-solvers.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.properties" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml" />
+    </list>
+    <list id="ff93b67c-844c-4f9f-940d-669bb94daa95" name="Ignore on commit" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op-emas/log.out" afterPath="$PROJECT_DIR$/qap-comma-op-emas/log.out" />
     </list>
     <ignored path="age-solvers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -175,21 +175,6 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/action/EncounterAction.java" line="95" class="org.jage.algorithms.comma.op.emas.action.EncounterAction" package="org.jage.algorithms.comma.op.emas.action">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -261,16 +246,7 @@
       <file leaf-file-name="age.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="50" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.0" vertical-offset="320" max-vertical-offset="1888">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractStochasticMutate.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/AbstractStochasticMutate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="0" selection-start="2907" selection-end="2907" vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="2304">
+            <state line="75" column="35" selection-start="4690" selection-end="4690" vertical-scroll-proportion="0.0" vertical-offset="1116" max-vertical-offset="1824">
               <folding />
             </state>
           </provider>
@@ -279,11 +255,20 @@
       <file leaf-file-name="EncounterAction.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/action/EncounterAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="4" selection-start="3432" selection-end="3432" vertical-scroll-proportion="0.70348835" vertical-offset="1406" max-vertical-offset="2128">
+            <state line="98" column="28" selection-start="3221" selection-end="3221" vertical-scroll-proportion="0.33139536" vertical-offset="1454" max-vertical-offset="2288">
               <folding>
-                <element signature="e#0#4561#0" expanded="true" />
+                <element signature="e#0#4519#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultAsexualReproduction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/emas/2.6.2-SNAPSHOT/emas-2.6.2-20121201.162028-1-sources.jar!/org/jage/emas/reproduction/DefaultAsexualReproduction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="3" selection-start="1971" selection-end="2022" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1475,12 +1460,13 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="68499ffd-c6c9-426d-b6c7-fe5f6b2eeb5d" name="Default" comment="" />
+      <changelist id="ff93b67c-844c-4f9f-940d-669bb94daa95" name="Ignore on commit" comment="" />
       <created>1386461481055</created>
       <updated>1386461481055</updated>
       <workItem from="1396597207122" duration="37828000" />
       <workItem from="1396957336761" duration="1422000" />
       <workItem from="1396961787422" duration="1792000" />
-      <workItem from="1396963617875" duration="1403000" />
+      <workItem from="1396963617875" duration="1835000" />
     </task>
     <task id="LOCAL-00001" summary="Time based results.">
       <created>1393086115093</created>
@@ -1594,11 +1580,15 @@
       <created>1396963655115</created>
       <updated>1396963655115</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="CommaOP EMAS -- take 2">
+      <created>1396965080103</created>
+      <updated>1396965080103</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42445000" />
+    <option name="totallyTimeSpent" value="42877000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1625,7 +1615,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32597402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253012" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
@@ -1695,7 +1685,8 @@
     <MESSAGE value="Comma OP fix." />
     <MESSAGE value="Comma OP Emas project added." />
     <MESSAGE value="CommaOP EMAS -- take 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="CommaOP EMAS -- take 1" />
+    <MESSAGE value="CommaOP EMAS -- take 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="CommaOP EMAS -- take 2" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>
@@ -1761,21 +1752,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="38" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2533">
-          <folding>
-            <element signature="e#0#4523#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/etc/license.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="853" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="38" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
@@ -2071,9 +2047,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/emas/2.6.2-SNAPSHOT/emas-2.6.2-20121201.162028-1-sources.jar!/org/jage/emas/reproduction/AsexualReproduction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="50" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.0" vertical-offset="320" max-vertical-offset="1888">
+        <state line="43" column="29" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="496">
           <folding />
         </state>
       </provider>
@@ -2085,11 +2061,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/emas/2.6.2-SNAPSHOT/emas-2.6.2-20121201.162028-1-sources.jar!/org/jage/emas/reproduction/DefaultAsexualReproduction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="3" selection-start="1971" selection-end="2022" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="35" selection-start="4690" selection-end="4690" vertical-scroll-proportion="0.0" vertical-offset="1116" max-vertical-offset="1824">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/action/EncounterAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="4" selection-start="3432" selection-end="3432" vertical-scroll-proportion="0.70348835" vertical-offset="1406" max-vertical-offset="2128">
+        <state line="98" column="28" selection-start="3221" selection-end="3221" vertical-scroll-proportion="0.33139536" vertical-offset="1454" max-vertical-offset="2288">
           <folding>
-            <element signature="e#0#4561#0" expanded="true" />
+            <element signature="e#0#4519#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
