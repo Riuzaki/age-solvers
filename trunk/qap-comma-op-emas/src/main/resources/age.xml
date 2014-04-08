@@ -25,17 +25,16 @@
                             <list isSingleton="true">
                                 <strategy class="org.jage.emas.action.individual.EncounterActionContext"/>
                                 <strategy class="org.jage.emas.action.individual.MigrationActionContext"/>
-                                <strategy class="org.jage.emas.action.individual.DeathActionContext"/>
                             </list>
                         </strategy>
                     </agent>
 
-                    <strategy name="encounterAction" class="org.jage.emas.action.individual.EncounterAction">
+                    <strategy name="encounterAction" class="org.jage.algorithms.comma.op.emas.action.EncounterAction">
                         <strategy name="reproductionPredicate" class="org.jage.emas.predicate.HighEnergyPredicate">
                             <property name="threshold" type="Double" value="90"/>
                         </strategy>
-                        <strategy name="sexualReproductionStrategy"
-                                  class="org.jage.emas.reproduction.DefaultSexualReproduction"/>
+                        <!--<strategy name="sexualReproductionStrategy"-->
+                                  <!--class="org.jage.emas.reproduction.DefaultSexualReproduction"/>-->
                         <strategy name="asexualReproductionStrategy"
                                   class="org.jage.emas.reproduction.DefaultAsexualReproduction"/>
                         <strategy name="battleStrategy" class="org.jage.emas.battle.DeterministicFitnessBattle"/>
