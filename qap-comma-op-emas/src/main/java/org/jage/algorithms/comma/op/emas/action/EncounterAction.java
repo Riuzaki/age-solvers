@@ -33,6 +33,7 @@ package org.jage.algorithms.comma.op.emas.action;
 
 import com.google.common.collect.Iterables;
 import org.jage.agent.AgentException;
+import org.jage.algorithms.comma.op.emas.mutation.IMutateSolution;
 import org.jage.emas.agent.IndividualAgent;
 import org.jage.emas.battle.Battle;
 import org.jage.emas.energy.EnergyTransfer;
@@ -41,7 +42,6 @@ import org.jage.emas.util.ChainingAction;
 import org.jage.query.AgentEnvironmentQuery;
 import org.jage.random.IIntRandomGenerator;
 import org.jage.solution.ISolution;
-import org.jage.variation.mutation.IMutateSolution;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -127,7 +127,7 @@ public final class EncounterAction extends ChainingAction<IndividualAgent>
    private void selfReproduction (final IndividualAgent agent) throws AgentException
    {
       final ISolution gamete = agent.getSolution();
-      mutate.mutateSolution(gamete);
+      mutate.mutateSolution(gamete, agent.getEnergy());
    }
 
    private <T> T getRandomElement (final Collection<T> collection)
