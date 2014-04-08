@@ -38,7 +38,6 @@ import org.jage.solution.IVectorSolution;
 import org.jage.strategy.AbstractStrategy;
 
 import javax.inject.Inject;
-import java.io.IOException;
 import java.util.List;
 import java.util.Random;
 
@@ -87,7 +86,7 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
    }
 
    @Override
-   public final void mutateSolution (final IVectorSolution<R> solution, double energy)
+   public final void mutateSolution (final IVectorSolution<R> solution, int rank)
    {
       final List<R> representation = solution.getRepresentation();
       final int size = representation.size();
@@ -110,25 +109,11 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
          double fitness = 0.;
          double fitness2 = 0.;
 
-         try
-         {
-            fitness = new Evaluator().evaluate((IVectorSolution<Integer>) solution);
-         }
-         catch (IOException e)
-         {
-            e.printStackTrace();
-         }
+         fitness = Evaluator.getInstance().evaluate((IVectorSolution<Integer>) solution);
 
-         doMutate(representation, k, calculateRange(solution, energy));
+         doMutate(representation, k, calculateRange(solution, rank));
 
-         try
-         {
-            fitness2 = new Evaluator().evaluate((IVectorSolution<Integer>) solution);
-         }
-         catch (IOException e)
-         {
-            e.printStackTrace();
-         }
+         fitness2 = Evaluator.getInstance().evaluate((IVectorSolution<Integer>) solution);
 
          if (fitness2 < fitness)
          {
@@ -137,9 +122,8 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
       }
    }
 
-   private int calculateRange (final IVectorSolution<R> solution, double energy)
+   private int calculateRange (final IVectorSolution<R> solution, int r)
    {
-      int r = (int) (101 - energy); // TODO
       double rate = 1.0 - Evaluator.getInstance().getRate();
       //      System.out.println(rate);
       double rMinus = (((double) (r * distances.length)) / ((double) populationSize)) - rate * ((double) distances.length);

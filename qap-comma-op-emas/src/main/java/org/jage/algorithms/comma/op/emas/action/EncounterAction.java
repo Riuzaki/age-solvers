@@ -89,25 +89,37 @@ public final class EncounterAction extends ChainingAction<IndividualAgent>
       log.debug("Performing encounter action on {}", agent);
 
       final Collection<IndividualAgent> neighborhood = queryForNeighbors(agent);
-      if (!neighborhood.isEmpty())
-      {
-         final IndividualAgent other = getRandomElement(neighborhood);
-         log.debug("Encounter between agents {} and {}.", agent, other);
-
-         if (reproductionPredicate.apply(agent) && reproductionPredicate.apply(other))
-         {
-            selfReproduction(agent);
-            selfReproduction(other);
+      if (neighborhood.isEmpty()) {
+         selfReproduction(agent, 1);
+      } else {
+         double fitness = agent.getEffectiveFitness();
+         int rank = 1;
+         for (IndividualAgent neightbour : neighborhood) {
+            if (neightbour.getEffectiveFitness() > fitness) {
+               rank++;
+            }
          }
-         else
-         {
-            battleBetween(agent, other);
-         }
+         selfReproduction(agent, rank);
       }
-      else if (reproductionPredicate.apply(agent))
-      {
-         selfReproduction(agent);
-      }
+//      if (!neighborhood.isEmpty())
+//      {
+//         final IndividualAgent other = getRandomElement(neighborhood);
+//         log.debug("Encounter between agents {} and {}.", agent, other);
+//
+//         if (reproductionPredicate.apply(agent) && reproductionPredicate.apply(other))
+//         {
+//            selfReproduction(agent);
+//            selfReproduction(other);
+//         }
+//         else
+//         {
+//            battleBetween(agent, other);
+//         }
+//      }
+//      else if (reproductionPredicate.apply(agent))
+//      {
+//         selfReproduction(agent);
+//      }
    }
 
    private Collection<IndividualAgent> queryForNeighbors (final IndividualAgent agent) throws AgentException
@@ -124,10 +136,10 @@ public final class EncounterAction extends ChainingAction<IndividualAgent>
       log.debug("Fight! Agent {} lost {} energy to {}.", new Object[] { loser, energyLost, winner });
    }
 
-   private void selfReproduction (final IndividualAgent agent) throws AgentException
+   private void selfReproduction (final IndividualAgent agent, int rank) throws AgentException
    {
       final ISolution gamete = agent.getSolution();
-      mutate.mutateSolution(gamete, agent.getEnergy());
+      mutate.mutateSolution(gamete, rank);
    }
 
    private <T> T getRandomElement (final Collection<T> collection)
