@@ -36,7 +36,6 @@ import org.jage.random.IDoubleRandomGenerator;
 import org.jage.random.IIntRandomGenerator;
 import org.jage.solution.IVectorSolution;
 import org.jage.strategy.AbstractStrategy;
-import org.jage.variation.mutation.IMutateSolution;
 
 import javax.inject.Inject;
 import java.io.IOException;
@@ -88,7 +87,7 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
    }
 
    @Override
-   public final void mutateSolution (final IVectorSolution<R> solution)
+   public final void mutateSolution (final IVectorSolution<R> solution, double energy)
    {
       final List<R> representation = solution.getRepresentation();
       final int size = representation.size();
@@ -120,7 +119,7 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
             e.printStackTrace();
          }
 
-         doMutate(representation, k, calculateRange(solution));
+         doMutate(representation, k, calculateRange(solution, energy));
 
          try
          {
@@ -138,9 +137,9 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
       }
    }
 
-   private int calculateRange (final IVectorSolution<R> solution)
+   private int calculateRange (final IVectorSolution<R> solution, double energy)
    {
-      int r = 1; // TODO
+      int r = (int) (101 - energy); // TODO
       double rate = 1.0 - Evaluator.getInstance().getRate();
       //      System.out.println(rate);
       double rMinus = (((double) (r * distances.length)) / ((double) populationSize)) - rate * ((double) distances.length);
