@@ -37,91 +37,101 @@ import org.jage.emas.agent.IndividualAgent;
 import org.jage.emas.battle.Battle;
 import org.jage.emas.energy.EnergyTransfer;
 import org.jage.emas.predicate.IPredicate;
-import org.jage.emas.reproduction.AsexualReproduction;
-import org.jage.emas.reproduction.SexualReproduction;
 import org.jage.emas.util.ChainingAction;
 import org.jage.query.AgentEnvironmentQuery;
 import org.jage.random.IIntRandomGenerator;
+import org.jage.solution.ISolution;
+import org.jage.variation.mutation.IMutateSolution;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
 import java.util.Collection;
 
-import static org.jage.action.AgentActions.addToParent;
 import static org.jage.query.ValueFilters.eq;
 import static org.jage.query.ValueFilters.not;
 
 /**
  * This action handler performs encounter actions on agents.
- * <p>
+ * <p/>
  * For the action's agent target, a random neighbor is selected. If both are able to reproduce, according to some
  * predicate, they do. Otherwise, they fight.
- * <p>
+ * <p/>
  * If the neighborhood is empty, the agent may be able to reproduce itself asexually, based again on some predicate.
- * <p>
+ * <p/>
  * Reproduction and Battle implementations are delegated to strategies.
  *
  * @author AGH AgE Team
  */
-public final class EncounterAction extends ChainingAction<IndividualAgent> {
+public final class EncounterAction extends ChainingAction<IndividualAgent>
+{
 
-	private static final Logger log = LoggerFactory.getLogger(EncounterAction.class);
+   private static final Logger log = LoggerFactory.getLogger(EncounterAction.class);
 
-	@Inject
-	private IIntRandomGenerator rand;
+   @Inject
+   private IIntRandomGenerator rand;
 
-	@Inject
-	private IPredicate<IndividualAgent> reproductionPredicate;
+   @Inject
+   private IPredicate<IndividualAgent> reproductionPredicate;
 
-	@Inject
-	private AsexualReproduction<IndividualAgent> asexualReproductionStrategy;
+   @Inject
+   private Battle<IndividualAgent> battleStrategy;
 
-	@Inject
-	private Battle<IndividualAgent> battleStrategy;
+   @Inject
+   private EnergyTransfer<IndividualAgent> battleEnergyTransfer;
 
-	@Inject
-	private EnergyTransfer<IndividualAgent> battleEnergyTransfer;
+   @Inject
+   private IMutateSolution<ISolution> mutate;
 
-	@Override
-	public void doPerform(final IndividualAgent agent) throws AgentException {
-		log.debug("Performing encounter action on {}", agent);
+   @Override
+   public void doPerform (final IndividualAgent agent) throws AgentException
+   {
+      log.debug("Performing encounter action on {}", agent);
 
-		final Collection<IndividualAgent> neighborhood = queryForNeighbors(agent);
-		if (!neighborhood.isEmpty()) {
-			final IndividualAgent other = getRandomElement(neighborhood);
-			log.debug("Encounter between agents {} and {}.", agent, other);
+      final Collection<IndividualAgent> neighborhood = queryForNeighbors(agent);
+      if (!neighborhood.isEmpty())
+      {
+         final IndividualAgent other = getRandomElement(neighborhood);
+         log.debug("Encounter between agents {} and {}.", agent, other);
 
-			if (reproductionPredicate.apply(agent) && reproductionPredicate.apply(other)) {
+         if (reproductionPredicate.apply(agent) && reproductionPredicate.apply(other))
+         {
             selfReproduction(agent);
             selfReproduction(other);
-			} else {
-				battleBetween(agent, other);
-			}
-		} else if (reproductionPredicate.apply(agent)) {
-			selfReproduction(agent);
-		}
-	}
+         }
+         else
+         {
+            battleBetween(agent, other);
+         }
+      }
+      else if (reproductionPredicate.apply(agent))
+      {
+         selfReproduction(agent);
+      }
+   }
 
-	private Collection<IndividualAgent> queryForNeighbors(final IndividualAgent agent) throws AgentException {
-		return new AgentEnvironmentQuery<IndividualAgent, IndividualAgent>().matching(not(eq(agent))).execute(
-		        agent.getEnvironment());
-	}
+   private Collection<IndividualAgent> queryForNeighbors (final IndividualAgent agent) throws AgentException
+   {
+      return new AgentEnvironmentQuery<IndividualAgent, IndividualAgent>().matching(not(eq(agent))).execute(
+        agent.getEnvironment());
+   }
 
-	private void battleBetween(final IndividualAgent agent, final IndividualAgent other) throws AgentException {
-		final IndividualAgent winner = battleStrategy.fight(agent, other);
-		final IndividualAgent loser = winner != agent ? agent : other;
-		final double energyLost = battleEnergyTransfer.transferEnergy(loser, winner);
-		log.debug("Fight! Agent {} lost {} energy to {}.", new Object[] { loser, energyLost, winner });
-	}
+   private void battleBetween (final IndividualAgent agent, final IndividualAgent other) throws AgentException
+   {
+      final IndividualAgent winner = battleStrategy.fight(agent, other);
+      final IndividualAgent loser = winner != agent ? agent : other;
+      final double energyLost = battleEnergyTransfer.transferEnergy(loser, winner);
+      log.debug("Fight! Agent {} lost {} energy to {}.", new Object[] { loser, energyLost, winner });
+   }
 
-	private void selfReproduction(final IndividualAgent agent) throws AgentException {
-		final IndividualAgent child = asexualReproductionStrategy.reproduce(agent);
-		log.debug("Love? Agent {} spontaneously gave birth to {}.", agent, child);
-		agent.getEnvironment().submitAction(addToParent(agent, child));
-	}
+   private void selfReproduction (final IndividualAgent agent) throws AgentException
+   {
+      final ISolution gamete = agent.getSolution();
+      mutate.mutateSolution(gamete);
+   }
 
-	private <T> T getRandomElement(final Collection<T> collection) {
-		return Iterables.get(collection, rand.nextInt(collection.size()));
-	}
+   private <T> T getRandomElement (final Collection<T> collection)
+   {
+      return Iterables.get(collection, rand.nextInt(collection.size()));
+   }
 }
