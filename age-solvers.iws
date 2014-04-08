@@ -26,21 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="68499ffd-c6c9-426d-b6c7-fe5f6b2eeb5d" name="Default" comment="CommaOP EMAS -- take 1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/recombination" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/recombination/NopeRecombination.java" />
-      <change type="DELETED" beforePath="C:\temp\age\qap-comma-op-emas\src\main\java\org\jage\algorithms\comma\op\emas\evaluate\SequentialPopulationEvaluator.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\temp\age\qap-comma-op-emas\src\main\java\org\jage\algorithms\comma\op\emas\mutation\IndividuallyMutatePopulation.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\temp\age\qap-comma-op-emas\src\main\java\org\jage\algorithms\comma\op\emas\mutation\VariationOperatorMutationOnly.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\temp\age\qap-comma-op-emas\src\main\java\org\jage\algorithms\comma\op\emas\strategy\NopePreselectionActionStrategy.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\temp\age\qap-comma-op-emas\src\main\java\org\jage\algorithms\comma\op\emas\strategy" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/action" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/action/EncounterAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op-emas/log.out" afterPath="$PROJECT_DIR$/qap-comma-op-emas/log.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/AbstractStochasticMutate.java" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/AbstractStochasticMutate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/age-solvers.ipr" afterPath="$PROJECT_DIR$/age-solvers.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/age-solvers.iws" afterPath="$PROJECT_DIR$/age-solvers.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.properties" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml" afterPath="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op-emas/pom.xml" afterPath="$PROJECT_DIR$/qap-comma-op-emas/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qap-comma-op-emas/qap-comma-op-emas.iml" afterPath="$PROJECT_DIR$/qap-comma-op-emas/qap-comma-op-emas.iml" />
     </list>
     <ignored path="age-solvers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -184,6 +175,21 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/action/EncounterAction.java" line="95" class="org.jage.algorithms.comma.op.emas.action.EncounterAction" package="org.jage.algorithms.comma.op.emas.action">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -255,7 +261,7 @@
       <file leaf-file-name="age.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="27" selection-start="5144" selection-end="5144" vertical-scroll-proportion="0.0" vertical-offset="1161" max-vertical-offset="1904">
+            <state line="32" column="50" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.0" vertical-offset="320" max-vertical-offset="1888">
               <folding />
             </state>
           </provider>
@@ -264,71 +270,20 @@
       <file leaf-file-name="AbstractStochasticMutate.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/AbstractStochasticMutate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="4" selection-start="4156" selection-end="4156" vertical-scroll-proportion="0.0" vertical-offset="2256" max-vertical-offset="2928">
+            <state line="95" column="0" selection-start="2907" selection-end="2907" vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="2304">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileContentReader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/input/FileContentReader.java">
+      <file leaf-file-name="EncounterAction.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/action/EncounterAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="13" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="864">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputDataHolder.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/input/InputDataHolder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="43" selection-start="1677" selection-end="1677" vertical-scroll-proportion="0.28490028" vertical-offset="200" max-vertical-offset="944">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ISolution.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1-sources.jar!/org/jage/solution/ISolution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.0" vertical-offset="752" max-vertical-offset="848">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SwapMutation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/SwapMutation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="19" selection-start="1239" selection-end="1251" vertical-scroll-proportion="0.0" vertical-offset="704" max-vertical-offset="1536">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NopeRecombination.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/recombination/NopeRecombination.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="18" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="960">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Problem.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/solution/Problem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="18" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0" vertical-offset="704" max-vertical-offset="1280">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SolutionFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/solution/SolutionFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="23" selection-start="1654" selection-end="1654" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="2544">
-              <folding />
+            <state line="103" column="4" selection-start="3432" selection-end="3432" vertical-scroll-proportion="0.70348835" vertical-offset="1406" max-vertical-offset="2128">
+              <folding>
+                <element signature="e#0#4561#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -348,7 +303,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/p-median/input/334Pm_Pc.txt" />
         <option value="$PROJECT_DIR$/jssp-jp-emas/src/main/resources/age.properties" />
         <option value="$PROJECT_DIR$/jssp-jp/src/main/resources/age.properties" />
         <option value="$PROJECT_DIR$/p-median-emas/src/main/resources/age.properties" />
@@ -393,12 +347,13 @@
         <option value="$PROJECT_DIR$/qap-comma-op-emas/src/test/java/Test.java" />
         <option value="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/IndividuallyMutatePopulation.java" />
         <option value="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/recombination/NopeRecombination.java" />
-        <option value="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.properties" />
         <option value="$PROJECT_DIR$/qap-comma-op-emas/pom.xml" />
-        <option value="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml" />
         <option value="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/VariationOperatorMutationOnly.java" />
         <option value="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/AbstractStochasticMutate.java" />
         <option value="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/input/InputDataHolder.java" />
+        <option value="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.properties" />
+        <option value="$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml" />
+        <option value="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/action/EncounterAction.java" />
       </list>
     </option>
   </component>
@@ -513,31 +468,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Age Solvers" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Age Solvers" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Age Solvers" />
+          <option name="myItemId" value="Quadratic Assignment Problem with COMMAop algorithm -- EMAS" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -878,6 +809,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="age-solvers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="age" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qap-comma-op-emas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="emas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -898,7 +863,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/qap-comma-op-emas" />
     <property name="LayoutCode.rearrangeEntriesJava" value="true" />
     <property name="options.lastSelected" value="MavenSettings" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -939,6 +904,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -947,6 +913,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.jage.algorithms.comma.op.emas.action" />
       <recent name="org.jage.algorithms.comma.op.emas.recombination" />
       <recent name="org.jage.algorithms.p.radian.rechenberg" />
     </key>
@@ -1329,9 +1296,17 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="qap-comma-op-emas" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method />
+      <method>
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/qap-comma-op-emas/pom.xml" goal="clean install" />
+      </method>
     </configuration>
     <configuration default="false" name="clean install" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -1434,11 +1409,11 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.CliNodeBootstrapper2" />
-      <item index="1" class="java.lang.String" itemvalue="Maven.clean install" />
-      <item index="2" class="java.lang.String" itemvalue="Maven.jssp-sp" />
-      <item index="3" class="java.lang.String" itemvalue="Maven.jssp-sp-emas" />
-      <item index="4" class="java.lang.String" itemvalue="Remote.Remote Debug" />
-      <item index="5" class="java.lang.String" itemvalue="Application.CliNodeBootstrapper" />
+      <item index="1" class="java.lang.String" itemvalue="Application.CliNodeBootstrapper" />
+      <item index="2" class="java.lang.String" itemvalue="Maven.clean install" />
+      <item index="3" class="java.lang.String" itemvalue="Maven.jssp-sp" />
+      <item index="4" class="java.lang.String" itemvalue="Maven.jssp-sp-emas" />
+      <item index="5" class="java.lang.String" itemvalue="Remote.Remote Debug" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -1505,7 +1480,7 @@
       <workItem from="1396597207122" duration="37828000" />
       <workItem from="1396957336761" duration="1422000" />
       <workItem from="1396961787422" duration="1792000" />
-      <workItem from="1396963617875" duration="13000" />
+      <workItem from="1396963617875" duration="1403000" />
     </task>
     <task id="LOCAL-00001" summary="Time based results.">
       <created>1393086115093</created>
@@ -1615,11 +1590,15 @@
       <created>1396741122093</created>
       <updated>1396741122093</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="CommaOP EMAS -- take 1">
+      <created>1396963655115</created>
+      <updated>1396963655115</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41055000" />
+    <option name="totallyTimeSpent" value="42445000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1643,7 +1622,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32597402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1652,18 +1631,19 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39794755" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48728245" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868758" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32797858" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32262382" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32839224" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26251605" sideWeight="0.6706444" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48058903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.66934407" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="676" />
       <window_info id="Aspects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1672,7 +1652,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33868808" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3239625" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1782,97 +1761,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/recombination/NopeRecombination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="18" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="960">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/solution/Problem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="18" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0" vertical-offset="704" max-vertical-offset="1280">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/solution/SolutionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="23" selection-start="1654" selection-end="1654" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="2544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/it/unimi/dsi/fastutil/6.4.1/fastutil-6.4.1.jar!/it/unimi/dsi/fastutil/doubles/DoubleComparators.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="70" selection-start="262" selection-end="262" vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="408" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/13.0.1/guava-13.0.1.jar!/com/google/common/collect/TreeMultimap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="3" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/13.0.1/guava-13.0.1-sources.jar!/com/google/common/base/Preconditions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="22" selection-start="7527" selection-end="7527" vertical-scroll-proportion="0.0" vertical-offset="2725" max-vertical-offset="7412" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/13.0.1/guava-13.0.1-sources.jar!/com/google/common/collect/Synchronized.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="779" column="23" selection-start="19840" selection-end="19840" vertical-scroll-proportion="0.0" vertical-offset="12466" max-vertical-offset="26078" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/13.0.1/guava-13.0.1-sources.jar!/com/google/common/collect/SortedSetMultimap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="17" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0" vertical-offset="328" max-vertical-offset="1666" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/13.0.1/guava-13.0.1-sources.jar!/com/google/common/collect/Multimap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="17" selection-start="5833" selection-end="5833" vertical-scroll-proportion="0.0" vertical-offset="2062" max-vertical-offset="5865" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/13.0.1/guava-13.0.1-sources.jar!/com/google/common/collect/TreeMultimap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="2" selection-start="4812" selection-end="4812" vertical-scroll-proportion="0.0" vertical-offset="1331" max-vertical-offset="3060" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/solution/SolutionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="2976" selection-end="2976" vertical-scroll-proportion="0.0" vertical-offset="754" max-vertical-offset="1972" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/SwapMutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="1071" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-sources.jar!/org/jage/agent/AggregateActionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="283" column="25" selection-start="9896" selection-end="9896" vertical-scroll-proportion="0.0" vertical-offset="3199" max-vertical-offset="12580" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/AbstractStochasticMutate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="7" selection-start="4565" selection-end="4565" vertical-scroll-proportion="0.0" vertical-offset="671" max-vertical-offset="2142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1.jar!/org/jage/evaluation/ISolutionEvaluator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="166" selection-end="166" vertical-scroll-proportion="-3.4" vertical-offset="0" max-vertical-offset="221" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/SequentialPopulationEvaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="0" selection-start="4954" selection-end="4954" vertical-scroll-proportion="0.0" vertical-offset="1963" max-vertical-offset="2516" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/evaluate/Evaluator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="38" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2533" />
+        <state line="73" column="38" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2533">
+          <folding>
+            <element signature="e#0#4523#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/etc/license.txt">
@@ -1933,7 +1829,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jssp-jp-emas/src/main/resources/age.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="6684" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1856" />
+        <state line="0" column="0" selection-start="0" selection-end="6684" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1856">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jssp-jp-emas/src/main/java/org/jage/algorithms/jssp/jp/emas/rechenberg/RechenbergDefaultIslandAgent.java">
@@ -1975,17 +1873,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jssp-jp-emas/src/main/java/org/jage/algorithms/jssp/jp/emas/NopeRecombination.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="13" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.35699797" vertical-offset="0" max-vertical-offset="493" />
+        <state line="51" column="13" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.35699797" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jssp-jp-emas/src/main/resources/age.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="256" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jssp-jp-emas/pom.xml">
@@ -2001,13 +1896,6 @@
     <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="69" selection-start="418" selection-end="418" vertical-scroll-proportion="-1.9447514" vertical-offset="816" max-vertical-offset="1184">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/SwapMutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="19" selection-start="1239" selection-end="1251" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1008">
           <folding />
         </state>
       </provider>
@@ -2033,32 +1921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/resources/age.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="24" selection-start="3277" selection-end="3447" vertical-scroll-proportion="1.8255033" vertical-offset="0" max-vertical-offset="1040" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="27" selection-start="5144" selection-end="5144" vertical-scroll-proportion="0.0" vertical-offset="1161" max-vertical-offset="1904">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1-sources.jar!/org/jage/solution/ISolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="384">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/AbstractStochasticMutate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="4" selection-start="4156" selection-end="4156" vertical-scroll-proportion="0.0" vertical-offset="2060" max-vertical-offset="2928">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/input/FileContentReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="13" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0" vertical-offset="43" max-vertical-offset="384">
@@ -2066,10 +1928,170 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/emas/2.6.2-SNAPSHOT/emas-2.6.2-20121201.162028-1.jar!/org/jage/emas/battle/DeterministicFitnessBattle.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/emas/2.6.2-SNAPSHOT/emas-2.6.2-20121201.162028-1-sources.jar!/org/jage/emas/battle/DeterministicFitnessBattle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="1490" selection-end="1490" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/input/InputDataHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="43" selection-start="1677" selection-end="1677" vertical-scroll-proportion="0.28490028" vertical-offset="200" max-vertical-offset="944">
+        <state line="54" column="43" selection-start="1677" selection-end="1677" vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="944">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/SwapMutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="19" selection-start="1239" selection-end="1251" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1008">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-sources.jar!/org/jage/agent/ActionDrivenAggregate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="0" selection-start="3071" selection-end="3071" vertical-scroll-proportion="0.0" vertical-offset="1004" max-vertical-offset="1408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-sources.jar!/org/jage/agent/SimpleAggregate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="0" selection-start="5113" selection-end="5113" vertical-scroll-proportion="0.0" vertical-offset="1532" max-vertical-offset="7856">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../jad/org/jage/workplace/IsolatedSimpleWorkplace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="0" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0" vertical-offset="1084" max-vertical-offset="1392">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-sources.jar!/org/jage/workplace/SimpleWorkplace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="183" column="0" selection-start="4983" selection-end="4983" vertical-scroll-proportion="0.0" vertical-offset="2044" max-vertical-offset="3616">
+          <folding>
+            <element signature="e#4998#5139#0" expanded="true" />
+            <element signature="e#5134#5135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../jad/org/jage/agent/AggregateActionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="267" column="0" selection-start="5870" selection-end="5870" vertical-scroll-proportion="0.0" vertical-offset="3904" max-vertical-offset="12800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/emas/2.6.2-SNAPSHOT/emas-2.6.2-20121201.162028-1-sources.jar!/org/jage/emas/util/ChainingAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.0" vertical-offset="316" max-vertical-offset="800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1-sources.jar!/org/jage/variation/recombination/UniformRecombine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="21" selection-start="1643" selection-end="1643" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="912">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1-sources.jar!/org/jage/variation/recombination/IRecombine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="15" selection-start="1502" selection-end="1502" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="512">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1-sources.jar!/org/jage/solution/ISolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="17" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/java/org/jage/algorithms/comma/op/mutation/AbstractStochasticMutate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="21" selection-start="2775" selection-end="2775" vertical-scroll-proportion="0.33333334" vertical-offset="720" max-vertical-offset="2016">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1-sources.jar!/org/jage/variation/mutation/IMutateSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="15" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="464">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op/src/main/resources/age.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="24" selection-start="3277" selection-end="3447" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1040">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/base.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="16" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/emas/2.6.2-SNAPSHOT/emas-2.6.2-20121201.162028-1-sources.jar!/org/jage/emas/reproduction/DefaultSexualReproduction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="13" selection-start="1895" selection-end="1895" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="1328">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/emas/2.6.2-SNAPSHOT/emas-2.6.2-20121201.162028-1-sources.jar!/org/jage/emas/action/individual/EncounterAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="6" selection-start="2148" selection-end="2148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1488">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/resources/age.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="50" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.0" vertical-offset="320" max-vertical-offset="1888">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/mutation/AbstractStochasticMutate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="0" selection-start="2907" selection-end="2907" vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="2304">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qap-comma-op-emas/src/main/java/org/jage/algorithms/comma/op/emas/action/EncounterAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="4" selection-start="3432" selection-end="3432" vertical-scroll-proportion="0.70348835" vertical-offset="1406" max-vertical-offset="2128">
+          <folding>
+            <element signature="e#0#4561#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
