@@ -23,6 +23,8 @@
         <module>jssp-jp-emas</module>
         <module>p-median-emas</module>
         <module>qap-comma-op-emas</module>
+
+        <module>qap-comma-op-cloning</module>
     </modules>
 
     <repositories>
