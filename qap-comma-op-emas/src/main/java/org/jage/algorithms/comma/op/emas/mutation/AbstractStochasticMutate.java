@@ -109,10 +109,11 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
          double fitness = 0.;
          double fitness2 = 0.;
 
-         fitness = Evaluator.getInstance().evaluate((IVectorSolution<Integer>) solution);
+          fitness = Evaluator.getInstance().evaluate((IVectorSolution<Integer>) solution);
 
          doMutate(representation, k, calculateRange(solution, rank));
 
+         Evaluator.getInstance().decrStep();
          fitness2 = Evaluator.getInstance().evaluate((IVectorSolution<Integer>) solution);
 
          if (fitness2 < fitness)

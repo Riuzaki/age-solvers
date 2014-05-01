@@ -91,10 +91,11 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
         if (timer == null) {
             startTime = System.currentTimeMillis();
 
-            if (currentEvalStep.get() % 5000 == 0) {
-                if (currentEvalStep.get() < maxEvalStep) {
+            if (currentEvalStep.get() % 1000 == 0) {
+                if (currentEvalStep.get() <= maxEvalStep) {
                     if (bestList != null)
-                        LOG.warn("{} {} {}", (System.currentTimeMillis() - startTime) / 1000., best.get(), bestList);
+                        //LOG.warn("{};{}", currentEvalStep, (int) best.get());
+                        LOG.warn("{}", (int) best.get());
                 } else {
                     LOG.warn("FINISHED EXECUTION");
                     System.exit(0);
