@@ -15,6 +15,12 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
+            <artifactId>emas</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>${project.groupId}</groupId>
             <artifactId>genetic</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -34,12 +40,6 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>random</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>emas</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

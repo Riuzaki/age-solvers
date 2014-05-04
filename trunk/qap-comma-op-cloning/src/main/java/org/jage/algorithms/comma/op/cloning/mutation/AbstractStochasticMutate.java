@@ -109,7 +109,7 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
          double fitness = 0.;
          double fitness2 = 0.;
 
-          fitness = Evaluator.getInstance().evaluate((IVectorSolution<Integer>) solution);
+         fitness = Evaluator.getInstance().evaluate((IVectorSolution<Integer>) solution);
 
          doMutate(representation, k, calculateRange(solution, rank));
 
@@ -141,7 +141,11 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
       }
       if (rMinusInt > rPlusInt)
       {
-         throw new RuntimeException("that's bad");
+          if (rMinusInt < 0) {
+              rMinusInt = 0;
+          }
+          rPlusInt = rMinusInt;
+         //throw new RuntimeException("that's bad");
       }
       return (rMinusInt + random.nextInt((rPlusInt - rMinusInt + 1)));
    }
