@@ -81,7 +81,7 @@
                 </property>
 
                 <strategy name="initializationAction" class="org.jage.emas.action.island.InitializationAction">
-                    <property name="initialEnergy" type="Double" value="100"/>
+                    <property name="initialEnergy" type="Double" value="75"/>
                 </strategy>
                 <strategy name="skippingAction" class="org.jage.emas.util.SkippingAction"/>
                 <strategy name="statisticsUpdateAction" class="org.jage.emas.action.island.StatisticsUpdateAction">
