@@ -109,7 +109,7 @@ public final class EncounterAction extends ChainingAction<IndividualAgent> {
                 }
             }
             selfMutation(agent, rank);
-        } else if (reproductionPredicate.apply(agent)) {
+        } else {
             selfMutation(agent, 1);
         }
     }
