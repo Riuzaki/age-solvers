@@ -5,7 +5,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>jssp-sp-emas</artifactId>
-    <name>Job Shop Scheduling Problem - Simple Permutation - EMAS</name>
 
     <parent>
         <groupId>org.jage.algorithms</groupId>

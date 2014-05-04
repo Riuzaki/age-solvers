@@ -5,7 +5,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>p-median</artifactId>
-    <name>The P-Median Problem</name>
 
     <parent>
         <groupId>org.jage.algorithms</groupId>

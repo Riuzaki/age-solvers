@@ -4,7 +4,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>age-solvers</artifactId>
-    <name>Age Solvers</name>
     <packaging>pom</packaging>
 
     <parent>
@@ -15,15 +14,14 @@
 
     <modules>
         <module>jssp-sp</module>
-        <module>jssp-jp</module>
-        <module>p-median</module>
-        <module>qap-comma-op</module>
-
         <module>jssp-sp-emas</module>
+        <module>jssp-jp</module>
         <module>jssp-jp-emas</module>
+        <module>p-median</module>
         <module>p-median-emas</module>
-        <module>qap-comma-op-emas</module>
 
+        <module>qap-comma-op</module>
+        <module>qap-comma-op-islands</module>
         <module>qap-comma-op-cloning</module>
     </modules>
 
