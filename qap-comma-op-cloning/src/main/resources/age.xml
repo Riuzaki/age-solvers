@@ -25,16 +25,19 @@
                             <list isSingleton="true">
                                 <strategy class="org.jage.emas.action.individual.EncounterActionContext"/>
                                 <strategy class="org.jage.emas.action.individual.MigrationActionContext"/>
+                                <strategy class="org.jage.emas.action.individual.DeathActionContext"/>
                             </list>
                         </strategy>
                     </agent>
 
                     <strategy name="encounterAction" class="org.jage.algorithms.comma.op.cloning.action.EncounterAction">
-                        <strategy name="reproductionPredicate" class="org.jage.emas.predicate.RandomPredicate">
-                            <property name="probability" type="Double" value="0.5"/>
+                        <strategy name="reproductionPredicate" class="org.jage.emas.predicate.HighEnergyPredicate">
+                            <property name="threshold" type="Double" value="90"/>
                         </strategy>
+                        <strategy name="asexualReproductionStrategy"
+                                  class="org.jage.emas.reproduction.DefaultAsexualReproduction"/>
                         <strategy name="battleStrategy" class="org.jage.emas.battle.DeterministicFitnessBattle"/>
-                        <strategy name="battleEnergyTransfer" class="org.jage.algorithms.comma.op.cloning.energy.ConstantEnergyTransfer">
+                        <strategy name="battleEnergyTransfer" class="org.jage.emas.energy.ConstantEnergyTransfer">
                             <property name="transferredEnergy" type="Double" value="1.0"/>
                         </strategy>
                     </strategy>
@@ -43,6 +46,11 @@
                             <property name="probability" type="Double" value="${individual.chanceToMigrate}"/>
                         </strategy>
                         <strategy name="migrationStrategy" class="org.jage.emas.migration.RandomDestinationMigration"/>
+                    </strategy>
+                    <strategy name="deathAction" class="org.jage.emas.action.individual.DeathAction">
+                        <strategy name="deathPredicate" class="org.jage.emas.predicate.LowEnergyPredicate">
+                            <property name="threshold" type="Double" value="0"/>
+                        </strategy>
                     </strategy>
 
                     <property name="agents">
@@ -94,11 +102,15 @@
 
             <strategy name="recombinationStrategy"
                       class="org.jage.algorithms.comma.op.cloning.recombination.NopeRecombination"/>
-            <strategy name="mutationStategy"
-                      class="org.jage.algorithms.comma.op.cloning.mutation.SwapMutation">
+
+            <strategy name="mutateInSitu"
+                      class="org.jage.algorithms.comma.op.cloning.mutation.SwapMutationWithRange">
                 <constructor-arg name="steps" type="Integer" value="${steps}"/>
                 <constructor-arg name="populationSize" type="Integer" value="${population.size}"/>
             </strategy>
+
+            <strategy name="mutationStategy"
+                      class="org.jage.algorithms.comma.op.cloning.mutation.SwapMutation"/>
         </block>
     </include>
 </configuration>

@@ -31,8 +31,7 @@
 
 package org.jage.algorithms.comma.op.cloning.mutation;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.jage.variation.mutation.AbstractStochasticMutate;
 
 import java.util.List;
 import java.util.Random;
@@ -42,49 +41,14 @@ import java.util.Random;
  * Date: 20.11.13
  * Time: 13:51
  */
-public class SwapMutation extends AbstractStochasticMutate<Integer>
-{
-   private static final Logger LOG = LoggerFactory.getLogger(SwapMutation.class);
+public class SwapMutation extends AbstractStochasticMutate<Integer> {
+    private Random random = new Random();
 
-   private static boolean fixedDistance = false;
-
-   private Random random = new Random();
-
-   public SwapMutation(int steps, int populationSize) {
-      super(steps, populationSize);
-   }
-
-   int index1;
-   int index2;
-
-   @Override
-   protected void doMutate (List<Integer> integers, int index, int range)
-   {
-      LOG.debug("range " + range);
-      if (range > integers.size() / 2) {
-         range = integers.size() / 2;
-      }
-      int realDistance = range == 0 ? 0 : fixedDistance ? range : (Math.abs(random.nextInt()) % range) + 1;
-      int indexToSwap;
-      if (index < integers.size() / 2)
-      {
-         indexToSwap = index + realDistance;
-      }
-      else
-      {
-         indexToSwap = index - realDistance;
-      }
-      index1 = index;
-      index2 = indexToSwap;
-      int tmp = integers.get(index);
-      integers.set(index, integers.get(indexToSwap));
-      integers.set(indexToSwap, tmp);
-   }
-
-   @Override
-   protected void revert(List<Integer> integers) {
-      int tmp = integers.get(index1);
-      integers.set(index1, integers.get(index2));
-      integers.set(index2, tmp);
-   }
+    @Override
+    protected void doMutate(List<Integer> integers, int index) {
+        int indexToSwap = Math.abs(random.nextInt() % integers.size());
+        int tmp = integers.get(index);
+        integers.set(index, integers.get(indexToSwap));
+        integers.set(indexToSwap, tmp);
+    }
 }
