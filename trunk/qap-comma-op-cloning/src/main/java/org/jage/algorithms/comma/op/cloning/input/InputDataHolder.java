@@ -45,9 +45,9 @@ public class InputDataHolder
 
     //private static final String FILE_PATH = "input/tailard/tai12a.dat"; // optimum: 224416
     //private static final String FILE_PATH = "input/tailard/tai12b.dat";
-    //private static final String FILE_PATH = "input/tailard/tai15a.dat";
+    //private static final String FILE_PATH = "input/tailard/tai15a.dat"; // 388214
     //  private static final String FILE_PATH = "input/tailard/tai15b.dat";
-     private static final String FILE_PATH = "input/tailard/tai20a.dat"; // optimum: 703482
+    private static final String FILE_PATH = "input/tailard/tai20a.dat"; // optimum: 703482
     //private static final String FILE_PATH = "input/tailard/tai20b.dat";
 
    private static InputDataHolder instance;

@@ -63,6 +63,8 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
 
     private static int maxEvalStep;
 
+    private static boolean skipNext = false;
+
     static {
         try {
             maxEvalStep = 1000 * (int) Math.pow(InputDataHolder.getInstance().getInputData().getN(), 2);
@@ -91,11 +93,11 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
         if (timer == null) {
             startTime = System.currentTimeMillis();
 
-            if (currentEvalStep.get() % 1000 == 0) {
+            if (currentEvalStep.get() % 1000 == 0 && skipNext == false) {
                 if (currentEvalStep.get() <= maxEvalStep) {
                     if (bestList != null)
-                        LOG.warn("{};{}", currentEvalStep, (int) best.get());
-                        //LOG.warn("{}", (int) best.get());
+                        //LOG.warn("{};{}", currentEvalStep, (int) best.get());
+                        LOG.warn("{}", (int) best.get());
                 } else {
                     LOG.warn("FINISHED EXECUTION");
                     System.exit(0);
@@ -130,7 +132,11 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
 
         LOG.debug("Current: " + total + ", best: " + best.get());
 
-        currentEvalStep.incrementAndGet();
+        if (skipNext) {
+            skipNext = false;
+        } else {
+            currentEvalStep.incrementAndGet();
+        }
 
         return (double) -total;
     }
@@ -141,6 +147,6 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
     }
 
     public void decrStep() {
-        currentEvalStep.decrementAndGet();
+        skipNext = true;
     }
 }

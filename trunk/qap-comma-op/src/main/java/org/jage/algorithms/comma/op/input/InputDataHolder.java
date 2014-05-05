@@ -33,11 +33,6 @@ package org.jage.algorithms.comma.op.input;
 
 import java.io.IOException;
 
-/**
- * User: Norbert Tusiński
- * Date: 20.11.13
- * Time: 07:48
- */
 public class InputDataHolder {
     //private static final String FILE_PATH = "input/example";
     //private static final String FILE_PATH = "input/jensen-example"; // optimum: 3260
@@ -46,7 +41,7 @@ public class InputDataHolder {
     //  private static final String FILE_PATH = "input/tailard/tai12b.dat"; // 39464925
     //private static final String FILE_PATH = "input/tailard/tai15a.dat";
     //  private static final String FILE_PATH = "input/tailard/tai15b.dat";
-     private static final String FILE_PATH = "input/tailard/tai20a.dat"; // optimum: 703482
+    private static final String FILE_PATH = "input/tailard/tai20a.dat"; // optimum: 703482
     //private static final String FILE_PATH = "input/tailard/tai20b.dat";
 
     private static InputDataHolder instance;
