@@ -13,13 +13,6 @@
     </parent>
 
     <modules>
-        <module>jssp-sp</module>
-        <module>jssp-sp-emas</module>
-        <module>jssp-jp</module>
-        <module>jssp-jp-emas</module>
-        <module>p-median</module>
-        <module>p-median-emas</module>
-
         <module>qap-comma-op</module>
         <module>qap-comma-op-islands</module>
         <module>qap-comma-op-cloning</module>
