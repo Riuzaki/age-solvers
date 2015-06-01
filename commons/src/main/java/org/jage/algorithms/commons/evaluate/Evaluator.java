@@ -39,7 +39,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Timer;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Evaluator extends org.jage.property.ClassPropertyContainer implements org.jage.evaluation.ISolutionEvaluator<org.jage.solution.IVectorSolution<Integer>, Double> {
@@ -48,10 +47,6 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
     private static final AtomicDouble best = new AtomicDouble(Double.MAX_VALUE);
 
     private static List<Integer> bestList;
-
-    private static Timer timer;
-
-    private static long startTime;
 
     private static int maxEvalStep;
 
@@ -80,18 +75,14 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
 
     @Override
     public Double evaluate(IVectorSolution<Integer> solution) {
-        if (timer == null) {
-            startTime = System.currentTimeMillis();
-
-            if (currentEvalStep.get() % 1000 == 0) {
-                if (currentEvalStep.get() <= maxEvalStep) {
-                    if (bestList != null)
-                        //LOG.warn("{};{}", currentEvalStep, (int) best.get());
-                        LOG.warn("{}", (int) best.get());
-                } else {
-                    LOG.warn("FINISHED EXECUTION");
-                    System.exit(0);
-                }
+        if (currentEvalStep.get() % 1000 == 0) {
+            if (currentEvalStep.get() <= maxEvalStep) {
+                if (bestList != null)
+                    //LOG.warn("{};{}", currentEvalStep, (int) best.get());
+                    LOG.warn("{}", (int) best.get());
+            } else {
+                LOG.warn("FINISHED EXECUTION");
+                System.exit(0);
             }
         }
 
