@@ -37,6 +37,7 @@
     <orderEntry type="library" name="Maven: it.unimi.dsi:fastutil:6.4.1" level="project" />
     <orderEntry type="library" name="Maven: org.jage.algorithms:real-valued:2.6.2-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.jage.algorithms:integer:2.6.2-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="commons" />
     <orderEntry type="library" name="Maven: org.jage.platform:cli-bootstrapper:2.6.2-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.jage.platform:arguments:2.6.2-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.jage.services:lifecycle:2.6.2-SNAPSHOT" level="project" />

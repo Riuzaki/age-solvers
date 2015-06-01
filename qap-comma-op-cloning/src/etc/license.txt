@@ -1,9 +1,9 @@
 Copyright (C) 2006 - 2012
   Pawel Kedzior
   Tomasz Kmiecik
-  Kamil Pietak 
+  Kamil Pietak
   Krzysztof Sikora
-  Adam Wos 
+  Adam Wos
   Lukasz Faber
   Daniel Krzywicki
   and other students of AGH University of Science and Technology.

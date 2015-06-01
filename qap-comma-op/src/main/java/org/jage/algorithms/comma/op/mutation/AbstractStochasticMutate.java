@@ -31,8 +31,8 @@
 
 package org.jage.algorithms.comma.op.mutation;
 
-import org.jage.algorithms.comma.op.evaluate.Evaluator;
 import org.jage.algorithms.comma.op.evaluate.SequentialPopulationEvaluator;
+import org.jage.algorithms.commons.evaluate.Evaluator;
 import org.jage.random.IDoubleRandomGenerator;
 import org.jage.random.IIntRandomGenerator;
 import org.jage.solution.IVectorSolution;

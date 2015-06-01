@@ -24,12 +24,8 @@
  * You should have received a copy of the GNU General Public License
  * along with AgE.  If not, see <http://www.gnu.org/licenses/>.
  */
-/*
- * Created: 2011-11-03
- * $Id: IntegerSolutionFactory.java 471 2012-10-30 11:17:00Z faber $
- */
 
-package org.jage.algorithms.comma.op.input;
+package org.jage.algorithms.commons.input;
 
 import java.io.IOException;
 

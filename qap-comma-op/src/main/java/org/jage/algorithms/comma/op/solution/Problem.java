@@ -31,8 +31,8 @@
 
 package org.jage.algorithms.comma.op.solution;
 
-import org.jage.algorithms.comma.op.input.InputData;
-import org.jage.algorithms.comma.op.input.InputDataHolder;
+import org.jage.algorithms.commons.input.InputData;
+import org.jage.algorithms.commons.input.InputDataHolder;
 import org.jage.problem.IVectorProblem;
 
 import java.io.IOException;

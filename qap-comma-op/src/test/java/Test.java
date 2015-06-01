@@ -29,8 +29,8 @@
  * $Id: InitializationActionStrategy.java 471 2012-10-30 11:17:00Z faber $
  */
 
-import org.jage.algorithms.comma.op.evaluate.Evaluator;
-import org.jage.algorithms.comma.op.input.InputDataHolder;
+import org.jage.algorithms.commons.evaluate.Evaluator;
+import org.jage.algorithms.commons.input.InputDataHolder;
 import org.jage.solution.IVectorSolution;
 import org.jage.solution.VectorSolution;
 

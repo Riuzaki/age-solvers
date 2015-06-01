@@ -31,7 +31,7 @@
 
 package org.jage.algorithms.comma.op.emas.mutation;
 
-import org.jage.algorithms.comma.op.emas.evaluate.Evaluator;
+import org.jage.algorithms.commons.evaluate.Evaluator;
 import org.jage.random.IDoubleRandomGenerator;
 import org.jage.random.IIntRandomGenerator;
 import org.jage.solution.IVectorSolution;

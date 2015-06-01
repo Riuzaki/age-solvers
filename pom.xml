@@ -16,6 +16,7 @@
         <module>qap-comma-op</module>
         <module>qap-comma-op-islands</module>
         <module>qap-comma-op-cloning</module>
+        <module>commons</module>
     </modules>
 
     <repositories>

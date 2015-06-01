@@ -33,6 +33,7 @@ package org.jage.algorithms.comma.op.evaluate;
 
 import com.google.common.collect.SortedSetMultimap;
 import com.google.common.collect.TreeMultimap;
+import org.jage.algorithms.commons.evaluate.Evaluator;
 import org.jage.evaluation.IPopulationEvaluator;
 import org.jage.evaluation.ISolutionEvaluator;
 import org.jage.population.IPopulation;

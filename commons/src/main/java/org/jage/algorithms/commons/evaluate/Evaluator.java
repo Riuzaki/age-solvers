@@ -24,16 +24,13 @@
  * You should have received a copy of the GNU General Public License
  * along with AgE.  If not, see <http://www.gnu.org/licenses/>.
  */
-/*
- * Created: 2011-11-03
- * $Id: IntegerSolutionFactory.java 471 2012-10-30 11:17:00Z faber $
- */
 
-package org.jage.algorithms.comma.op.emas.evaluate;
+package org.jage.algorithms.commons.evaluate;
+
 
 import com.google.common.util.concurrent.AtomicDouble;
-import org.jage.algorithms.comma.op.emas.input.InputData;
-import org.jage.algorithms.comma.op.emas.input.InputDataHolder;
+import org.jage.algorithms.commons.input.InputData;
+import org.jage.algorithms.commons.input.InputDataHolder;
 import org.jage.solution.IVectorSolution;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -45,11 +42,6 @@ import java.util.List;
 import java.util.Timer;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/**
- * User: Norbert Tusiński
- * Date: 11/27/13
- * Time: 3:44 PM
- */
 public class Evaluator extends org.jage.property.ClassPropertyContainer implements org.jage.evaluation.ISolutionEvaluator<org.jage.solution.IVectorSolution<Integer>, Double> {
     private static final Logger LOG = LoggerFactory.getLogger(Evaluator.class);
 
@@ -62,8 +54,6 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
     private static long startTime;
 
     private static int maxEvalStep;
-
-    private static boolean skipNext = false;
 
     static {
         try {
@@ -93,7 +83,7 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
         if (timer == null) {
             startTime = System.currentTimeMillis();
 
-            if (currentEvalStep.get() % 1000 == 0 && skipNext == false) {
+            if (currentEvalStep.get() % 1000 == 0) {
                 if (currentEvalStep.get() <= maxEvalStep) {
                     if (bestList != null)
                         //LOG.warn("{};{}", currentEvalStep, (int) best.get());
@@ -132,11 +122,7 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
 
         LOG.debug("Current: " + total + ", best: " + best.get());
 
-        if (skipNext) {
-            skipNext = false;
-        } else {
-            currentEvalStep.incrementAndGet();
-        }
+        currentEvalStep.incrementAndGet();
 
         return (double) -total;
     }
@@ -147,6 +133,6 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
     }
 
     public void decrStep() {
-        skipNext = true;
+        currentEvalStep.decrementAndGet();
     }
 }
