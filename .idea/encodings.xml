@@ -2,13 +2,9 @@
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jssp-jp" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jssp-jp-emas" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jssp-sp" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jssp-sp-emas" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/p-median" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/p-median-emas" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/qap-comma-op" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qap-comma-op-cloning" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qap-comma-op-islands" charset="UTF-8" />
   </component>
 </project>
-

@@ -22,6 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="commons" />
         <module name="jssp-jp" />
         <module name="jssp-jp-emas" />
         <module name="jssp-sp" />
@@ -30,11 +31,14 @@
         <module name="p-median-emas" />
         <module name="qap-comma-op" />
         <module name="qap-comma-op (1)" />
+        <module name="qap-comma-op-cloning" />
         <module name="qap-comma-op-emas" />
+        <module name="qap-comma-op-islands" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="age-solvers" target="1.6" />
+      <module name="commons" target="1.6" />
       <module name="jssp-jp" target="1.6" />
       <module name="jssp-jp-emas" target="1.6" />
       <module name="jssp-sp" target="1.6" />
@@ -43,7 +47,9 @@
       <module name="p-median-emas" target="1.6" />
       <module name="qap-comma-op" target="1.6" />
       <module name="qap-comma-op (1)" target="1.6" />
+      <module name="qap-comma-op-cloning" target="1.6" />
       <module name="qap-comma-op-emas" target="1.6" />
+      <module name="qap-comma-op-islands" target="1.6" />
     </bytecodeTargetLevel>
   </component>
   <component name="CopyrightManager" default="">
@@ -57,14 +63,10 @@
   </component>
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jssp-jp" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jssp-jp-emas" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jssp-sp" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jssp-sp-emas" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/p-median" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/p-median-emas" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/qap-comma-op" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/qap-comma-op-emas" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qap-comma-op-cloning" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qap-comma-op-islands" charset="UTF-8" />
   </component>
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
@@ -210,14 +212,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/age-solvers.iml" filepath="$PROJECT_DIR$/age-solvers.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jssp-jp/jssp-jp.iml" filepath="$PROJECT_DIR$/jssp-jp/jssp-jp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jssp-jp-emas/jssp-jp-emas.iml" filepath="$PROJECT_DIR$/jssp-jp-emas/jssp-jp-emas.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jssp-sp/jssp-sp.iml" filepath="$PROJECT_DIR$/jssp-sp/jssp-sp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jssp-sp-emas/jssp-sp-emas.iml" filepath="$PROJECT_DIR$/jssp-sp-emas/jssp-sp-emas.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p-median/p-median.iml" filepath="$PROJECT_DIR$/p-median/p-median.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p-median-emas/p-median-emas.iml" filepath="$PROJECT_DIR$/p-median-emas/p-median-emas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/qap-comma-op/qap-comma-op.iml" filepath="$PROJECT_DIR$/qap-comma-op/qap-comma-op.iml" />
-      <module fileurl="file://$PROJECT_DIR$/qap-comma-op-emas/qap-comma-op-emas.iml" filepath="$PROJECT_DIR$/qap-comma-op-emas/qap-comma-op-emas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qap-comma-op-cloning/qap-comma-op-cloning.iml" filepath="$PROJECT_DIR$/qap-comma-op-cloning/qap-comma-op-cloning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qap-comma-op-islands/qap-comma-op-islands.iml" filepath="$PROJECT_DIR$/qap-comma-op-islands/qap-comma-op-islands.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
@@ -333,7 +331,7 @@
     <option name="mySupportsUserInfoFilter" value="true" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="libraryTable">
     <library name="Maven: com.google.code.findbugs:jsr305:2.0.1">
@@ -514,202 +512,202 @@
     </library>
     <library name="Maven: org.jage.algorithms:common:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-20121201.161930-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/common/2.6.2-SNAPSHOT/common-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.algorithms:emas:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/emas/2.6.2-SNAPSHOT/emas-2.6.2-20121201.162028-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/emas/2.6.2-SNAPSHOT/emas-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/emas/2.6.2-SNAPSHOT/emas-2.6.2-20121201.162028-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/emas/2.6.2-SNAPSHOT/emas-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/emas/2.6.2-SNAPSHOT/emas-2.6.2-20121201.162028-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/emas/2.6.2-SNAPSHOT/emas-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.algorithms:genetic:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/genetic/2.6.2-SNAPSHOT/genetic-2.6.2-20121201.162014-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/genetic/2.6.2-SNAPSHOT/genetic-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/genetic/2.6.2-SNAPSHOT/genetic-2.6.2-20121201.162014-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/genetic/2.6.2-SNAPSHOT/genetic-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/genetic/2.6.2-SNAPSHOT/genetic-2.6.2-20121201.162014-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/genetic/2.6.2-SNAPSHOT/genetic-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.algorithms:integer:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/integer/2.6.2-SNAPSHOT/integer-2.6.2-20121201.161951-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/integer/2.6.2-SNAPSHOT/integer-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/integer/2.6.2-SNAPSHOT/integer-2.6.2-20121201.161951-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/integer/2.6.2-SNAPSHOT/integer-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/integer/2.6.2-SNAPSHOT/integer-2.6.2-20121201.161951-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/integer/2.6.2-SNAPSHOT/integer-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.algorithms:random:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/random/2.6.2-SNAPSHOT/random-2.6.2-20121201.161915-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/random/2.6.2-SNAPSHOT/random-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/random/2.6.2-SNAPSHOT/random-2.6.2-20121201.161915-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/random/2.6.2-SNAPSHOT/random-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/random/2.6.2-SNAPSHOT/random-2.6.2-20121201.161915-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/random/2.6.2-SNAPSHOT/random-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.algorithms:real-valued:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/real-valued/2.6.2-SNAPSHOT/real-valued-2.6.2-20121201.162001-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/real-valued/2.6.2-SNAPSHOT/real-valued-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/real-valued/2.6.2-SNAPSHOT/real-valued-2.6.2-20121201.162001-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/real-valued/2.6.2-SNAPSHOT/real-valued-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/real-valued/2.6.2-SNAPSHOT/real-valued-2.6.2-20121201.162001-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/algorithms/real-valued/2.6.2-SNAPSHOT/real-valued-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.platform:arguments:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/arguments/2.6.2-SNAPSHOT/arguments-2.6.2-20121201.161705-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/arguments/2.6.2-SNAPSHOT/arguments-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/arguments/2.6.2-SNAPSHOT/arguments-2.6.2-20121201.161705-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/arguments/2.6.2-SNAPSHOT/arguments-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/arguments/2.6.2-SNAPSHOT/arguments-2.6.2-20121201.161705-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/arguments/2.6.2-SNAPSHOT/arguments-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.platform:cli-bootstrapper:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/cli-bootstrapper/2.6.2-SNAPSHOT/cli-bootstrapper-2.6.2-20121201.161818-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/cli-bootstrapper/2.6.2-SNAPSHOT/cli-bootstrapper-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/cli-bootstrapper/2.6.2-SNAPSHOT/cli-bootstrapper-2.6.2-20121201.161818-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/cli-bootstrapper/2.6.2-SNAPSHOT/cli-bootstrapper-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
         <root url="file://$PROJECT_DIR$/../jad" />
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/cli-bootstrapper/2.6.2-SNAPSHOT/cli-bootstrapper-2.6.2-20121201.161818-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/cli-bootstrapper/2.6.2-SNAPSHOT/cli-bootstrapper-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.platform:component-pico:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/component-pico/2.6.2-SNAPSHOT/component-pico-2.6.2-20121201.161633-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/component-pico/2.6.2-SNAPSHOT/component-pico-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/component-pico/2.6.2-SNAPSHOT/component-pico-2.6.2-20121201.161633-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/component-pico/2.6.2-SNAPSHOT/component-pico-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/component-pico/2.6.2-SNAPSHOT/component-pico-2.6.2-20121201.161633-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/component-pico/2.6.2-SNAPSHOT/component-pico-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.platform:component:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/component/2.6.2-SNAPSHOT/component-2.6.2-20121201.161618-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/component/2.6.2-SNAPSHOT/component-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/component/2.6.2-SNAPSHOT/component-2.6.2-20121201.161618-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/component/2.6.2-SNAPSHOT/component-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/component/2.6.2-SNAPSHOT/component-2.6.2-20121201.161618-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/component/2.6.2-SNAPSHOT/component-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.platform:config-loader-xml:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/config-loader-xml/2.6.2-SNAPSHOT/config-loader-xml-2.6.2-20121201.161656-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/config-loader-xml/2.6.2-SNAPSHOT/config-loader-xml-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/config-loader-xml/2.6.2-SNAPSHOT/config-loader-xml-2.6.2-20121201.161656-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/config-loader-xml/2.6.2-SNAPSHOT/config-loader-xml-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/config-loader-xml/2.6.2-SNAPSHOT/config-loader-xml-2.6.2-20121201.161656-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/config-loader-xml/2.6.2-SNAPSHOT/config-loader-xml-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.platform:config:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/config/2.6.2-SNAPSHOT/config-2.6.2-20121201.161642-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/config/2.6.2-SNAPSHOT/config-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/config/2.6.2-SNAPSHOT/config-2.6.2-20121201.161642-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/config/2.6.2-SNAPSHOT/config-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/config/2.6.2-SNAPSHOT/config-2.6.2-20121201.161642-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/config/2.6.2-SNAPSHOT/config-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.platform:property:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/property/2.6.2-SNAPSHOT/property-2.6.2-20121201.161605-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/property/2.6.2-SNAPSHOT/property-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/property/2.6.2-SNAPSHOT/property-2.6.2-20121201.161605-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/property/2.6.2-SNAPSHOT/property-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/property/2.6.2-SNAPSHOT/property-2.6.2-20121201.161605-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/property/2.6.2-SNAPSHOT/property-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.platform:util:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/util/2.6.2-SNAPSHOT/util-2.6.2-20121201.161548-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/util/2.6.2-SNAPSHOT/util-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/util/2.6.2-SNAPSHOT/util-2.6.2-20121201.161548-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/util/2.6.2-SNAPSHOT/util-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/util/2.6.2-SNAPSHOT/util-2.6.2-20121201.161548-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/platform/util/2.6.2-SNAPSHOT/util-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.services:address:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/address/2.6.2-SNAPSHOT/address-2.6.2-20121201.161721-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/address/2.6.2-SNAPSHOT/address-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/address/2.6.2-SNAPSHOT/address-2.6.2-20121201.161721-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/address/2.6.2-SNAPSHOT/address-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/address/2.6.2-SNAPSHOT/address-2.6.2-20121201.161721-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/address/2.6.2-SNAPSHOT/address-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.services:communication:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/communication/2.6.2-SNAPSHOT/communication-2.6.2-20121201.161735-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/communication/2.6.2-SNAPSHOT/communication-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/communication/2.6.2-SNAPSHOT/communication-2.6.2-20121201.161735-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/communication/2.6.2-SNAPSHOT/communication-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/communication/2.6.2-SNAPSHOT/communication-2.6.2-20121201.161735-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/communication/2.6.2-SNAPSHOT/communication-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.services:core:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
         <root url="file://$PROJECT_DIR$/../jad" />
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-20121201.161755-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/core/2.6.2-SNAPSHOT/core-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.jage.services:lifecycle:2.6.2-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/lifecycle/2.6.2-SNAPSHOT/lifecycle-2.6.2-20121201.161808-1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/lifecycle/2.6.2-SNAPSHOT/lifecycle-2.6.2-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/lifecycle/2.6.2-SNAPSHOT/lifecycle-2.6.2-20121201.161808-1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/lifecycle/2.6.2-SNAPSHOT/lifecycle-2.6.2-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/lifecycle/2.6.2-SNAPSHOT/lifecycle-2.6.2-20121201.161808-1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jage/services/lifecycle/2.6.2-SNAPSHOT/lifecycle-2.6.2-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.mockito:mockito-core:1.9.5">

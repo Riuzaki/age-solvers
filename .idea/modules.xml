@@ -3,14 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/age-solvers.iml" filepath="$PROJECT_DIR$/age-solvers.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jssp-jp/jssp-jp.iml" filepath="$PROJECT_DIR$/jssp-jp/jssp-jp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jssp-jp-emas/jssp-jp-emas.iml" filepath="$PROJECT_DIR$/jssp-jp-emas/jssp-jp-emas.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jssp-sp/jssp-sp.iml" filepath="$PROJECT_DIR$/jssp-sp/jssp-sp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jssp-sp-emas/jssp-sp-emas.iml" filepath="$PROJECT_DIR$/jssp-sp-emas/jssp-sp-emas.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p-median/p-median.iml" filepath="$PROJECT_DIR$/p-median/p-median.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p-median-emas/p-median-emas.iml" filepath="$PROJECT_DIR$/p-median-emas/p-median-emas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/qap-comma-op/qap-comma-op.iml" filepath="$PROJECT_DIR$/qap-comma-op/qap-comma-op.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qap-comma-op-cloning/qap-comma-op-cloning.iml" filepath="$PROJECT_DIR$/qap-comma-op-cloning/qap-comma-op-cloning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qap-comma-op-islands/qap-comma-op-islands.iml" filepath="$PROJECT_DIR$/qap-comma-op-islands/qap-comma-op-islands.iml" />
     </modules>
   </component>
 </project>
-

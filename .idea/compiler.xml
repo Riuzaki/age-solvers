@@ -28,11 +28,39 @@
         <module name="jssp-sp-emas" />
         <module name="p-median" />
         <module name="p-median-emas" />
+      </profile>
+      <profile default="false" name="Annotation profile for qap-comma-op" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="qap-comma-op" />
+      </profile>
+      <profile default="false" name="Annotation profile for qap-comma-op-cloning" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="qap-comma-op-cloning" />
+      </profile>
+      <profile default="false" name="Annotation profile for qap-comma-op-islands" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="qap-comma-op-islands" />
+      </profile>
+      <profile default="false" name="Annotation profile for commons" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="commons" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="age-solvers" target="1.6" />
+      <module name="commons" target="1.6" />
       <module name="jssp-jp" target="1.6" />
       <module name="jssp-jp-emas" target="1.6" />
       <module name="jssp-sp" target="1.6" />
@@ -40,7 +68,8 @@
       <module name="p-median" target="1.6" />
       <module name="p-median-emas" target="1.6" />
       <module name="qap-comma-op" target="1.6" />
+      <module name="qap-comma-op-cloning" target="1.6" />
+      <module name="qap-comma-op-islands" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
-
