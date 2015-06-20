@@ -101,7 +101,7 @@
             <strategy name="solutionFactory" class="org.jage.algorithms.comma.op.doublemutation.solution.SolutionFactory"/>
 
             <strategy name="recombinationStrategy"
-                      class="org.jage.algorithms.comma.op.doublemutation.recombination.NopeRecombination"/>
+                      class="org.jage.algorithms.comma.op.doublemutation.recombination.UniformRecombine"/>
 
             <strategy name="mutateInSitu"
                       class="org.jage.algorithms.comma.op.doublemutation.mutation.SwapMutationWithRange">
