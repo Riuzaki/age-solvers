@@ -43,24 +43,9 @@ import javax.inject.Inject;
 import java.util.List;
 import java.util.Random;
 
-/**
- * Abstract implementation of {@link IMutateSolution}. Features are not mutated independently. Instead, a random subset
- * of features is first selected (the size of this subset is proportional to the chance to mutate). Then these features
- * are mutated.<br />
- * <br />
- * Concrete subclasses are supposed to provide the actual mutation computation.
- *
- * @param <R> the representation type of the solution to be mutated
- * @author AGH AgE Team
- */
 public abstract class AbstractStochasticMutate<R> extends AbstractStrategy implements IMutateSolution<IVectorSolution<R>>
 {
-
    private static final double DEFAULT_CHANCE_TO_MUTATE = 1.0;
-
-   private double chanceToMutate = DEFAULT_CHANCE_TO_MUTATE;
-
-   private final int steps;
 
    private final int populationSize;
 
@@ -76,7 +61,6 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
 
    protected AbstractStochasticMutate (int steps, int populationSize)
    {
-      this.steps = steps;
       this.populationSize = populationSize;
 
       int size = populationSize / 2;
@@ -93,6 +77,7 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
       final List<R> representation = solution.getRepresentation();
       final int size = representation.size();
 
+      double chanceToMutate = DEFAULT_CHANCE_TO_MUTATE;
       int mutatedBitsCount = (int) (chanceToMutate * size);
       final double chanceForExtraBit = chanceToMutate * size - mutatedBitsCount;
       final int extraBit = (doubleRand.nextDouble() < chanceForExtraBit) ? 1 : 0;

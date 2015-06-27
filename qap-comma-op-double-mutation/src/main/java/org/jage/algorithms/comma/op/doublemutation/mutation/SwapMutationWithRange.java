@@ -37,16 +37,9 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 import java.util.Random;
 
-/**
- * User: Norbert Tusiński
- * Date: 20.11.13
- * Time: 13:51
- */
 public class SwapMutationWithRange extends AbstractStochasticMutate<Integer>
 {
    private static final Logger LOG = LoggerFactory.getLogger(SwapMutationWithRange.class);
-
-   private static boolean fixedDistance = false;
 
    private Random random = new Random();
 
@@ -64,6 +57,7 @@ public class SwapMutationWithRange extends AbstractStochasticMutate<Integer>
       if (range > integers.size() / 2) {
          range = integers.size() / 2;
       }
+      boolean fixedDistance = false;
       int realDistance = range == 0 ? 0 : fixedDistance ? range : (Math.abs(random.nextInt()) % range) + 1;
       int indexToSwap;
       if (index < integers.size() / 2)

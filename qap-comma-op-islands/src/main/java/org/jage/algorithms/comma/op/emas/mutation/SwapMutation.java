@@ -46,8 +46,6 @@ public class SwapMutation extends AbstractStochasticMutate<Integer>
 {
    private static final Logger LOG = LoggerFactory.getLogger(SwapMutation.class);
 
-   private static boolean fixedDistance = false;
-
    private Random random = new Random();
 
    public SwapMutation(int steps, int populationSize) {
@@ -64,6 +62,7 @@ public class SwapMutation extends AbstractStochasticMutate<Integer>
       if (range > integers.size() / 2) {
          range = integers.size() / 2;
       }
+      boolean fixedDistance = false;
       int realDistance = range == 0 ? 0 : fixedDistance ? range : (Math.abs(random.nextInt()) % range) + 1;
       int indexToSwap;
       if (index < integers.size() / 2)
