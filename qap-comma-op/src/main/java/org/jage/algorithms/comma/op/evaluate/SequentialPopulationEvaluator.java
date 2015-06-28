@@ -44,13 +44,6 @@ import javax.inject.Inject;
 import java.util.Comparator;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/**
- * Simple {@link IPopulationEvaluator} strategy, which evaluates solutions sequentially, one by one.
- *
- * @param <S> The type of {@link ISolution} to be evaluated
- * @param <E> the type of evaluation
- * @author AGH AgE Team
- */
 public class SequentialPopulationEvaluator<S extends ISolution, E> extends ClassPropertyContainer implements
         IPopulationEvaluator<S, E> {
     private static Object instance;
@@ -58,7 +51,7 @@ public class SequentialPopulationEvaluator<S extends ISolution, E> extends Class
     @Inject
     private ISolutionEvaluator<S, E> evaluator;
 
-    private SortedSetMultimap<Double, S> sortedPop = TreeMultimap.create(new Comparator<Double>() {
+    private final SortedSetMultimap<Double, S> sortedPop = TreeMultimap.create(new Comparator<Double>() {
                                                                              @Override
                                                                              public int compare(Double o1, Double o2) {
                                                                                  return o1.compareTo(o2);
@@ -82,9 +75,9 @@ public class SequentialPopulationEvaluator<S extends ISolution, E> extends Class
     );
 
     //= new SynchronizedSortedSetMultimap<E, S>();
-    private AtomicInteger popSize = new AtomicInteger();
+    private final AtomicInteger popSize = new AtomicInteger();
 
-    private AtomicInteger epoch = new AtomicInteger(1);
+    private final AtomicInteger epoch = new AtomicInteger(1);
 
     public static <S extends ISolution, E> SequentialPopulationEvaluator<S, E> getInstance() {
         return (SequentialPopulationEvaluator<S, E>) instance;

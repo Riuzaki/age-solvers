@@ -47,7 +47,7 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
 
    private final int populationSize;
 
-   private int[] distances;
+   private final int[] distances;
 
    @Inject
    private IDoubleRandomGenerator doubleRand;
@@ -55,7 +55,7 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
    @Inject
    private IIntRandomGenerator intRand;
 
-   private Random random = new Random();
+   private final Random random = new Random();
 
    protected AbstractStochasticMutate (int steps, int populationSize)
    {

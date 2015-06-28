@@ -37,16 +37,11 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 import java.util.Random;
 
-/**
- * User: Norbert Tusiński
- * Date: 20.11.13
- * Time: 13:51
- */
 public class SwapMutation extends AbstractStochasticMutate<Integer>
 {
    private static final Logger LOG = LoggerFactory.getLogger(SwapMutation.class);
 
-   private Random random = new Random();
+   private final Random random = new Random();
 
    public SwapMutation(int steps, int populationSize) {
       super(steps, populationSize);

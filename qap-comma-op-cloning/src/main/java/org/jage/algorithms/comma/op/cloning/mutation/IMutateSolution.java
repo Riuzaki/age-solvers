@@ -34,20 +34,6 @@ package org.jage.algorithms.comma.op.cloning.mutation;
 import org.jage.solution.ISolution;
 import org.jage.strategy.IStrategy;
 
-/**
- * Strategy interface for mutating a solution.
- *
- * @param <S>
- *            the type of the solutions to be mutated
- * @author AGH AgE Team
- */
 public interface IMutateSolution<S extends ISolution> extends IStrategy {
-
-	/**
-	 * Mutates the given solution.
-	 *
-	 * @param solution
-	 *            The solution to be mutated
-	 */
-	public void mutateSolution (S solution, int rank);
+	void mutateSolution(S solution, int rank);
 }

@@ -36,13 +36,8 @@ import org.jage.variation.mutation.AbstractStochasticMutate;
 import java.util.List;
 import java.util.Random;
 
-/**
- * User: Norbert Tusiński
- * Date: 20.11.13
- * Time: 13:51
- */
 public class SwapMutation extends AbstractStochasticMutate<Integer> {
-    private Random random = new Random();
+    private final Random random = new Random();
 
     @Override
     protected void doMutate(List<Integer> integers, int index) {

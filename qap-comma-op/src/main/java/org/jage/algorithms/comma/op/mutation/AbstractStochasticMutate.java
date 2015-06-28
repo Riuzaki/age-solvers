@@ -49,7 +49,7 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
 
    private final int populationSize;
 
-   private int[] distances;
+   private final int[] distances;
 
    @Inject
    private IDoubleRandomGenerator doubleRand;
@@ -57,7 +57,7 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
    @Inject
    private IIntRandomGenerator intRand;
 
-   private Random random = new Random();
+   private final Random random = new Random();
 
    protected AbstractStochasticMutate (int steps, int populationSize)
    {
@@ -107,7 +107,7 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
 
    private int calculateRange (final IVectorSolution<R> solution)
    {
-      int r = SequentialPopulationEvaluator.getInstance().getRank(solution);
+      int r = SequentialPopulationEvaluator.getRank(solution);
       double rate = 1.0 - Evaluator.getInstance().getRate();
 //      System.out.println(rate);
       double rMinus = (((double) (r * distances.length)) / ((double) populationSize)) - rate * ((double) distances.length);

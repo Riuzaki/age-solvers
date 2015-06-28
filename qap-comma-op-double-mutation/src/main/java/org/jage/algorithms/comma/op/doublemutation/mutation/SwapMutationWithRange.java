@@ -41,7 +41,7 @@ public class SwapMutationWithRange extends AbstractStochasticMutate<Integer>
 {
    private static final Logger LOG = LoggerFactory.getLogger(SwapMutationWithRange.class);
 
-   private Random random = new Random();
+   private final Random random = new Random();
 
    public SwapMutationWithRange(int steps, int populationSize) {
       super(steps, populationSize);

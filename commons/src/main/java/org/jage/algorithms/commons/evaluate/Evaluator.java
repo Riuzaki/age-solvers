@@ -48,13 +48,13 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
 
     private static List<Integer> bestList;
 
-    private static int maxEvalStep;
+    private static final int maxEvalStep;
 
     static {
         try {
             maxEvalStep = 1000 * (int) Math.pow(InputDataHolder.getInstance().getInputData().getN(), 2);
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
 
@@ -62,7 +62,7 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
 
     private InputData inputData;
 
-    private AtomicInteger currentEvalStep = new AtomicInteger(0);
+    private final AtomicInteger currentEvalStep = new AtomicInteger(0);
 
     public Evaluator() throws IOException {
         inputData = InputDataHolder.getInstance().getInputData();

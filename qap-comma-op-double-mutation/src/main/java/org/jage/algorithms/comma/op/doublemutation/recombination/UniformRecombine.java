@@ -83,7 +83,7 @@ public class UniformRecombine<R> extends AbstractStrategy implements IRecombine<
         boolean[] duplicateCheckArray = new boolean[representation.size()];
         for (int i = 0; i < representation.size(); i++) {
             int gene = representation.get(i);
-            if (duplicateCheckArray[gene] == false) {
+            if (!duplicateCheckArray[gene]) {
                 duplicateCheckArray[gene] = true;
             } else {
                 representation.set(i, missingValuesList.get(0));
