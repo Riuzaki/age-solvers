@@ -91,15 +91,12 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
          }
          alreadyChecked[k] = true;
 
-         double fitness = 0.;
-         double fitness2 = 0.;
+         double fitness = Evaluator.getInstance().evaluate((IVectorSolution<Integer>) solution);
 
-         fitness = Evaluator.getInstance().evaluate((IVectorSolution<Integer>) solution);
-
-         doMutate(representation, k, calculateRange(solution, rank));
+         doMutate(representation, k, calculateRange(rank));
 
          Evaluator.getInstance().decrStep();
-         fitness2 = Evaluator.getInstance().evaluate((IVectorSolution<Integer>) solution);
+         double fitness2 = Evaluator.getInstance().evaluate((IVectorSolution<Integer>) solution);
 
          if (fitness2 < fitness)
          {
@@ -108,7 +105,7 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
       }
    }
 
-   private int calculateRange (final IVectorSolution<R> solution, int r)
+   private int calculateRange(int r)
    {
       double rate = 1.0 - Evaluator.getInstance().getRate();
       //      System.out.println(rate);

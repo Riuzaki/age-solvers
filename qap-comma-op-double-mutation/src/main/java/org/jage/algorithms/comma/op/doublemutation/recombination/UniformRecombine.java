@@ -73,8 +73,8 @@ public class UniformRecombine<R> extends AbstractStrategy implements IRecombine<
         for (int i = 0; i < representation.size(); i++) {
             missingValues.add(i);
         }
-        for (int i = 0; i < representation.size(); i++) {
-            missingValues.remove(representation.get(i));
+        for (Integer aRepresentation : representation) {
+            missingValues.remove(aRepresentation);
         }
         List<Integer> missingValuesList = new ArrayList<Integer>();
         missingValuesList.addAll(missingValues);

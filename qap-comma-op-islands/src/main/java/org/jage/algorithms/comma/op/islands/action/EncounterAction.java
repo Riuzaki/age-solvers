@@ -133,7 +133,7 @@ public final class EncounterAction extends ChainingAction<IndividualAgent>
       final IndividualAgent winner = battleStrategy.fight(agent, other);
       final IndividualAgent loser = winner != agent ? agent : other;
       final double energyLost = battleEnergyTransfer.transferEnergy(loser, winner);
-      log.debug("Fight! Agent {} lost {} energy to {}.", new Object[] { loser, energyLost, winner });
+      log.debug("Fight! Agent {} lost {} energy to {}.", loser, energyLost, winner);
    }
 
    private void selfReproduction (final IndividualAgent agent, int rank) throws AgentException
