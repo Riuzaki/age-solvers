@@ -29,7 +29,7 @@
  * $Id: IntegerSolutionFactory.java 471 2012-10-30 11:17:00Z faber $
  */
 
-package org.jage.algorithms.comma.op.doublemutation.solution;
+package org.jage.algorithms.comma.op.islands.solution;
 
 import it.unimi.dsi.fastutil.ints.IntArrayList;
 import org.apache.commons.lang.ArrayUtils;

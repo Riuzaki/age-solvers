@@ -29,11 +29,11 @@
  * $Id: EncounterAction.java 471 2012-10-30 11:17:00Z faber $
  */
 
-package org.jage.algorithms.comma.op.emas.action;
+package org.jage.algorithms.comma.op.islands.action;
 
 import com.google.common.collect.Iterables;
 import org.jage.agent.AgentException;
-import org.jage.algorithms.comma.op.emas.mutation.IMutateSolution;
+import org.jage.algorithms.comma.op.islands.mutation.IMutateSolution;
 import org.jage.emas.agent.IndividualAgent;
 import org.jage.emas.battle.Battle;
 import org.jage.emas.energy.EnergyTransfer;

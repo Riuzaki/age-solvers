@@ -29,12 +29,12 @@
                         </strategy>
                     </agent>
 
-                    <strategy name="encounterAction" class="org.jage.algorithms.comma.op.emas.action.EncounterAction">
+                    <strategy name="encounterAction" class="org.jage.algorithms.comma.op.islands.action.EncounterAction">
                         <strategy name="reproductionPredicate" class="org.jage.emas.predicate.RandomPredicate">
                             <property name="probability" type="Double" value="0.5"/>
                         </strategy>
                         <strategy name="battleStrategy" class="org.jage.emas.battle.DeterministicFitnessBattle"/>
-                        <strategy name="battleEnergyTransfer" class="org.jage.algorithms.comma.op.emas.energy.ConstantEnergyTransfer">
+                        <strategy name="battleEnergyTransfer" class="org.jage.algorithms.comma.op.islands.energy.ConstantEnergyTransfer">
                             <property name="transferredEnergy" type="Double" value="1.0"/>
                         </strategy>
                     </strategy>
@@ -88,14 +88,14 @@
             </strategy>
 
             <strategy name="solutionEvaluator" class="org.jage.algorithms.commons.evaluate.Evaluator"/>
-            <strategy name="problem" class="org.jage.algorithms.comma.op.emas.solution.Problem"/>
+            <strategy name="problem" class="org.jage.algorithms.comma.op.islands.solution.Problem"/>
 
-            <strategy name="solutionFactory" class="org.jage.algorithms.comma.op.emas.solution.SolutionFactory"/>
+            <strategy name="solutionFactory" class="org.jage.algorithms.comma.op.islands.solution.SolutionFactory"/>
 
             <strategy name="recombinationStrategy"
-                      class="org.jage.algorithms.comma.op.emas.recombination.NopeRecombination"/>
+                      class="org.jage.algorithms.comma.op.islands.recombination.NopeRecombination"/>
             <strategy name="mutationStategy"
-                      class="org.jage.algorithms.comma.op.emas.mutation.SwapMutation">
+                      class="org.jage.algorithms.comma.op.islands.mutation.SwapMutation">
                 <constructor-arg name="steps" type="Integer" value="${steps}"/>
                 <constructor-arg name="populationSize" type="Integer" value="${population.size}"/>
             </strategy>

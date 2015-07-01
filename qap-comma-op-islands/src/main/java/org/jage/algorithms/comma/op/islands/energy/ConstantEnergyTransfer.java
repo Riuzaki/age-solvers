@@ -29,7 +29,7 @@
  * $Id: ConstantEnergyTransfer.java 471 2012-10-30 11:17:00Z faber $
  */
 
-package org.jage.algorithms.comma.op.emas.energy;
+package org.jage.algorithms.comma.op.islands.energy;
 
 import org.jage.emas.agent.IndividualAgent;
 import org.jage.emas.energy.EnergyTransfer;

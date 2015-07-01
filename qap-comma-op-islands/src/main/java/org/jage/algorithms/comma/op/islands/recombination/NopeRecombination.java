@@ -25,15 +25,30 @@
  * along with AgE.  If not, see <http://www.gnu.org/licenses/>.
  */
 /*
- * Created: 2011-10-20
- * $Id: IMutateSolution.java 471 2012-10-30 11:17:00Z faber $
+ * Created: 21-03-2012
+ * $Id$
  */
 
-package org.jage.algorithms.comma.op.emas.mutation;
+package org.jage.algorithms.comma.op.islands.recombination;
 
-import org.jage.solution.ISolution;
-import org.jage.strategy.IStrategy;
+import org.jage.random.IIntRandomGenerator;
+import org.jage.solution.IVectorSolution;
+import org.jage.strategy.AbstractStrategy;
+import org.jage.variation.recombination.IRecombine;
 
-public interface IMutateSolution<S extends ISolution> extends IStrategy {
-	void mutateSolution(S solution, int rank);
+import javax.inject.Inject;
+
+/**
+ * Recombines the representations of two real-valued solutions at a random point.
+ *
+ * @author AGH AgE Team
+ */
+public class NopeRecombination extends AbstractStrategy implements IRecombine<IVectorSolution<Double>> {
+
+	@Inject
+	private IIntRandomGenerator rand;
+
+    @Override
+    public void recombine(final IVectorSolution<Double> solution1, final IVectorSolution<Double> solution2) {
+    }
 }

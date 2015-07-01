@@ -133,12 +133,6 @@ public class SolutionFactory extends ClassPropertyContainer implements
       }
 
       @Override
-      public int hashCode ()
-      {
-         return super.hashCode();
-      }
-
-      @Override
       public int compareTo (final List<? extends Integer> l)
       {
          if (l instanceof IntArrayList)
