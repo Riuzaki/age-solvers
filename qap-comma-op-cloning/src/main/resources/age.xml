@@ -105,7 +105,6 @@
 
             <strategy name="mutateInSitu"
                       class="org.jage.algorithms.comma.op.cloning.mutation.SwapMutationWithRange">
-                <constructor-arg name="steps" type="Integer" value="${steps}"/>
                 <constructor-arg name="populationSize" type="Integer" value="${population.size}"/>
             </strategy>
 

@@ -43,8 +43,8 @@ public class SwapMutation extends AbstractStochasticMutate<Integer>
 
    private final Random random = new Random();
 
-   public SwapMutation(int steps, int populationSize) {
-      super(steps, populationSize);
+   public SwapMutation(int populationSize) {
+      super(populationSize);
    }
 
    int index1;

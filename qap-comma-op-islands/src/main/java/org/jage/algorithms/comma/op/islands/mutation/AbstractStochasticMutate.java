@@ -57,7 +57,7 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
 
    private final Random random = new Random();
 
-   protected AbstractStochasticMutate (int steps, int populationSize)
+   protected AbstractStochasticMutate(int populationSize)
    {
       this.populationSize = populationSize;
 

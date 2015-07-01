@@ -96,7 +96,6 @@
                       class="org.jage.algorithms.comma.op.islands.recombination.NopeRecombination"/>
             <strategy name="mutationStategy"
                       class="org.jage.algorithms.comma.op.islands.mutation.SwapMutation">
-                <constructor-arg name="steps" type="Integer" value="${steps}"/>
                 <constructor-arg name="populationSize" type="Integer" value="${population.size}"/>
             </strategy>
         </block>

@@ -43,8 +43,8 @@ public class SwapMutationWithRange extends AbstractStochasticMutate<Integer>
 
    private final Random random = new Random();
 
-   public SwapMutationWithRange(int steps, int populationSize) {
-      super(steps, populationSize);
+   public SwapMutationWithRange(int populationSize) {
+      super(populationSize);
    }
 
    int index1;
