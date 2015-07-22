@@ -31,6 +31,8 @@ package org.jage.algorithms.commons.evaluate;
 import com.google.common.util.concurrent.AtomicDouble;
 import org.jage.algorithms.commons.input.InputData;
 import org.jage.algorithms.commons.input.InputDataHolder;
+import org.jage.algorithms.commons.output.ResultPrinter;
+import org.jage.algorithms.commons.timer.AlgorithmTimer;
 import org.jage.solution.IVectorSolution;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,30 +41,18 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class Evaluator extends org.jage.property.ClassPropertyContainer implements org.jage.evaluation.ISolutionEvaluator<org.jage.solution.IVectorSolution<Integer>, Double> {
     private static final Logger LOG = LoggerFactory.getLogger(Evaluator.class);
 
     private static final AtomicDouble best = new AtomicDouble(Double.MAX_VALUE);
-
     private static List<Integer> bestList;
-
-    private static final int maxEvalStep;
-
-    static {
-        try {
-            maxEvalStep = 1000 * (int) Math.pow(InputDataHolder.getInstance().getInputData().getN(), 2);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
     private static Evaluator instance;
 
     private InputData inputData;
 
-    private final AtomicInteger currentEvalStep = new AtomicInteger(0);
+    private ResultPrinter resultPrinter = new ResultPrinter();
+    private AlgorithmTimer algorithmTimer = new AlgorithmTimer();
 
     public Evaluator() throws IOException {
         inputData = InputDataHolder.getInstance().getInputData();
@@ -75,15 +65,13 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
 
     @Override
     public Double evaluate(IVectorSolution<Integer> solution) {
-        if (currentEvalStep.get() % 1000 == 0) {
-            if (currentEvalStep.get() <= maxEvalStep) {
-                if (bestList != null)
-                    //LOG.warn("{};{}", currentEvalStep, (int) best.get());
-                    LOG.warn("{}", (int) best.get());
-            } else {
-                LOG.warn("FINISHED EXECUTION");
-                System.exit(0);
-            }
+        if (algorithmTimer.isAlgorithmEnd()) {
+            LOG.warn("FINISHED EXECUTION");
+            System.exit(0);
+        }
+
+        if (bestList != null) {
+            resultPrinter.printStep((int) best.get());
         }
 
         LOG.debug("Solution vector: " + solution.getRepresentation());
@@ -113,17 +101,10 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
 
         LOG.debug("Current: " + total + ", best: " + best.get());
 
-        currentEvalStep.incrementAndGet();
-
         return (double) -total;
     }
 
     public double getRate() {
-        double rate = ((double) currentEvalStep.get()) / ((double) maxEvalStep);
-        return rate > 1. ? 1. : rate;
-    }
-
-    public void decrStep() {
-        currentEvalStep.decrementAndGet();
+        return 1.0 - algorithmTimer.calculateCompletionLevel();
     }
 }

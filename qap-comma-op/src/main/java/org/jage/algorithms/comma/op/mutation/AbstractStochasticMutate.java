@@ -108,7 +108,7 @@ public abstract class AbstractStochasticMutate<R> extends AbstractStrategy imple
    private int calculateRange (final IVectorSolution<R> solution)
    {
       int r = SequentialPopulationEvaluator.getRank(solution);
-      double rate = 1.0 - Evaluator.getInstance().getRate();
+      double rate = Evaluator.getInstance().getRate();
 //      System.out.println(rate);
       double rMinus = (((double) (r * distances.length)) / ((double) populationSize)) - rate * ((double) distances.length);
       int rMinusInt = (int) rMinus;

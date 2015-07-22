@@ -24,10 +24,6 @@
  * You should have received a copy of the GNU General Public License
  * along with AgE.  If not, see <http://www.gnu.org/licenses/>.
  */
-/*
- * Created: 2011-12-01
- * $Id: SequentialPopulationEvaluator.java 471 2012-10-30 11:17:00Z faber $
- */
 
 package org.jage.algorithms.comma.op.evaluate;
 
@@ -107,7 +103,6 @@ public class SequentialPopulationEvaluator<S extends ISolution, E> extends Class
     }
 
     public E evaluate(S solution) {
-        ((Evaluator) evaluator).decrStep();
         return evaluator.evaluate(solution);
     }
 
