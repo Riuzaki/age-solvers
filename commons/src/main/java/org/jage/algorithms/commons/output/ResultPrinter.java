@@ -27,25 +27,41 @@
 
 package org.jage.algorithms.commons.output;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import java.io.*;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-public class ResultPrinter {
-    private static final Logger LOG = LoggerFactory.getLogger(ResultPrinter.class);
+public class ResultPrinter implements Closeable {
     private static final long LOG_INTERVAL = 1000L;
+    private static final String FOLDER_PATH = "C://age-solvers-logs";
+    private static final String FILE_PATH = "C://age-solvers-logs/log-";
 
     private long startTime = new Date().getTime();
     private long lastLogTime = startTime;
+
+    private PrintWriter resultFileWriter;
+
+    public ResultPrinter() {
+        try {
+            File folder = new File(FOLDER_PATH);
+            if (!folder.exists()) folder.mkdir();
+            resultFileWriter = new PrintWriter(FILE_PATH + startTime);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     public void printStep(int bestFitness) {
         long currentTime = new Date().getTime();
 
         if (currentTime - lastLogTime > LOG_INTERVAL) {
-            LOG.warn("{};{}", TimeUnit.MILLISECONDS.toSeconds(currentTime - startTime), bestFitness);
+            resultFileWriter.println("" + TimeUnit.MILLISECONDS.toSeconds(currentTime - startTime) + ";" + bestFitness);
             lastLogTime = currentTime;
         }
+    }
+
+    @Override
+    public void close() throws IOException {
+        resultFileWriter.close();
     }
 }

@@ -65,13 +65,18 @@ public class Evaluator extends org.jage.property.ClassPropertyContainer implemen
 
     @Override
     public Double evaluate(IVectorSolution<Integer> solution) {
-        if (algorithmTimer.isAlgorithmEnd()) {
-            LOG.warn("FINISHED EXECUTION");
-            System.exit(0);
-        }
-
         if (bestList != null) {
             resultPrinter.printStep((int) best.get());
+        }
+
+        if (algorithmTimer.isAlgorithmEnd()) {
+            LOG.warn("FINISHED EXECUTION");
+            try {
+                resultPrinter.close();
+            } catch (IOException e) {
+                throw new RuntimeException();
+            }
+            System.exit(0);
         }
 
         LOG.debug("Solution vector: " + solution.getRepresentation());
