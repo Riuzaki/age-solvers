@@ -27,7 +27,7 @@
 
 package org.jage.algorithms.commons.input;
 
-
+import org.jage.algorithms.commons.properties.ProjectPropertiesHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -44,7 +44,7 @@ public class InputData {
 
         n = Integer.parseInt(fileContent[0]);
 
-        LOG.info("Reading operations for: " + n + " size problem");
+        LOG.info("Parsing input from file: " + ProjectPropertiesHolder.getProperties().getProperty(ProjectPropertiesHolder.INPUT_PATH_PROPERTY_NAME));
 
         flow = new int[n][n];
         distances = new int[n][n];

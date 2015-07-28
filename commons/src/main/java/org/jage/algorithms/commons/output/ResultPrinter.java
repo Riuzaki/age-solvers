@@ -27,14 +27,18 @@
 
 package org.jage.algorithms.commons.output;
 
+import org.jage.algorithms.commons.properties.ProjectPropertiesHolder;
+
 import java.io.*;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class ResultPrinter implements Closeable {
     private static final long LOG_INTERVAL = 1000L;
-    private static final String FOLDER_PATH = "C://age-solvers-logs";
-    private static final String FILE_PATH = "C://age-solvers-logs/log-";
+    private static final String FOLDER_PATH = ProjectPropertiesHolder.getProperties().getProperty(ProjectPropertiesHolder.LOG_FOLDER_PATH_PROPERTY_NAME);
+    private static final String FILE_PATH = FOLDER_PATH + File.separator;
+    private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
 
     private long startTime = new Date().getTime();
     private long lastLogTime = startTime;
@@ -45,7 +49,7 @@ public class ResultPrinter implements Closeable {
         try {
             File folder = new File(FOLDER_PATH);
             if (!folder.exists()) folder.mkdir();
-            resultFileWriter = new PrintWriter(FILE_PATH + startTime);
+            resultFileWriter = new PrintWriter(FILE_PATH + DATE_FORMAT.format(startTime));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }

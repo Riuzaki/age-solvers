@@ -27,25 +27,17 @@
 
 package org.jage.algorithms.commons.input;
 
+import org.jage.algorithms.commons.properties.ProjectPropertiesHolder;
+
 import java.io.IOException;
 
 public class InputDataHolder {
-    //private static final String FILE_PATH = "input/example";
-    //private static final String FILE_PATH = "input/jensen-example"; // optimum: 3260
-
-    //private static final String FILE_PATH = "input/tailard/tai12a.dat"; // optimum: 224416
-    //  private static final String FILE_PATH = "input/tailard/tai12b.dat"; // 39464925
-    //private static final String FILE_PATH = "input/tailard/tai15a.dat";
-    //  private static final String FILE_PATH = "input/tailard/tai15b.dat";
-    private static final String FILE_PATH = "input/tailard/tai20a.dat"; // optimum: 703482
-    //private static final String FILE_PATH = "input/tailard/tai20b.dat";
-
     private static InputDataHolder instance;
 
     private InputData inputData;
 
     private InputDataHolder() throws IOException {
-        inputData = new InputData(FILE_PATH);
+        inputData = new InputData(ProjectPropertiesHolder.getProperties().getProperty(ProjectPropertiesHolder.INPUT_PATH_PROPERTY_NAME));
     }
 
     private InputDataHolder(String src) throws IOException {

@@ -27,24 +27,29 @@
 
 package org.jage.algorithms.commons.timer;
 
+import org.jage.algorithms.commons.properties.ProjectPropertiesHolder;
+
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class AlgorithmTimer {
-    private static long ALGORITHM_DURATION_IN_SECONDS = 60;
-
     private long startTime = new Date().getTime();
 
     public boolean isAlgorithmEnd() {
         long currentTime = new Date().getTime();
-        return TimeUnit.MILLISECONDS.toSeconds(currentTime - startTime) > ALGORITHM_DURATION_IN_SECONDS;
+        return TimeUnit.MILLISECONDS.toSeconds(currentTime - startTime) > getAlgorithmDurationInSeconds();
     }
 
     public double calculateCompletionLevel() {
         long currentTime = new Date().getTime();
         double counter = (currentTime - startTime);
-        double denominator = TimeUnit.SECONDS.toMillis(ALGORITHM_DURATION_IN_SECONDS);
+        double denominator = TimeUnit.SECONDS.toMillis(getAlgorithmDurationInSeconds());
         if (counter > denominator) denominator = counter;
         return counter / denominator;
+    }
+
+    private long getAlgorithmDurationInSeconds() {
+        String duration = ProjectPropertiesHolder.getProperties().getProperty(ProjectPropertiesHolder.ALGORITHM_DURATION_IN_SECONDS_PROPERTY_NAME);
+        return Long.parseLong(duration);
     }
 }
