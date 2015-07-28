@@ -1,3 +1,5 @@
+call mvn clean install
+
 cd qap-comma-op
 call run.bat
 cd ..
