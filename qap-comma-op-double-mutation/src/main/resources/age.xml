@@ -96,9 +96,9 @@
             </strategy>
 
             <strategy name="solutionEvaluator" class="org.jage.algorithms.commons.evaluate.Evaluator"/>
-            <strategy name="problem" class="org.jage.algorithms.comma.op.doublemutation.solution.Problem"/>
+            <strategy name="problem" class="org.jage.algorithms.commons.solution.Problem"/>
 
-            <strategy name="solutionFactory" class="org.jage.algorithms.comma.op.doublemutation.solution.SolutionFactory"/>
+            <strategy name="solutionFactory" class="org.jage.algorithms.commons.solution.SolutionFactory"/>
 
             <strategy name="recombinationStrategy"
                       class="org.jage.algorithms.comma.op.doublemutation.recombination.UniformRecombine"/>

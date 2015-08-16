@@ -24,12 +24,8 @@
  * You should have received a copy of the GNU General Public License
  * along with AgE.  If not, see <http://www.gnu.org/licenses/>.
  */
-/*
- * Created: 2011-12-16
- * $Id: InitializationActionStrategy.java 471 2012-10-30 11:17:00Z faber $
- */
 
-package org.jage.algorithms.comma.op.doublemutation.solution;
+package org.jage.algorithms.commons.solution;
 
 import org.jage.algorithms.commons.input.InputData;
 import org.jage.algorithms.commons.input.InputDataHolder;
@@ -37,11 +33,6 @@ import org.jage.problem.IVectorProblem;
 
 import java.io.IOException;
 
-/**
- * User: Norbert Tusiński
- * Date: 20.11.13
- * Time: 07:47
- */
 public class Problem implements IVectorProblem<Integer> {
     private InputData inputData;
 

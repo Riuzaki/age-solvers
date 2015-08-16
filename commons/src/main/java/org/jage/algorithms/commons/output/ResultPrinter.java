@@ -59,7 +59,8 @@ public class ResultPrinter implements Closeable {
         long currentTime = new Date().getTime();
 
         if (currentTime - lastLogTime > LOG_INTERVAL) {
-            resultFileWriter.println("" + TimeUnit.MILLISECONDS.toSeconds(currentTime - startTime) + ";" + bestFitness);
+//            resultFileWriter.println("" + TimeUnit.MILLISECONDS.toSeconds(currentTime - startTime) + ";" + bestFitness);
+            resultFileWriter.println("" + bestFitness);
             lastLogTime = currentTime;
         }
     }

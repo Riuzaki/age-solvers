@@ -27,11 +27,11 @@
             <strategy name="populationFactory" class="org.jage.population.PopulationFactory">
                 <property name="populationSize" type="Integer" value="${population.size}"/>
             </strategy>
-            <strategy name="solutionFactory" class="org.jage.algorithms.comma.op.solution.SolutionFactory"/>
+            <strategy name="solutionFactory" class="org.jage.algorithms.commons.solution.SolutionFactory"/>
 
             <strategy name="populationEvaluator" class="org.jage.algorithms.comma.op.evaluate.SequentialPopulationEvaluator"/>
             <strategy name="solutionEvaluator" class="org.jage.algorithms.commons.evaluate.Evaluator"/>
-            <strategy name="problem" class="org.jage.algorithms.comma.op.solution.Problem"/>
+            <strategy name="problem" class="org.jage.algorithms.commons.solution.Problem"/>
 
             <strategy name="rand" class="org.jage.random.SimpleGenerator">
                 <constructor-arg type="Long" value="1234567890"/>
